@@ -14,7 +14,7 @@ var is_in_game := false
 var is_in_pause_menu := false
 
 #Przedmioty
-var Lista: Array
+var Lista: Array = []
 
 var Przedmioty: Array = ["jabłko","chleb","kiełbasa","ziemniak","mleko","konserwa","ocet","papier toaletowy",
 "szare mydło","pasta do zębów","szczototka do kibla","klucz hydrauliczny","klej","farba","gwoździe","gazeta",
@@ -25,6 +25,7 @@ var Przedmiot: String #przedmiot podany klientowi
 
 func _ready() -> void:
 	Rzadowa_Dostawa()
+	print(Lista)
 
 func Rzadowa_Dostawa():
 	for i in range(0,ilosc_przedmiotow_od_rzadu):
