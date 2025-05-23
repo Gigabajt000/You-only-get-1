@@ -30,7 +30,7 @@ func random_podkategoria():
 	var pkat = randi_range(2,2)
 	pkat = str(pkat)
 	podkat_path = podkat_path+"/"+name_kat+"/"+pkat+".tres"
-	#print(podkat_path)
+	print(podkat_path)
 	podkategoria = ResourceLoader.load(podkat_path)
 	print(podkategoria.Dialog)
 	
