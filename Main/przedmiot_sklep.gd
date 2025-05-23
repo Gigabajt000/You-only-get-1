@@ -3,8 +3,6 @@ extends TextureButton
 var Nazwa: String #Nazwa
 var stats: Resource
 
-var parent
-
 func _ready() -> void:
 	#To Działa Tylko Narazie Nie Ma Resourcesów Zrobionych --------------------
 	stats = load("res://Recourses/Products/%s.tres" % Nazwa) 
@@ -13,7 +11,8 @@ func _ready() -> void:
 
 
 func _on_pressed() -> void:
-	parent = get_node("/root/Shop-Magazyn")
+	if Global.Przedmiot != "":
+		Global.Lista.append(Global.Przedmiot)
 	Global.Przedmiot = Nazwa
 	Global.Lista.erase(Nazwa)
 	get_tree().change_scene_to_file("res://Main/Main.tscn")

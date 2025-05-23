@@ -1,28 +1,28 @@
-[gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://d0jsj0y7qxli0"]
+[gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://4muqe0a08xfp"]
 
-[ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_iholm"]
+[ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_ictip"]
 
 [resource]
-script = ExtResource("1_iholm")
-Dialog = "\"I need a gift. Something between ‘I tried’ and ‘I found this on the floor.’\""
+script = ExtResource("1_ictip")
+Dialog = "\"I’m looking for something to share with a comrade. Or bribe him.\""
 Items = {
 "alkohol": 1.0,
-"chleb": -0.3,
+"chleb": -0.2,
 "fajki": 1.0,
-"farba": -1.0,
+"farba": -0.7,
 "gazeta": 0.3,
-"gwoździe": -0.5,
+"gwoździe": -0.3,
 "jabłko": 0.2,
-"kiełbasa": 0.5,
-"klej": -1.0,
+"kiełbasa": 0.7,
+"klej": -0.7,
 "klucz hydrauliczny": 0.2,
-"konserwa": 0.1,
-"książka marola karksa": 1.0,
+"konserwa": 0.2,
+"książka marola karksa": 0.7,
 "mleko": -0.5,
 "ocet": -0.7,
-"papier toaletowy": -0.3,
-"pasta do zębów": -0.7,
+"papier toaletowy": 0.5,
+"pasta do zębów": -0.2,
 "szare mydło": -0.7,
 "szczototka do kibla": 0.3,
-"ziemniak": 0.3
+"ziemniak": 0.4
 }
