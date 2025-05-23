@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dkudhydo12mt7"]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://6mspbxcgvrtf"]
 
 [ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_ddsc8"]
 
@@ -6,10 +6,10 @@
 script = ExtResource("1_ddsc8")
 Dialog = "\"Mine children came for sweets. I give them culture.\""
 Items = {
-"alkohol": 1.0,
-"chleb": -0.6,
-"fajki": 1.0,
-"farba": -1.0,
+"alkohol": 0.0,
+"chleb": -0.3,
+"fajki": 0.0,
+"farba": -0.3,
 "gazeta": 1.0,
 "gwoździe": -1.0,
 "jabłko": 0.6,
