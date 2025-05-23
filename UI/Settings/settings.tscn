@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bcjt7iyff2kjg"]
 
 [ext_resource type="Script" uid="uid://bj2gahfarupoh" path="res://UI/Settings/settings.gd" id="1_wnv0n"]
-[ext_resource type="Texture2D" uid="uid://b8jgqcfcu1663" path="res://Misc/marek_button.png" id="2_u23uq"]
+[ext_resource type="Texture2D" uid="uid://b8jgqcfcu1663" path="res://Art/marek_button.png" id="2_u23uq"]
 
 [node name="Settings" type="Control"]
 process_mode = 3
