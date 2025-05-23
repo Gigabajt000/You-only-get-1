@@ -9,13 +9,19 @@ var podkategoria : dialog
 var k = "i"
 var name_kat = 0 
 
+@export var label : Label
+
 
 func _ready() -> void:
+	losowanie()
+
+
+func losowanie():
 	random_kategoria()
 	random_podkategoria()
 
-
 func random_kategoria():
+	kat_path = "res://NPC's/Dialog/Kategoria/"
 	var kat = randi_range(0,3)
 	kat = str(kat)
 	#print(kat)
@@ -23,15 +29,19 @@ func random_kategoria():
 	#print(kat_path)
 	kategoria = ResourceLoader.load(kat_path)
 	name_kat = kategoria.name
+	
 	#print(name_kat)
 
 func random_podkategoria():
+	podkat_path = "res://NPC's/Dialog/Podkategorie"
 	#range musi byc powyzej 1 (np: od 2 do 6)
-	var pkat = randi_range(2,2)
+	var pkat = randi_range(2,6)
 	pkat = str(pkat)
 	podkat_path = podkat_path+"/"+name_kat+"/"+pkat+".tres"
 	print(podkat_path)
 	podkategoria = ResourceLoader.load(podkat_path)
-	print(podkategoria.Dialog)
+	if podkategoria == null:
+		random_podkategoria() 
+	label.text = podkategoria.Dialog
 	
 	

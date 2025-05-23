@@ -3,10 +3,26 @@
 [ext_resource type="Script" uid="uid://c4r5eq7pdidem" path="res://NPC's/npc.gd" id="1_4g4tx"]
 [ext_resource type="Texture2D" uid="uid://b8jgqcfcu1663" path="res://Art/marek_button.png" id="2_wfqlo"]
 
-[node name="NPC" type="CharacterBody2D"]
+[node name="NPC" type="CharacterBody2D" node_paths=PackedStringArray("label")]
 script = ExtResource("1_4g4tx")
+label = NodePath("CanvasLayer/Label")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -95)
 scale = Vector2(1.33703, 23.4167)
 texture = ExtResource("2_wfqlo")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_left = 114.0
+offset_top = 448.0
+offset_right = 1036.0
+offset_bottom = 620.0
+color = Color(0.154876, 0.154876, 0.154876, 1)
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 255.0
+offset_top = 471.0
+offset_right = 881.0
+offset_bottom = 602.0
