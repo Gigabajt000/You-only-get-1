@@ -13,7 +13,11 @@ var name_kat = 0
 
 
 func _ready() -> void:
-	losowanie()
+	if Global.klient_res == null:
+		losowanie()
+	else:
+		podkategoria = Global.klient_res
+	label.text = podkategoria.Dialog
 
 
 func losowanie():
@@ -42,6 +46,8 @@ func random_podkategoria():
 	podkategoria = ResourceLoader.load(podkat_path)
 	if podkategoria == null:
 		random_podkategoria() 
-	label.text = podkategoria.Dialog
+	Global.klient_res = podkategoria
+	
+	
 	
 	

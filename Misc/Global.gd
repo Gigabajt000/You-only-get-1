@@ -23,6 +23,9 @@ var ilosc_przedmiotow_od_rzadu: int = 5
 
 var Przedmiot: String #przedmiot podany klientowi
 
+#klient Resource
+var klient_res : Resource
+
 func _ready() -> void:
 	Rzadowa_Dostawa(10)
 
