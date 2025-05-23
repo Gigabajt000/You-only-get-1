@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c0hwx437ngxck"]
+
+[ext_resource type="Script" uid="uid://yofnken1ay5c" path="res://Recourses/Products/Product.gd" id="1_cne63"]
+
+[resource]
+script = ExtResource("1_cne63")
+Nazwa = "szare mydło"
+Tooltip = "GraySoap: One soap to wash all comrades equally"

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dv4y3wh0gn3uy"]
+
+[ext_resource type="Script" uid="uid://yofnken1ay5c" path="res://Recourses/Products/Product.gd" id="1_cg4k3"]
+
+[resource]
+script = ExtResource("1_cg4k3")
+Nazwa = "gazeta"
+Tooltip = "Newspaper: Truth according to the party, printed daily"

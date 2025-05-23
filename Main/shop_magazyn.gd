@@ -15,14 +15,13 @@ func _ready() -> void:
 func Rozstawienie():
 	for i in Global.Lista:
 		var item = preload_path.instantiate()
+		item.Nazwa = i
 		if h_box_container.get_child_count() < 7:
 			h_box_container.add_child(item)
 		elif h_box_container_2.get_child_count() < 7:
 			h_box_container_2.add_child(item)
 		elif h_box_container_3.get_child_count() < 7:
 			h_box_container_3.add_child(item)
-		
-		item.Nazwa = Global.Lista[i]
 		
 func _on_accept_pressed() -> void:
 	if Przedmiot != null:

@@ -4,4 +4,5 @@
 
 [resource]
 script = ExtResource("1_ch7ns")
-Nazwa = ""
+Nazwa = "ziemniak"
+Tooltip = "Potato: Glorious root of every Polish dinner dream"
