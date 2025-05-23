@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Kategoria" load_steps=2 format=3 uid="uid://c6ioivt2eiqo3"]
+
+[ext_resource type="Script" uid="uid://cw5cngvlffadf" path="res://NPC's/Dialog/Kategoria/!.gd" id="1_1djtq"]
+
+[resource]
+script = ExtResource("1_1djtq")
+name = "1"
+metadata/_custom_type_script = "uid://cw5cngvlffadf"
