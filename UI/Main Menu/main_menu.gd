@@ -3,6 +3,8 @@ extends Control
 
 
 func _on_play_pressed() -> void:
+	Transition.transition()
+	await Transition.on_transition_finished
 	Global.is_in_game = true
 	get_tree().change_scene_to_file("res://Main/Main.tscn")
 

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bmy83n3yyps2l"]
+
+[ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_vu4us"]
+
+[resource]
+script = ExtResource("1_vu4us")
+Dialog = "\"My teacher says I can’t paint with bread again. Need something better.\""
+Items = {
+"alkohol": 0.0,
+"chleb": -10.0,
+"fajki": 0.0,
+"farba": 1.0,
+"gazeta": 0.5,
+"gwoździe": -1.0,
+"jabłko": -1.0,
+"kiełbasa": -1.0,
+"klej": -0.3,
+"klucz hydrauliczny": -1.0,
+"konserwa": -1.0,
+"książka marola karksa": 0.7,
+"mleko": -1.0,
+"ocet": -1.0,
+"papier toaletowy": 0.8,
+"pasta do zębów": 0.2,
+"szare mydło": -1.0,
+"szczototka do kibla": 1.0,
+"ziemniak": 0.7
+}

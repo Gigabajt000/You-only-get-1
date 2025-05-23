@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://djol3y6pmfg08"]
+
+[ext_resource type="Script" uid="uid://yofnken1ay5c" path="res://Recourses/Products/Product.gd" id="1_5grh1"]
+
+[resource]
+script = ExtResource("1_5grh1")
+Nazwa = "papier toaletowy"
+Tooltip = "ToiletPaper: Rarer than freedom, softer than ideology"
