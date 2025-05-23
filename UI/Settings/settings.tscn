@@ -1,0 +1,168 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcjt7iyff2kjg"]
+
+[ext_resource type="Script" uid="uid://bj2gahfarupoh" path="res://UI/Settings/settings.gd" id="1_wnv0n"]
+[ext_resource type="Texture2D" uid="uid://b8jgqcfcu1663" path="res://Misc/marek_button.png" id="2_u23uq"]
+
+[node name="Settings" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wnv0n")
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -226.0
+offset_top = -152.0
+offset_right = 226.0
+offset_bottom = 82.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+text = "Master Volume"
+
+[node name="Master Volume" type="HSlider" parent="MarginContainer2/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+focus_mode = 0
+max_value = 1.0
+step = 0.01
+
+[node name="Label2" type="Label" parent="MarginContainer2/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+text = "
+Music Volume"
+
+[node name="Music Volume" type="HSlider" parent="MarginContainer2/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+focus_mode = 0
+max_value = 1.0
+step = 0.01
+
+[node name="Label3" type="Label" parent="MarginContainer2/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+text = "
+SFX Volume"
+
+[node name="SFX Volume" type="HSlider" parent="MarginContainer2/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+focus_mode = 0
+max_value = 1.0
+step = 0.01
+
+[node name="MarginContainer3" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -226.0
+offset_top = 116.0
+offset_right = 227.0
+offset_bottom = 221.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer3"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer3/VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="MarginContainer3/VBoxContainer2/HBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+text = "Windowed resolution"
+
+[node name="resolutions" type="OptionButton" parent="MarginContainer3/VBoxContainer2/HBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+fit_to_longest_item = false
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer3/VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 102
+
+[node name="Label2" type="Label" parent="MarginContainer3/VBoxContainer2/HBoxContainer2"]
+texture_filter = 1
+layout_mode = 2
+text = "fullscreen mode"
+
+[node name="fullscreen" type="OptionButton" parent="MarginContainer3/VBoxContainer2/HBoxContainer2"]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+fit_to_longest_item = false
+item_count = 3
+popup/item_0/text = "Windowed"
+popup/item_0/id = 0
+popup/item_1/text = "Fullscreen"
+popup/item_1/id = 1
+popup/item_2/text = "Winowed Borderless"
+popup/item_2/id = 2
+
+[node name="Label" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -285.5
+offset_right = 285.5
+offset_bottom = 154.0
+grow_horizontal = 2
+theme_override_font_sizes/normal_font_size = 100
+text = "SETTINGS"
+fit_content = true
+horizontal_alignment = 1
+
+[node name="back" type="TextureButton" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -71.5
+offset_top = -24.0
+offset_right = 71.5
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 3
+texture_normal = ExtResource("2_u23uq")
+texture_pressed = ExtResource("2_u23uq")
+texture_hover = ExtResource("2_u23uq")
+
+[connection signal="value_changed" from="MarginContainer2/VBoxContainer/Master Volume" to="." method="_on_master_volume_value_changed"]
+[connection signal="value_changed" from="MarginContainer2/VBoxContainer/Music Volume" to="." method="_on_music_volume_value_changed"]
+[connection signal="value_changed" from="MarginContainer2/VBoxContainer/SFX Volume" to="." method="_on_sfx_volume_value_changed"]
+[connection signal="item_selected" from="MarginContainer3/VBoxContainer2/HBoxContainer/resolutions" to="." method="_on_resolutions_item_selected"]
+[connection signal="item_selected" from="MarginContainer3/VBoxContainer2/HBoxContainer2/fullscreen" to="." method="_on_fullscreen_item_selected"]
+[connection signal="button_down" from="back" to="." method="_on_back_button_down"]
+[connection signal="button_up" from="back" to="." method="_on_back_button_up"]
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]

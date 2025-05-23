@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccs8hafnc58wy"]
+
+[ext_resource type="Script" uid="uid://frhse62uc8i5" path="res://UI/Credits/credits.gd" id="1_n4oh0"]
+[ext_resource type="Texture2D" uid="uid://b8jgqcfcu1663" path="res://Misc/marek_button.png" id="2_4iuj4"]
+
+[node name="Credits" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n4oh0")
+
+[node name="Label" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -285.5
+offset_right = 285.5
+offset_bottom = 154.0
+grow_horizontal = 2
+theme_override_font_sizes/normal_font_size = 128
+text = "CREDITS"
+fit_content = true
+horizontal_alignment = 1
+
+[node name="back" type="TextureButton" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -71.5
+offset_top = -48.0
+offset_right = 71.5
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 3
+texture_normal = ExtResource("2_4iuj4")
+texture_pressed = ExtResource("2_4iuj4")
+texture_hover = ExtResource("2_4iuj4")
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]

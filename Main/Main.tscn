@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://66h1j5trsblh"]
+
+[ext_resource type="PackedScene" uid="uid://baeffjqt2pip1" path="res://UI/Pause Menu/pause_menu.tscn" id="1_83ytx"]
+[ext_resource type="PackedScene" uid="uid://bm1vquy3vqvrc" path="res://UI/Settings/pause_menu_settings.tscn" id="2_amygn"]
+
+[node name="Main" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Pause Menu" parent="CanvasLayer" instance=ExtResource("1_83ytx")]
+visible = false
+
+[node name="Pause Menu Settings" parent="CanvasLayer" instance=ExtResource("2_amygn")]
+visible = false
