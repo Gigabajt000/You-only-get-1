@@ -8,4 +8,4 @@ func _ready() -> void:
 	#To Działa Tylko Narazie Nie Ma Resourcesów Zrobionych --------------------
 	stats = load("res://Recourses/Products/%s.tres" % Nazwa) 
 	#texture_normal = stats.Textura 
-	#tooltip_text = stats.Tooltip
+	tooltip_text = stats.Tooltip

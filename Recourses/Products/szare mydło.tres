@@ -4,4 +4,5 @@
 
 [resource]
 script = ExtResource("1_cne63")
-Nazwa = "papier toaletowy"
+Nazwa = "szare mydło"
+Tooltip = "GraySoap: One soap to wash all comrades equally"

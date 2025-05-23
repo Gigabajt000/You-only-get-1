@@ -5,3 +5,4 @@
 [resource]
 script = ExtResource("1_axjns")
 Nazwa = "jabłko"
+Tooltip = "Apple: Luxury fruit, available once per revolution"

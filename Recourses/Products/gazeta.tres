@@ -4,4 +4,5 @@
 
 [resource]
 script = ExtResource("1_cg4k3")
-Nazwa = "farba"
+Nazwa = "gazeta"
+Tooltip = "Newspaper: Truth according to the party, printed daily"

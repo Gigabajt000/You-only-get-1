@@ -4,4 +4,5 @@
 
 [resource]
 script = ExtResource("1_p2tu8")
-Nazwa = "kiełbasa"
+Nazwa = "mleko"
+Tooltip = "Milk: White hope of the motherland, often sour"

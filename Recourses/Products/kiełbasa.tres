@@ -4,4 +4,5 @@
 
 [resource]
 script = ExtResource("1_slcvu")
-Nazwa = "chleb"
+Nazwa = "kiełbasa"
+Tooltip = "Sausage: Party-approved tube of mysterious meat unity"
