@@ -4,4 +4,5 @@
 
 [resource]
 script = ExtResource("1_x2sx1")
-Nazwa = "klucz hydrauliczny"
+Nazwa = "klej"
+Tooltip = "Glue: Idealistic binder of broken socialist promises"

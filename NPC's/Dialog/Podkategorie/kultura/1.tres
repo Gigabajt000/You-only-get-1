@@ -1,10 +1,14 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://mfjw3355r3h3"]
+[gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://mfjw3355r3h3"]
 
 [ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_08xyu"]
 
 [resource]
 script = ExtResource("1_08xyu")
+<<<<<<< HEAD
+Dialog = "kultura"
+=======
 Dialog = "\"I need something that’s readable… and wipeable.\""
+>>>>>>> refs/remotes/origin/main
 Items = {
 "alkohol": 0.0,
 "chleb": -0.6,

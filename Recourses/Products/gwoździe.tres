@@ -4,4 +4,5 @@
 
 [resource]
 script = ExtResource("1_x0qaj")
-Nazwa = "gazeta"
+Nazwa = "gwoździe"
+Tooltip = "Nails: Industrial relics, holding prefab dreams together"

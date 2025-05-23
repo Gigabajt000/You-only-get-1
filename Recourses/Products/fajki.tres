@@ -5,3 +5,4 @@
 [resource]
 script = ExtResource("1_hkhly")
 Nazwa = "fajki"
+Tooltip = "Cigarettes: Smoked dreams of a better five-year plan, solves everything"

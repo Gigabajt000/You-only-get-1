@@ -4,4 +4,5 @@
 
 [resource]
 script = ExtResource("1_1hxsc")
-Nazwa = "szczototka do kibla"
+Nazwa = "klucz hydrauliczny"
+Tooltip = "Wrench: Heroic worker's friend, fixes all five-year plans"

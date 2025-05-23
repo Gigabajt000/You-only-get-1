@@ -5,3 +5,4 @@
 [resource]
 script = ExtResource("1_aq48d")
 Nazwa = "konserwa"
+Tooltip = "CannedFood: Soviet tin miracle, expires never, trusted always"

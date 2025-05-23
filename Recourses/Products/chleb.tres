@@ -4,4 +4,5 @@
 
 [resource]
 script = ExtResource("1_lds3d")
-Nazwa = ""
+Nazwa = "chleb"
+Tooltip = "Bread: Daily rations of crusty communist carbs"

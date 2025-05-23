@@ -4,4 +4,5 @@
 
 [resource]
 script = ExtResource("1_tjvvw")
-Nazwa = "szare mydło"
+Nazwa = "pasta do zębów"
+Tooltip = "Toothpaste: Minty paste, squeezed like national morale"

@@ -4,4 +4,5 @@
 
 [resource]
 script = ExtResource("1_gk76w")
-Nazwa = "pasta do zębów"
+Nazwa = "szczototka do kibla"
+Tooltip = "ToiletBrush: Essential tool for planned economy plumbing"

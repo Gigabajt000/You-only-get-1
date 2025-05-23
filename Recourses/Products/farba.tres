@@ -4,4 +4,5 @@
 
 [resource]
 script = ExtResource("1_4h6fj")
-Nazwa = "klej"
+Nazwa = "farba"
+Tooltip = "Paint: Covers up cracks in both walls and systems"
