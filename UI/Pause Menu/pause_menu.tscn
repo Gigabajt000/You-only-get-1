@@ -74,6 +74,7 @@ texture_hover = ExtResource("2_8siy5")
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="MarginContainer2/VBoxContainer/Main Menu"]
+layout_mode = 0
 offset_left = 293.0
 offset_top = -129.0
 offset_right = 506.0

@@ -4,25 +4,25 @@
 
 [resource]
 script = ExtResource("1_5dkpi")
-Dialog = "\"Nigger once said\""
+Dialog = "\"I need something for both whitening teeth and scrubbing the bathtub!\""
 Items = {
 "alkohol": 0.0,
-"chleb": 0.0,
+"chleb": 0.3,
 "fajki": 0.0,
-"farba": 0.0,
+"farba": -1.0,
 "gazeta": 0.0,
-"gwoździe": 0.0,
-"jabłko": 0.0,
-"kiełbasa": 0.0,
-"klej": 0.0,
-"klucz hydrauliczny": 0.0,
-"konserwa": 0.0,
-"książka marola karksa": 0.0,
-"mleko": 0.0,
-"ocet": 0.0,
-"papier toaletowy": 0.0,
-"pasta do zębów": 0.0,
-"szare mydło": 0.0,
-"szczototka do kibla": 0.0,
-"ziemniak": 0.0
+"gwoździe": -1.0,
+"jabłko": -1.0,
+"kiełbasa": -0.5,
+"klej": -1.0,
+"klucz hydrauliczny": -1.0,
+"konserwa": -1.0,
+"książka marola karksa": -1.0,
+"mleko": -0.7,
+"ocet": -0.3,
+"papier toaletowy": 0.6,
+"pasta do zębów": 1.0,
+"szare mydło": 1.0,
+"szczototka do kibla": 0.5,
+"ziemniak": 0.5
 }

@@ -4,25 +4,25 @@
 
 [resource]
 script = ExtResource("1_jh5x7")
-Dialog = "\"Nigger once said\""
+Dialog = "\"Pipe’s leaking. Wife’s leaking tears. I need a tool.\""
 Items = {
 "alkohol": 0.0,
-"chleb": 0.0,
+"chleb": -0.3,
 "fajki": 0.0,
-"farba": 0.0,
-"gazeta": 0.0,
-"gwoździe": 0.0,
-"jabłko": 0.0,
-"kiełbasa": 0.0,
-"klej": 0.0,
-"klucz hydrauliczny": 0.0,
-"konserwa": 0.0,
-"książka marola karksa": 0.0,
-"mleko": 0.0,
-"ocet": 0.0,
-"papier toaletowy": 0.0,
-"pasta do zębów": 0.0,
-"szare mydło": 0.0,
-"szczototka do kibla": 0.0,
-"ziemniak": 0.0
+"farba": -0.6,
+"gazeta": 0.2,
+"gwoździe": 0.5,
+"jabłko": -1.0,
+"kiełbasa": -1.0,
+"klej": 1.0,
+"klucz hydrauliczny": 1.0,
+"konserwa": -1.0,
+"książka marola karksa": -0.2,
+"mleko": -1.0,
+"ocet": -1.0,
+"papier toaletowy": 0.4,
+"pasta do zębów": 0.3,
+"szare mydło": 0.2,
+"szczototka do kibla": 0.3,
+"ziemniak": -0.9
 }

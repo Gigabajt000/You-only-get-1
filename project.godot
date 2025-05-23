@@ -22,6 +22,7 @@ buses/default_bus_layout="uid://bycih7i5dw7k3"
 [autoload]
 
 Global="*res://Misc/Global.gd"
+Transition="*res://Misc/Transition/transition.tscn"
 
 [file_customization]
 
