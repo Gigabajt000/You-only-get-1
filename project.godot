@@ -26,6 +26,7 @@ Global="*res://Misc/Global.gd"
 [file_customization]
 
 folder_colors={
+"res://Art/": "red",
 "res://Main/": "blue",
 "res://Misc/": "pink",
 "res://UI/": "green"

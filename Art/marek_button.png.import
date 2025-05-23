@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8jgqcfcu1663"
-path="res://.godot/imported/marek_button.png-8d00d4d4a79009c7da7cffe9607292f9.ctex"
+path="res://.godot/imported/marek_button.png-a856a54ab6c27c7baed1c822d43bd1d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Misc/marek_button.png"
-dest_files=["res://.godot/imported/marek_button.png-8d00d4d4a79009c7da7cffe9607292f9.ctex"]
+source_file="res://Art/marek_button.png"
+dest_files=["res://.godot/imported/marek_button.png-a856a54ab6c27c7baed1c822d43bd1d1.ctex"]
 
 [params]
 
