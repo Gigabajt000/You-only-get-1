@@ -24,11 +24,11 @@ var ilosc_przedmiotow_od_rzadu: int = 5
 var Przedmiot: String #przedmiot podany klientowi
 
 func _ready() -> void:
-	Rzadowa_Dostawa()
+	Rzadowa_Dostawa(10)
 	print(Lista)
 
-func Rzadowa_Dostawa():
-	for i in range(0,ilosc_przedmiotow_od_rzadu):
-		var x = randi_range(0,len(Przedmioty) - 1)
-		Lista.append(Przedmioty[x])
+func Rzadowa_Dostawa(x):
+	for i in range(0,x):
+		var y = randi_range(0,len(Przedmioty) - 1)
+		Lista.append(Przedmioty[y])
 		
