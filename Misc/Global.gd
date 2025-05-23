@@ -21,7 +21,8 @@ var Przedmioty: Array = ["jabłko","chleb","kiełbasa","ziemniak","mleko","konse
 "książka marola karksa","alkohol","fajki"]
 var ilosc_przedmiotow_od_rzadu: int = 5
 
-var Przedmiot: String #przedmiot podany klientowi
+var Przedmiot: String = "" #przedmiot na ladzie
+var Podany_Przedmiot: String = "" #przedmiot podany klientowi
 
 #klient Resource
 var klient_res : Resource
