@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://caumx44a7hum1"]
+=======
+[gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://6mspbxcgvrtf"]
+>>>>>>> 094cd9ceefb6c20e32626d30506bf83ef45fb00e
 
 [ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_ddsc8"]
 

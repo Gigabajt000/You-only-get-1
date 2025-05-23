@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://bh01dykrpth4o"]
+[gd_scene load_steps=4 format=3 uid="uid://bh01dykrpth4o"]
 
 [ext_resource type="Texture2D" uid="uid://dr4xufhyjgk2t" path="res://icon.svg" id="1_7o363"]
 [ext_resource type="Script" uid="uid://cndqmucc6qnt2" path="res://Main/shop_magazyn.gd" id="1_xlw5q"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xlw5q"]
+font_color = Color(0, 0, 0, 1)
 
 [node name="Shop-Magazyn" type="Control"]
 layout_mode = 3
@@ -53,13 +56,20 @@ offset_bottom = 128.0
 grow_horizontal = 2
 theme_override_constants/separation = 500
 
-[node name="Accept" type="TextureButton" parent="HBoxContainer"]
-layout_mode = 2
-texture_normal = ExtResource("1_7o363")
-
 [node name="Back" type="TextureButton" parent="HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("1_7o363")
 
-[connection signal="pressed" from="HBoxContainer/Accept" to="." method="_on_accept_pressed"]
+[node name="Label" type="Label" parent="HBoxContainer/Back"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Back"
+label_settings = SubResource("LabelSettings_xlw5q")
+
 [connection signal="pressed" from="HBoxContainer/Back" to="." method="_on_back_pressed"]
