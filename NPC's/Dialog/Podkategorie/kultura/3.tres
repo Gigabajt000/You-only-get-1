@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://d0jsj0y7qxli0"]
+
+[ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_iholm"]
+
+[resource]
+script = ExtResource("1_iholm")
+Dialog = "\"I need a gift. Something between ‘I tried’ and ‘I found this on the floor.’\""
+Items = {
+"alkohol": 1.0,
+"chleb": -0.3,
+"fajki": 1.0,
+"farba": -1.0,
+"gazeta": 0.3,
+"gwoździe": -0.5,
+"jabłko": 0.2,
+"kiełbasa": 0.5,
+"klej": -1.0,
+"klucz hydrauliczny": 0.2,
+"konserwa": 0.1,
+"książka marola karksa": 1.0,
+"mleko": -0.5,
+"ocet": -0.7,
+"papier toaletowy": -0.3,
+"pasta do zębów": -0.7,
+"szare mydło": -0.7,
+"szczototka do kibla": 0.3,
+"ziemniak": 0.3
+}

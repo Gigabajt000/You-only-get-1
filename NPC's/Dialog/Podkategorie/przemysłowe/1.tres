@@ -1,10 +1,14 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dhut7aexy3wag"]
+[gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://dhut7aexy3wag"]
 
 [ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_jh5x7"]
 
 [resource]
 script = ExtResource("1_jh5x7")
+<<<<<<< HEAD
+Dialog = "przemyslowe"
+=======
 Dialog = "\"Pipe’s leaking. Wife’s leaking tears. I need a tool.\""
+>>>>>>> refs/remotes/origin/main
 Items = {
 "alkohol": 0.0,
 "chleb": -0.3,

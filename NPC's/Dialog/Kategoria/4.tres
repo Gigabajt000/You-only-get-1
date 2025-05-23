@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="Kategoria" load_steps=2 format=3 uid="uid://clc5ou7rf7v8u"]
-
-[ext_resource type="Script" uid="uid://cw5cngvlffadf" path="res://NPC's/Dialog/Kategoria/!.gd" id="1_ja22f"]
-
-[resource]
-script = ExtResource("1_ja22f")
-name = "kultura"
-metadata/_custom_type_script = "uid://cw5cngvlffadf"

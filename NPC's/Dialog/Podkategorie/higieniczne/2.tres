@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://dqcf1g8qev0mk"]
+
+[ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_ktxa3"]
+
+[resource]
+script = ExtResource("1_ktxa3")
+Dialog = "\"Anything that makes you cleaner, or at least feel that way for a few minutes?\""
+Items = {
+"alkohol": 1.0,
+"chleb": 0.0,
+"fajki": 1.0,
+"farba": -0.3,
+"gazeta": -0.5,
+"gwoździe": -1.0,
+"jabłko": -1.0,
+"kiełbasa": -1.0,
+"klej": -0.3,
+"klucz hydrauliczny": -1.0,
+"konserwa": -1.0,
+"książka marola karksa": -1.0,
+"mleko": 0.5,
+"ocet": 0.5,
+"papier toaletowy": 1.0,
+"pasta do zębów": 1.0,
+"szare mydło": 1.0,
+"szczototka do kibla": 0.7,
+"ziemniak": -1.0
+}
