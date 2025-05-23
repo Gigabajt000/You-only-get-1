@@ -1,5 +1,7 @@
 extends Resource
 
+class_name dialog
+
 @export var Dialog: String
 
 @export var Items = {"jabłko" : 0.0,
