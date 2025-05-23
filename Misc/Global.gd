@@ -25,7 +25,6 @@ var Przedmiot: String #przedmiot podany klientowi
 
 func _ready() -> void:
 	Rzadowa_Dostawa(10)
-	print(Lista)
 
 func Rzadowa_Dostawa(x):
 	for i in range(0,x):
