@@ -6,7 +6,6 @@ extends Control
 @onready var music_volume: HSlider = $"MarginContainer2/VBoxContainer/Music Volume"
 @onready var sfx_volume: HSlider = $"MarginContainer2/VBoxContainer/SFX Volume"
 
-
 func _ready():
 	for res in resolutions:
 		resolution_button.add_item(res)

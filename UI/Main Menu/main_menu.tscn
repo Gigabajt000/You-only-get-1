@@ -64,12 +64,12 @@ texture_pressed = ExtResource("2_v04x6")
 texture_hover = ExtResource("2_v04x6")
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="VBoxContainer/Quit"]
 layout_mode = 0
-offset_left = 757.0
-offset_top = 199.0
-offset_right = 970.0
-offset_bottom = 458.0
+offset_left = 309.0
+offset_top = -206.0
+offset_right = 522.0
+offset_bottom = 53.0
 text = "<--		Play
 <--		Settings
 <--		Credits
