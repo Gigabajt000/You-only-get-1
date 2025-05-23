@@ -23,7 +23,8 @@ var ilosc_przedmiotow_od_rzadu: int = 5
 
 var Przedmiot: String = "" #przedmiot na ladzie
 var Podany_Przedmiot: String = "" #przedmiot podany klientowi
-
+var punkty_po_podaniu: float
+var podany = false
 #klient Resource
 var klient_res : Resource
 
