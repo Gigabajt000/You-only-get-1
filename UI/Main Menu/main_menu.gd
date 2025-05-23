@@ -1,7 +1,6 @@
 extends Control
 
 
-
 func _on_play_pressed() -> void:
 	Transition.transition()
 	await Transition.on_transition_finished
