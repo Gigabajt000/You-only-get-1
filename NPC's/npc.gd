@@ -19,6 +19,16 @@ func _ready() -> void:
 		podkategoria = Global.klient_res
 	label.text = podkategoria.Dialog
 
+func _process(delta: float) -> void:
+	if Global.podany == true:
+		Global.podany = false
+		checkItem()
+
+func checkItem():
+	var przedmiot = Global.Podany_Przedmiot
+	Global.punkty_po_podaniu = podkategoria.Items[przedmiot]
+	Global.Vdolce += Global.punkty_po_podaniu * 10
+	
 
 func losowanie():
 	random_kategoria()
