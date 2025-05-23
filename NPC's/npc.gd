@@ -26,9 +26,9 @@ func _process(delta: float) -> void:
 
 func checkItem():
 	var przedmiot = Global.Podany_Przedmiot
-	print(przedmiot)
 	Global.punkty_po_podaniu = podkategoria.Items[przedmiot]
-	print(podkategoria.Items[przedmiot])
+	Global.Vdolce += Global.punkty_po_podaniu * 10
+	
 
 func losowanie():
 	random_kategoria()

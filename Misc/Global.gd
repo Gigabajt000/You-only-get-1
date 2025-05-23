@@ -13,7 +13,7 @@ var is_in_settings := false # dotyczy settingsów w pause menu
 var is_in_game := false
 var is_in_pause_menu := false
 
-#Przedmioty
+#Przedmioty-------------------------------------------------------------------------
 var Lista: Array = []
 
 var Przedmioty: Array = ["jabłko","chleb","kiełbasa","ziemniak","mleko","konserwa","ocet","papier toaletowy",
@@ -21,11 +21,14 @@ var Przedmioty: Array = ["jabłko","chleb","kiełbasa","ziemniak","mleko","konse
 "książka marola karksa","alkohol","fajki"]
 var ilosc_przedmiotow_od_rzadu: int = 5
 
-var Przedmiot: String = "" #przedmiot na ladzie
-var Podany_Przedmiot: String = "" #przedmiot podany klientowi
+var Przedmiot: String = ""           #przedmiot na ladzie
+var Podany_Przedmiot: String = ""    #przedmiot podany klientowi
 var punkty_po_podaniu: float
 var podany = false
-#klient Resource
+#klient Resource---------------------------------------------------------------------
+var Vdolce: int = 10
+var Start_Timer: bool = false        #start timer w labelu 
+
 var klient_res : Resource
 
 func _ready() -> void:
