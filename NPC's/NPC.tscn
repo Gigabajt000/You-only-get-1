@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bk1wd1ukqspqx"]
+
+[ext_resource type="Script" uid="uid://c4r5eq7pdidem" path="res://NPC's/npc.gd" id="1_4g4tx"]
+[ext_resource type="Texture2D" uid="uid://b8jgqcfcu1663" path="res://Art/marek_button.png" id="2_wfqlo"]
+
+[node name="NPC" type="CharacterBody2D"]
+script = ExtResource("1_4g4tx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -95)
+scale = Vector2(1.33703, 23.4167)
+texture = ExtResource("2_wfqlo")

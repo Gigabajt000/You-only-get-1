@@ -12,3 +12,23 @@ var current_sfx_volume: float = 100
 var is_in_settings := false # dotyczy settingsów w pause menu
 var is_in_game := false
 var is_in_pause_menu := false
+
+#Przedmioty
+var Lista: Array = []
+
+var Przedmioty: Array = ["jabłko","chleb","kiełbasa","ziemniak","mleko","konserwa","ocet","papier toaletowy",
+"szare mydło","pasta do zębów","szczototka do kibla","klucz hydrauliczny","klej","farba","gwoździe","gazeta",
+"książka marola karksa","alkohol","fajki"]
+var ilosc_przedmiotow_od_rzadu: int = 5
+
+var Przedmiot: String #przedmiot podany klientowi
+
+func _ready() -> void:
+	Rzadowa_Dostawa()
+	print(Lista)
+
+func Rzadowa_Dostawa():
+	for i in range(0,ilosc_przedmiotow_od_rzadu):
+		var x = randi_range(0,len(Przedmioty) - 1)
+		Lista.append(Przedmioty[x])
+		
