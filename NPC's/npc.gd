@@ -18,19 +18,20 @@ func _ready() -> void:
 func random_kategoria():
 	var kat = randi_range(0,3)
 	kat = str(kat)
-	print(kat)
+	#print(kat)
 	kat_path = kat_path+ kat + ".tres"
-	print(kat_path)
+	#print(kat_path)
 	kategoria = ResourceLoader.load(kat_path)
 	name_kat = kategoria.name
-	print(name_kat)
+	#print(name_kat)
 
 func random_podkategoria():
-	var pkat = randi_range(1,1)
+	#range musi byc powyzej 1 (np: od 2 do 6)
+	var pkat = randi_range(2,2)
 	pkat = str(pkat)
 	podkat_path = podkat_path+"/"+name_kat+"/"+pkat+".tres"
+	#print(podkat_path)
 	podkategoria = ResourceLoader.load(podkat_path)
-	print(podkat_path)
 	print(podkategoria.Dialog)
 	
 	

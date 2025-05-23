@@ -4,29 +4,25 @@
 
 [resource]
 script = ExtResource("1_docac")
-<<<<<<< HEAD
-Dialog = "spozywcze"
-=======
-Dialog = "\"Need something sticky. Don’t ask why.\""
->>>>>>> refs/remotes/origin/main
+Dialog = "maly marek mcno spi "
 Items = {
 "alkohol": 0.0,
-"chleb": -1.0,
+"chleb": 0.0,
 "fajki": 0.0,
-"farba": 0.8,
-"gazeta": -1.0,
-"gwoździe": -1.0,
-"jabłko": -1.0,
-"kiełbasa": -1.0,
-"klej": 1.0,
-"klucz hydrauliczny": -1.0,
-"konserwa": -1.0,
-"książka marola karksa": -1.0,
-"mleko": 0.1,
-"ocet": 0.3,
-"papier toaletowy": -1.0,
-"pasta do zębów": 0.5,
-"szare mydło": 0.6,
-"szczototka do kibla": -1.0,
-"ziemniak": -1.0
+"farba": 0.0,
+"gazeta": 0.0,
+"gwoździe": 0.0,
+"jabłko": 0.0,
+"kiełbasa": 0.0,
+"klej": 0.0,
+"klucz hydrauliczny": 0.0,
+"konserwa": 0.0,
+"książka marola karksa": 0.0,
+"mleko": 0.0,
+"ocet": 0.0,
+"papier toaletowy": 0.0,
+"pasta do zębów": 0.0,
+"szare mydło": 0.0,
+"szczototka do kibla": 0.0,
+"ziemniak": 0.0
 }
