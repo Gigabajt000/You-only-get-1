@@ -210,6 +210,8 @@ func Start_Timer():
 		$Timer.start()
 
 func Zakonczenie():
+	Transition.transition()
+	await Transition.on_transition_finished
 	if Global.Vdolce > 0:
 		get_tree().change_scene_to_file(dobre_zakonczenie)
 	else:
