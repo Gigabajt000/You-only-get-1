@@ -33,6 +33,7 @@ var Start_Timer: bool = false        #start timer w labelu
 #Dialog klienta---------------------------------------------------------------------
 var klient_res : Resource
 
+var Dodatkowy_Hajs: int = 1
 
 #system dni---------------------------------------------------------------------
 var Zarobione_Pieniadze: int = 0

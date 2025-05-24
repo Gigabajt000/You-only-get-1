@@ -4,6 +4,8 @@ class_name dialog
 
 @export var Dialog: String
 
+@export var Specjalne: bool = false
+
 @export var Items = {"jabłko" : 0.0,
 "chleb" : 0.0,
 "kiełbasa" : 0.0,

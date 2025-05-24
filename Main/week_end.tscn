@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://cj51b85pcf145" path="res://Main/week_end.gd" id="1_kpuyn"]
 [ext_resource type="Texture2D" uid="uid://bqb4bgi3clh12" path="res://Art/UI/obwódka.png" id="2_kpuyn"]
 [ext_resource type="Texture2D" uid="uid://bpjux1batlcjc" path="res://Art/UI/plajstik.png" id="3_m2mpv"]
-[ext_resource type="Script" path="res://Main/label.gd" id="4_g0hrr"]
+[ext_resource type="Script" uid="uid://djwqgfx1eddcg" path="res://Main/label.gd" id="4_g0hrr"]
 [ext_resource type="Texture2D" uid="uid://cfil5a87xiubf" path="res://Maro_ZdjęcieOG.png" id="4_u5pt0"]
 [ext_resource type="Script" uid="uid://cw2j532esa3w" path="res://Main/dostawa_rządowa.gd" id="5_1jwi6"]
 [ext_resource type="Script" uid="uid://dsepjrdnevdco" path="res://Main/zarobiona_kasa.gd" id="5_ic5xn"]

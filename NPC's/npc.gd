@@ -35,8 +35,8 @@ func _process(delta: float) -> void:
 			checkItem()
 		else:
 			Global.punkty_po_podaniu = -1
-			Global.Vdolce += Global.punkty_po_podaniu * 10
-		Global.Zarobione_Pieniadze += Global.punkty_po_podaniu * 10
+			Global.Vdolce += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
+			Global.Zarobione_Pieniadze += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
 		$AnimationPlayer.play("odejscie")
 		
 		
@@ -75,7 +75,9 @@ func ShowButton():
 func checkItem():
 	var przedmiot = Global.Podany_Przedmiot
 	Global.punkty_po_podaniu = podkategoria.Items[przedmiot]
-	Global.Vdolce += Global.punkty_po_podaniu * 10
+	Global.Vdolce += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
+	Global.Zarobione_Pieniadze += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
+
 	
 func losowanie():
 	if Global.Klient < 5:
@@ -88,6 +90,10 @@ func losowanie():
 func random_kategoria():
 	kat_path = "res://NPC's/Dialog/Kategoria/"
 	var kat = randi_range(0,4)
+	if kat ==4:
+		Global.Dodatkowy_Hajs = 2
+	else:
+		Global.Dodatkowy_Hajs = 1
 	kat = str(kat)
 	#print(kat)
 	kat_path = kat_path+ kat + ".tres"

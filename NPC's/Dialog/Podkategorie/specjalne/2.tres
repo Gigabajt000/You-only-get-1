@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource("1_1mcs2")
 Dialog = "specjal2"
+Specjalne = true
 Items = {
 "alkohol": 1.0,
 "chleb": 1.0,

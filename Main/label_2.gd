@@ -1,7 +1,8 @@
 extends Label
 
+
 func _process(delta: float) -> void:
-	text = str(Global.punkty_po_podaniu * 10)
+	text = str(Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs)
 	if Global.punkty_po_podaniu * 10 < 0:
 		label_settings.font_color = Color(1,0,0)
 	else:
