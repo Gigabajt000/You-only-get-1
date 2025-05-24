@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://b6eerff3doe0l"]
+
+[ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_hh6so"]
+
+[resource]
+script = ExtResource("1_hh6so")
+Dialog = "“Give me something I can throw, catch, or accidentally break a window with.”"
+Specjalne = false
+Bezdomny = false
+Items = {
+"alkohol": 1.0,
+"chleb": 0.4,
+"fajki": 1.0,
+"farba": -1.0,
+"gazeta": -1.0,
+"gwoździe": -1.0,
+"jabłko": 1.0,
+"kiełbasa": 0.3,
+"klej": -0.7,
+"klucz hydrauliczny": 0.6,
+"konserwa": 0.9,
+"książka marola karksa": -0.6,
+"mleko": -0.8,
+"ocet": -0.8,
+"papier toaletowy": -0.8,
+"pasta do zębów": -0.6,
+"szare mydło": -0.8,
+"szczototka do kibla": -0.5,
+"ziemniak": 1.0
+}
