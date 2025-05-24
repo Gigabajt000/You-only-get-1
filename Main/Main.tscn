@@ -1,11 +1,11 @@
 [gd_scene load_steps=16 format=3 uid="uid://66h1j5trsblh"]
 
 [ext_resource type="PackedScene" uid="uid://baeffjqt2pip1" path="res://UI/Pause Menu/pause_menu.tscn" id="1_83ytx"]
-[ext_resource type="Script" path="res://Main/label.gd" id="1_bor5n"]
+[ext_resource type="Script" uid="uid://djwqgfx1eddcg" path="res://Main/label.gd" id="1_bor5n"]
 [ext_resource type="PackedScene" uid="uid://bm1vquy3vqvrc" path="res://UI/Settings/pause_menu_settings.tscn" id="2_amygn"]
-[ext_resource type="Script" path="res://Main/label_2.gd" id="2_wltqy"]
+[ext_resource type="Script" uid="uid://bxt26po2nixjj" path="res://Main/label_2.gd" id="2_wltqy"]
 [ext_resource type="Texture2D" uid="uid://cfil5a87xiubf" path="res://Maro_ZdjęcieOG.png" id="3_amygn"]
-[ext_resource type="Script" path="res://Main/magazyn_button.gd" id="4_ps1la"]
+[ext_resource type="Script" uid="uid://defeswvoqx7w4" path="res://Main/magazyn_button.gd" id="4_ps1la"]
 [ext_resource type="Script" uid="uid://c2eg2q2q2x2t4" path="res://Main/control.gd" id="5_6aewd"]
 [ext_resource type="Script" uid="uid://b1b1cbubo5op8" path="res://Main/accept_button.gd" id="6_hh5pf"]
 [ext_resource type="Texture2D" uid="uid://dr4xufhyjgk2t" path="res://icon.svg" id="6_qg80j"]
@@ -86,17 +86,20 @@ text = "Magazyn"
 label_settings = SubResource("LabelSettings_ps1la")
 
 [node name="Control" type="TextureButton" parent="CanvasLayer"]
+texture_filter = 1
+custom_minimum_size = Vector2(120, 120)
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -316.0
-offset_top = -27.0
-offset_right = -276.0
-offset_bottom = 13.0
+offset_left = -55.0
+offset_top = -8.0
+offset_right = -15.0
+offset_bottom = 32.0
 grow_horizontal = 2
 grow_vertical = 2
+stretch_mode = 0
 script = ExtResource("5_6aewd")
 
 [node name="accept_button" type="TextureButton" parent="CanvasLayer"]
