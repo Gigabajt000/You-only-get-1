@@ -1,8 +1,10 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bjh04q7ugmqqu"]
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bjh04q7ugmqqu"]
 
+[ext_resource type="Texture2D" uid="uid://be27ik6w0u755" path="res://Art/Itemki/chleb.png" id="1_040t2"]
 [ext_resource type="Script" uid="uid://yofnken1ay5c" path="res://Recourses/Products/Product.gd" id="1_lds3d"]
 
 [resource]
 script = ExtResource("1_lds3d")
 Nazwa = "chleb"
+Textura = ExtResource("1_040t2")
 Tooltip = "Bread: Daily rations of crusty communist carbs"

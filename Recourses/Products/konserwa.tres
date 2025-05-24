@@ -1,8 +1,10 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bb78rmqftvkpr"]
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bb78rmqftvkpr"]
 
 [ext_resource type="Script" uid="uid://yofnken1ay5c" path="res://Recourses/Products/Product.gd" id="1_aq48d"]
+[ext_resource type="Texture2D" uid="uid://ruhdugokoevp" path="res://Art/Itemki/konserwa.png" id="1_p07np"]
 
 [resource]
 script = ExtResource("1_aq48d")
 Nazwa = "konserwa"
+Textura = ExtResource("1_p07np")
 Tooltip = "CannedFood: Soviet tin miracle, expires never, trusted always"

@@ -1,8 +1,10 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c7hiu78qere72"]
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://c7hiu78qere72"]
 
+[ext_resource type="Texture2D" uid="uid://b73xje3c7c8hm" path="res://Art/Itemki/kiełbasa albo fjut chuj wie.png" id="1_1k0yb"]
 [ext_resource type="Script" uid="uid://yofnken1ay5c" path="res://Recourses/Products/Product.gd" id="1_slcvu"]
 
 [resource]
 script = ExtResource("1_slcvu")
 Nazwa = "kiełbasa"
+Textura = ExtResource("1_1k0yb")
 Tooltip = "Sausage: Party-approved tube of mysterious meat unity"

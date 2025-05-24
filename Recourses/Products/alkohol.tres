@@ -1,8 +1,10 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://uw18qju4ggip"]
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://uw18qju4ggip"]
 
 [ext_resource type="Script" uid="uid://yofnken1ay5c" path="res://Recourses/Products/Product.gd" id="1_i50dk"]
+[ext_resource type="Texture2D" uid="uid://bhir2moium6nv" path="res://Art/Itemki/vódka.png" id="1_yiewx"]
 
 [resource]
 script = ExtResource("1_i50dk")
 Nazwa = "alkohol"
+Textura = ExtResource("1_yiewx")
 Tooltip = "Alcohol: State-issued therapy, solves everything"

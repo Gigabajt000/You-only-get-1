@@ -1,8 +1,10 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://b4nagltiw31ve"]
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://b4nagltiw31ve"]
 
 [ext_resource type="Script" uid="uid://yofnken1ay5c" path="res://Recourses/Products/Product.gd" id="1_axjns"]
+[ext_resource type="Texture2D" uid="uid://bx1i5lxjmcq7h" path="res://Art/Itemki/jabłko.png" id="1_qmybp"]
 
 [resource]
 script = ExtResource("1_axjns")
 Nazwa = "jabłko"
+Textura = ExtResource("1_qmybp")
 Tooltip = "Apple: Luxury fruit, available once per revolution"

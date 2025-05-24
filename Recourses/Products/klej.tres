@@ -1,8 +1,10 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cu82tmidr7bqa"]
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://cu82tmidr7bqa"]
 
+[ext_resource type="Texture2D" uid="uid://dguakpek42ftj" path="res://Art/Itemki/klej.png" id="1_i2sa5"]
 [ext_resource type="Script" uid="uid://yofnken1ay5c" path="res://Recourses/Products/Product.gd" id="1_x2sx1"]
 
 [resource]
 script = ExtResource("1_x2sx1")
 Nazwa = "klej"
+Textura = ExtResource("1_i2sa5")
 Tooltip = "Glue: Idealistic binder of broken socialist promises"

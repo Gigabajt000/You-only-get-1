@@ -6,7 +6,8 @@ var stats: Resource
 func _ready() -> void:
 	#To Działa Tylko Narazie Nie Ma Resourcesów Zrobionych --------------------
 	stats = load("res://Recourses/Products/%s.tres" % Nazwa) 
-	#texture_normal = stats.Textura 
+	texture_normal = stats.Textura 
+	scale = Vector2(2,2)
 	tooltip_text = stats.Tooltip
 
 

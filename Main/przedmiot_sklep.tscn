@@ -4,12 +4,17 @@
 [ext_resource type="Script" uid="uid://c5h42idfktyvb" path="res://Main/przedmiot_sklep.gd" id="2_ea3s0"]
 
 [node name="Przedmiot-Sklep" type="TextureButton"]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 100)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(5, 5)
+size_flags_stretch_ratio = 0.0
 texture_normal = ExtResource("1_v3sqd")
+stretch_mode = 0
 script = ExtResource("2_ea3s0")
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

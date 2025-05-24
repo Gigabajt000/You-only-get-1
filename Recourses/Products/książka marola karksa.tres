@@ -1,8 +1,10 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://di8s05hrux3s6"]
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://di8s05hrux3s6"]
 
+[ext_resource type="Texture2D" uid="uid://cyp8sdik2iwwn" path="res://Art/Itemki/książka.png" id="1_gu0ff"]
 [ext_resource type="Script" uid="uid://yofnken1ay5c" path="res://Recourses/Products/Product.gd" id="1_iwhm5"]
 
 [resource]
 script = ExtResource("1_iwhm5")
 Nazwa = "książka marola karksa"
+Textura = ExtResource("1_gu0ff")
 Tooltip = "MarxBook: Holy script of proletariat enlightenment and queues"

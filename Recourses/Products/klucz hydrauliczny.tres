@@ -1,8 +1,10 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://drlqe2j1w0xvo"]
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://drlqe2j1w0xvo"]
 
 [ext_resource type="Script" uid="uid://yofnken1ay5c" path="res://Recourses/Products/Product.gd" id="1_1hxsc"]
+[ext_resource type="Texture2D" uid="uid://dr148s0jtfllf" path="res://Art/Itemki/klucz marka wocha.png" id="1_k36np"]
 
 [resource]
 script = ExtResource("1_1hxsc")
 Nazwa = "klucz hydrauliczny"
+Textura = ExtResource("1_k36np")
 Tooltip = "Wrench: Heroic worker's friend, fixes all five-year plans"

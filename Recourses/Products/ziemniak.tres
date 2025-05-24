@@ -1,8 +1,10 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://d2dfivxdeata5"]
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://d2dfivxdeata5"]
 
 [ext_resource type="Script" uid="uid://yofnken1ay5c" path="res://Recourses/Products/Product.gd" id="1_ch7ns"]
+[ext_resource type="Texture2D" uid="uid://cul3s7oqjdi38" path="res://Art/Itemki/ziemniak.png" id="1_hava8"]
 
 [resource]
 script = ExtResource("1_ch7ns")
 Nazwa = "ziemniak"
+Textura = ExtResource("1_hava8")
 Tooltip = "Potato: Glorious root of every Polish dinner dream"

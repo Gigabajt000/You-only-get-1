@@ -1,8 +1,10 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dv4y3wh0gn3uy"]
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://dv4y3wh0gn3uy"]
 
+[ext_resource type="Texture2D" uid="uid://ccl8atchccwg3" path="res://Art/Itemki/gazeta.png" id="1_3cljn"]
 [ext_resource type="Script" uid="uid://yofnken1ay5c" path="res://Recourses/Products/Product.gd" id="1_cg4k3"]
 
 [resource]
 script = ExtResource("1_cg4k3")
 Nazwa = "gazeta"
+Textura = ExtResource("1_3cljn")
 Tooltip = "Newspaper: Truth according to the party, printed daily"

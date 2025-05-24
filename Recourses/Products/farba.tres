@@ -1,8 +1,10 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://m1kwgamh6bwy"]
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://m1kwgamh6bwy"]
 
 [ext_resource type="Script" uid="uid://yofnken1ay5c" path="res://Recourses/Products/Product.gd" id="1_4h6fj"]
+[ext_resource type="Texture2D" uid="uid://ch2apay7b6onb" path="res://Art/Itemki/wiadro.png" id="1_8ewwg"]
 
 [resource]
 script = ExtResource("1_4h6fj")
 Nazwa = "farba"
+Textura = ExtResource("1_8ewwg")
 Tooltip = "Paint: Covers up cracks in both walls and systems"

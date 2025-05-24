@@ -1,8 +1,10 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dp2c2kkf2tesc"]
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://dp2c2kkf2tesc"]
 
+[ext_resource type="Texture2D" uid="uid://crkpcim8y75j8" path="res://Art/Itemki/fajki.png" id="1_5cpcr"]
 [ext_resource type="Script" uid="uid://yofnken1ay5c" path="res://Recourses/Products/Product.gd" id="1_hkhly"]
 
 [resource]
 script = ExtResource("1_hkhly")
 Nazwa = "fajki"
+Textura = ExtResource("1_5cpcr")
 Tooltip = "Cigarettes: Smoked dreams of a better five-year plan, solves everything"

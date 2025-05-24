@@ -1,8 +1,10 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dkbsqytlthg15"]
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://dkbsqytlthg15"]
 
 [ext_resource type="Script" uid="uid://yofnken1ay5c" path="res://Recourses/Products/Product.gd" id="1_gk76w"]
+[ext_resource type="Texture2D" uid="uid://rwr68ha62om" path="res://Art/Itemki/przepychaczka.png" id="1_wmk0q"]
 
 [resource]
 script = ExtResource("1_gk76w")
 Nazwa = "szczototka do kibla"
+Textura = ExtResource("1_wmk0q")
 Tooltip = "ToiletBrush: Essential tool for planned economy plumbing"

@@ -1,8 +1,10 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c0hwx437ngxck"]
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://c0hwx437ngxck"]
 
 [ext_resource type="Script" uid="uid://yofnken1ay5c" path="res://Recourses/Products/Product.gd" id="1_cne63"]
+[ext_resource type="Texture2D" uid="uid://dpoyxdu7b00i8" path="res://Art/Itemki/mydło w kostce.png" id="1_lwkf2"]
 
 [resource]
 script = ExtResource("1_cne63")
 Nazwa = "szare mydło"
+Textura = ExtResource("1_lwkf2")
 Tooltip = "GraySoap: One soap to wash all comrades equally"
