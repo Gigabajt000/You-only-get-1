@@ -26,6 +26,7 @@ grow_vertical = 2
 mouse_filter = 2
 
 [node name="ColorRect" type="ColorRect" parent="MarginContainer"]
+visibility_layer = 512
 layout_mode = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 0.505882)

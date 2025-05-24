@@ -1,11 +1,16 @@
-[gd_scene load_steps=7 format=3 uid="uid://baeffjqt2pip1"]
+[gd_scene load_steps=12 format=3 uid="uid://baeffjqt2pip1"]
 
 [ext_resource type="Script" uid="uid://dfr4ev0ah2rh6" path="res://UI/Pause Menu/pause_menu.gd" id="1_e11wt"]
-[ext_resource type="Texture2D" uid="uid://b8jgqcfcu1663" path="res://Art/marek_button.png" id="2_8siy5"]
+[ext_resource type="Texture2D" uid="uid://bdxyhu6bttrjs" path="res://Art/UI/Menu Buttons/resume_idle.png" id="2_jc1cc"]
 [ext_resource type="Script" uid="uid://bxy3unsqxrujp" path="res://UI/button.gd" id="3_3ol4c"]
+[ext_resource type="Texture2D" uid="uid://4fb213eoqb4q" path="res://Art/UI/Menu Buttons/resume_pressed.png" id="3_d1e4y"]
+[ext_resource type="Texture2D" uid="uid://c40jmgvswo6ym" path="res://Art/UI/Menu Buttons/resume_hover.png" id="4_q0nw1"]
 [ext_resource type="Texture2D" uid="uid://bc0q4q7xqwtfe" path="res://Art/UI/Menu Buttons/Options/options_idle2.png" id="4_sludg"]
 [ext_resource type="Texture2D" uid="uid://dodbxkfr3tps8" path="res://Art/UI/Menu Buttons/Options/options_pressed2.png" id="5_dra6u"]
 [ext_resource type="Texture2D" uid="uid://dv7qwggxvmhy1" path="res://Art/UI/Menu Buttons/Options/options_hover2.png" id="6_xg370"]
+[ext_resource type="Texture2D" uid="uid://dcji44jnjybhm" path="res://Art/UI/Menu Buttons/menu_idle.png" id="9_q0nw1"]
+[ext_resource type="Texture2D" uid="uid://cv5jo56fydi0a" path="res://Art/UI/Menu Buttons/menu_pressed.png" id="10_i831f"]
+[ext_resource type="Texture2D" uid="uid://bxcmm77s25pny" path="res://Art/UI/Menu Buttons/menu_hover.png" id="11_aw2qs"]
 
 [node name="Pause Menu" type="Control"]
 process_mode = 3
@@ -61,9 +66,9 @@ offset_right = 256.0
 offset_bottom = 64.0
 pivot_offset = Vector2(128, 32)
 size_flags_vertical = 3
-texture_normal = ExtResource("2_8siy5")
-texture_pressed = ExtResource("2_8siy5")
-texture_hover = ExtResource("2_8siy5")
+texture_normal = ExtResource("2_jc1cc")
+texture_pressed = ExtResource("3_d1e4y")
+texture_hover = ExtResource("4_q0nw1")
 stretch_mode = 0
 script = ExtResource("3_3ol4c")
 
@@ -90,28 +95,18 @@ custom_minimum_size = Vector2(256, 64)
 layout_mode = 2
 
 [node name="Main Menu" type="TextureButton" parent="MarginContainer2/VBoxContainer/Control3"]
+visibility_layer = 512
 texture_filter = 1
 layout_mode = 2
 offset_right = 256.0
 offset_bottom = 64.0
 pivot_offset = Vector2(128, 32)
 size_flags_vertical = 3
-texture_normal = ExtResource("2_8siy5")
-texture_pressed = ExtResource("2_8siy5")
-texture_hover = ExtResource("2_8siy5")
+texture_normal = ExtResource("9_q0nw1")
+texture_pressed = ExtResource("10_i831f")
+texture_hover = ExtResource("11_aw2qs")
 stretch_mode = 0
 script = ExtResource("3_3ol4c")
-
-[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer/Control3/Main Menu"]
-layout_mode = 0
-offset_left = 293.0
-offset_top = -129.0
-offset_right = 506.0
-offset_bottom = 53.0
-text = "<--		Resume
-<--		Settings
-<--		Main Menu"
-vertical_alignment = 3
 
 [connection signal="pressed" from="MarginContainer2/VBoxContainer/Control/Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="MarginContainer2/VBoxContainer/Control2/Settings" to="." method="_on_settings_pressed"]
