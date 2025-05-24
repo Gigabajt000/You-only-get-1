@@ -13,7 +13,7 @@
 [ext_resource type="Script" uid="uid://b1b1cbubo5op8" path="res://Main/accept_button.gd" id="6_hh5pf"]
 [ext_resource type="Texture2D" uid="uid://dr4xufhyjgk2t" path="res://icon.svg" id="6_qg80j"]
 [ext_resource type="PackedScene" uid="uid://bk1wd1ukqspqx" path="res://NPC's/NPC.tscn" id="6_u2i7p"]
-[ext_resource type="Script" uid="uid://dmkunh8xetibq" path="res://Main/dzien_licznik.gd" id="10_kf8jr"]
+[ext_resource type="Script" path="res://Main/dzien_licznik.gd" id="10_kf8jr"]
 [ext_resource type="Texture2D" uid="uid://dp4dx0vpw14wt" path="res://Art/pixil-frame-0 - 2025-05-24T120819.440.png" id="12_kmnsd"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_bor5n"]

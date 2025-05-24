@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bh01dykrpth4o"]
+[gd_scene load_steps=7 format=3 uid="uid://bh01dykrpth4o"]
 
 [ext_resource type="Texture2D" uid="uid://dr4xufhyjgk2t" path="res://icon.svg" id="1_7o363"]
 [ext_resource type="Script" uid="uid://cndqmucc6qnt2" path="res://Main/shop_magazyn.gd" id="1_xlw5q"]
+[ext_resource type="Texture2D" uid="uid://c106pmkc2xpll" path="res://Art/tło.png" id="2_27yh6"]
 [ext_resource type="Script" uid="uid://cneq0x2fomwd0" path="res://Main/dostawa_od_rządu.gd" id="3_6kdoj"]
 [ext_resource type="Texture2D" uid="uid://cfil5a87xiubf" path="res://Maro_ZdjęcieOG.png" id="4_27yh6"]
 
@@ -16,6 +17,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_xlw5q")
+
+[node name="Tło" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(572, 326)
+scale = Vector2(9.069, 9.069)
+texture = ExtResource("2_27yh6")
 
 [node name="TextureButton" type="TextureButton" parent="."]
 layout_mode = 0
