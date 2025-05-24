@@ -11,11 +11,14 @@ var name_kat = 0
 
 var numer_klienta : int
 
+var accept_button
 
 @export var label : Label
 
 
 func _ready() -> void:
+	accept_button = get_node("/root/Main/CanvasLayer/accept_button")
+	
 	$Node2D/Sprite2D.scale=Vector2(1,1)
 	if Global.klient_res == null:
 		losowanie()
@@ -26,6 +29,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if Global.podany == true:
+		accept_button.visible = false
 		Global.podany = false
 		if Global.Podany_Przedmiot != "":
 			checkItem()
@@ -63,6 +67,11 @@ func _process(delta: float) -> void:
 	if $AnimationPlayer.is_playing() == false:
 		$AnimationPlayer.play("idle")
 		
+#pokazuje accept button
+func ShowButton():
+	accept_button.visible = true
+	label.text = podkategoria.Dialog
+		
 func checkItem():
 	var przedmiot = Global.Podany_Przedmiot
 	Global.punkty_po_podaniu = podkategoria.Items[przedmiot]
@@ -73,7 +82,8 @@ func losowanie():
 		$AnimationPlayer.play("przyjście")
 		random_kategoria()
 		random_podkategoria()
-		label.text = podkategoria.Dialog
+		
+		
 
 func random_kategoria():
 	kat_path = "res://NPC's/Dialog/Kategoria/"
