@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="name" load_steps=2 format=3 uid="uid://g01jlgauj4i6"]
+
+[ext_resource type="Script" uid="uid://nlwsptc1bsm6" path="res://NPC's/Gender/0/name/!.gd" id="1_du4a5"]
+
+[resource]
+script = ExtResource("1_du4a5")
+name = "Bartol Kraskin: "
+metadata/_custom_type_script = "uid://nlwsptc1bsm6"

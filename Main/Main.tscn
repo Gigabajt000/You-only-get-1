@@ -162,8 +162,131 @@ visible = false
 [node name="Pause Menu Settings" parent="CanvasLayer" instance=ExtResource("2_amygn")]
 visible = false
 
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer2"]
+texture_filter = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -114.0
+offset_right = 114.0
+offset_bottom = 50.0
+grow_horizontal = 2
+min_value = -100.0
+value = 3.0
+nine_patch_stretch = true
+texture_under = ExtResource("4_qd626")
+script = ExtResource("5_6ivxk")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer2/TextureProgressBar"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 10.0
+offset_right = 219.0
+offset_bottom = 50.0
+texture = ExtResource("6_6ivxk")
+
+[node name="Label2" type="Label" parent="CanvasLayer2"]
+visible = false
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -380.0
+offset_top = 50.0
+offset_right = -315.0
+offset_bottom = 95.0
+grow_horizontal = 0
+text = "dfgz"
+label_settings = SubResource("LabelSettings_bor5n")
+script = ExtResource("2_wltqy")
+
+[node name="Timer" type="Timer" parent="CanvasLayer2/Label2"]
+one_shot = true
+
+[node name="Magazyn_Button" type="TextureButton" parent="CanvasLayer2"]
+texture_filter = 1
+custom_minimum_size = Vector2(128, 192)
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -134.0
+offset_top = -200.0
+offset_right = -6.0
+offset_bottom = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+pivot_offset = Vector2(64, 96)
+texture_normal = ExtResource("8_r2ac1")
+texture_pressed = ExtResource("9_d3r6l")
+texture_hover = ExtResource("9_d3r6l")
+stretch_mode = 0
+script = ExtResource("4_ps1la")
+
+[node name="Control" type="TextureButton" parent="CanvasLayer2"]
+texture_filter = 1
+custom_minimum_size = Vector2(128, 128)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -95.0
+offset_top = -48.0
+offset_right = 33.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(64, 64)
+stretch_mode = 0
+script = ExtResource("5_6aewd")
+
+[node name="accept_button" type="TextureButton" parent="CanvasLayer2"]
+texture_filter = 1
+custom_minimum_size = Vector2(192, 64)
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -195.0
+offset_top = -303.0
+offset_right = -3.0
+offset_bottom = -239.0
+grow_horizontal = 0
+grow_vertical = 0
+pivot_offset = Vector2(96, 32)
+texture_normal = ExtResource("12_fayjp")
+texture_pressed = ExtResource("13_j2iu7")
+texture_hover = ExtResource("14_j4nmm")
+stretch_mode = 0
+script = ExtResource("6_hh5pf")
+
+[node name="Timer" type="Timer" parent="CanvasLayer2/accept_button"]
+wait_time = 1.5
+one_shot = true
+
+[node name="Dzien" type="Label" parent="CanvasLayer2"]
+offset_right = 157.0
+offset_bottom = 62.0
+theme_override_font_sizes/font_size = 37
+script = ExtResource("10_kf8jr")
+
+[node name="Pause Menu" parent="CanvasLayer2" instance=ExtResource("1_83ytx")]
+visible = false
+
+[node name="Pause Menu Settings" parent="CanvasLayer2" instance=ExtResource("2_amygn")]
+visible = false
+
 [connection signal="timeout" from="CanvasLayer/Label2/Timer" to="CanvasLayer/Label2" method="_on_timer_timeout"]
 [connection signal="pressed" from="CanvasLayer/Magazyn_Button" to="CanvasLayer/Magazyn_Button" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control" to="CanvasLayer/Control" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/accept_button" to="CanvasLayer/accept_button" method="_on_pressed"]
 [connection signal="timeout" from="CanvasLayer/accept_button/Timer" to="CanvasLayer/accept_button" method="_on_timer_timeout"]
+[connection signal="timeout" from="CanvasLayer2/Label2/Timer" to="CanvasLayer2/Label2" method="_on_timer_timeout"]
+[connection signal="pressed" from="CanvasLayer2/Magazyn_Button" to="CanvasLayer2/Magazyn_Button" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer2/Control" to="CanvasLayer2/Control" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer2/accept_button" to="CanvasLayer2/accept_button" method="_on_pressed"]
+[connection signal="timeout" from="CanvasLayer2/accept_button/Timer" to="CanvasLayer2/accept_button" method="_on_timer_timeout"]
