@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://hkmdm5cltr3g" path="res://UI/Settings/pause_menu_settings.gd" id="1_vnph7"]
 [ext_resource type="FontFile" uid="uid://dqc18vmk7m5o3" path="res://Misc/Orange Kid.otf" id="2_lvpno"]
 [ext_resource type="Texture2D" uid="uid://b844m625itdua" path="res://Art/UI/Menu Buttons/Back/back_idle3.png" id="2_ox4tv"]
-[ext_resource type="Theme" uid="uid://xu804sr430ul" path="res://Misc/ui.tres" id="2_u3c0a"]
+[ext_resource type="Theme" uid="uid://bbev0e0v6u3w4" path="res://Misc/ui.tres" id="2_u3c0a"]
 [ext_resource type="Script" uid="uid://bxy3unsqxrujp" path="res://UI/button.gd" id="3_1hce2"]
 [ext_resource type="Texture2D" uid="uid://bl6lf310ppml0" path="res://Art/UI/Menu Buttons/Back/back_pressed3.png" id="3_lvpno"]
 [ext_resource type="Texture2D" uid="uid://bfckftb1urh7l" path="res://Art/UI/Menu Buttons/Back/back_hover3.png" id="4_u3c0a"]

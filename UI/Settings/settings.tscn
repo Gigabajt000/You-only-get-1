@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://bcjt7iyff2kjg"]
 
-[ext_resource type="Theme" uid="uid://xu804sr430ul" path="res://Misc/ui.tres" id="1_v3ito"]
+[ext_resource type="Theme" uid="uid://bbev0e0v6u3w4" path="res://Misc/ui.tres" id="1_v3ito"]
 [ext_resource type="Script" uid="uid://bj2gahfarupoh" path="res://UI/Settings/settings.gd" id="1_wnv0n"]
 [ext_resource type="Texture2D" uid="uid://w0gaoqxc6cqu" path="res://Art/UI/Menu Buttons/Back/back_idle2.png" id="2_eeom4"]
 [ext_resource type="FontFile" uid="uid://dqc18vmk7m5o3" path="res://Misc/Orange Kid.otf" id="2_hfoeg"]
