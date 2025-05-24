@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://d4fcf5r6vyawd"]
+
+[ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_55ax2"]
+
+[resource]
+script = ExtResource("1_55ax2")
+Dialog = "“Need something to style hair and survive economic collapse.”"
+Specjalne = false
+Bezdomny = true
+Items = {
+"alkohol": 1.0,
+"chleb": -0.3,
+"fajki": 1.0,
+"farba": 0.6,
+"gazeta": -0.5,
+"gwoździe": -0.6,
+"jabłko": -1.0,
+"kiełbasa": -1.0,
+"klej": 0.2,
+"klucz hydrauliczny": -0.7,
+"konserwa": -1.0,
+"książka marola karksa": -1.0,
+"mleko": 0.3,
+"ocet": 0.6,
+"papier toaletowy": 0.3,
+"pasta do zębów": 0.5,
+"szare mydło": 1.0,
+"szczototka do kibla": 1.0,
+"ziemniak": -1.0
+}

@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://c354sssfv0sj8"]
+
+[ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_g8i85"]
+
+[resource]
+script = ExtResource("1_g8i85")
+Dialog = "“I think the tomatoes are plotting. Need a weapon.”"
+Specjalne = false
+Bezdomny = true
+Items = {
+"alkohol": 1.0,
+"chleb": -1.0,
+"fajki": 1.0,
+"farba": 0.6,
+"gazeta": -0.3,
+"gwoździe": 0.6,
+"jabłko": -1.0,
+"kiełbasa": -1.0,
+"klej": 0.5,
+"klucz hydrauliczny": 1.0,
+"konserwa": 0.3,
+"książka marola karksa": -0.8,
+"mleko": -0.7,
+"ocet": -0.7,
+"papier toaletowy": -0.4,
+"pasta do zębów": -0.4,
+"szare mydło": -0.7,
+"szczototka do kibla": 0.4,
+"ziemniak": -1.0
+}

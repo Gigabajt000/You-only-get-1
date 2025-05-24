@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://cs5y0bi8c3wi8"]
+
+[ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_fwroc"]
+
+[resource]
+script = ExtResource("1_fwroc")
+Dialog = "\"I need something to hold a table, a marriage, or a conversation together.\""
+Specjalne = false
+Bezdomny = false
+Items = {
+"alkohol": 1.0,
+"chleb": -0.6,
+"fajki": 1.0,
+"farba": -0.3,
+"gazeta": -0.3,
+"gwoździe": 1.0,
+"jabłko": -0.6,
+"kiełbasa": -0.6,
+"klej": 1.0,
+"klucz hydrauliczny": -0.3,
+"konserwa": -0.7,
+"książka marola karksa": -0.3,
+"mleko": 0.7,
+"ocet": -1.0,
+"papier toaletowy": -0.5,
+"pasta do zębów": -0.7,
+"szare mydło": -1.0,
+"szczototka do kibla": -1.0,
+"ziemniak": -0.7
+}

@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://df4bj7j5vykiu"]
+
+[ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_bpi5u"]
+
+[resource]
+script = ExtResource("1_bpi5u")
+Dialog = "“They said I should get ‘something for the soul.’ Got any?”"
+Specjalne = false
+Bezdomny = false
+Items = {
+"alkohol": 1.0,
+"chleb": -0.2,
+"fajki": 1.0,
+"farba": -0.7,
+"gazeta": 0.8,
+"gwoździe": -1.0,
+"jabłko": 0.2,
+"kiełbasa": 0.1,
+"klej": -0.7,
+"klucz hydrauliczny": -0.5,
+"konserwa": 0.2,
+"książka marola karksa": 1.0,
+"mleko": -0.5,
+"ocet": -0.7,
+"papier toaletowy": 0.5,
+"pasta do zębów": 0.4,
+"szare mydło": 0.6,
+"szczototka do kibla": -1.0,
+"ziemniak": 0.4
+}
