@@ -1,7 +1,7 @@
 extends TextureButton
 
 func _ready() -> void:
-	$"../Magazyn_Button".visible = true
+	$"../Magazyn_button".visible = true
 	visible = true
 #Podanie Przedmiotu Klientowi
 func _on_pressed() -> void:
@@ -17,7 +17,7 @@ func _on_pressed() -> void:
 		if Global.Klient == 5:
 			Global.Klient = 0
 			Global.Dostawa = true
-			$"../Magazyn_Button".visible = false
+			$"../Magazyn_button".visible = false
 			visible = false
 			$Timer.start()
 	else:
