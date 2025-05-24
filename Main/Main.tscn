@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bm1vquy3vqvrc" path="res://UI/Settings/pause_menu_settings.tscn" id="2_amygn"]
 [ext_resource type="Script" uid="uid://bxt26po2nixjj" path="res://Main/label_2.gd" id="2_wltqy"]
 [ext_resource type="Texture2D" uid="uid://cfil5a87xiubf" path="res://Maro_ZdjęcieOG.png" id="3_amygn"]
-[ext_resource type="Script" uid="uid://defeswvoqx7w4" path="res://Main/magazyn_button.gd" id="4_ps1la"]
+[ext_resource type="Script" path="res://Main/magazyn_button.gd" id="4_ps1la"]
 [ext_resource type="Script" uid="uid://c2eg2q2q2x2t4" path="res://Main/control.gd" id="5_6aewd"]
 [ext_resource type="Script" uid="uid://b1b1cbubo5op8" path="res://Main/accept_button.gd" id="6_hh5pf"]
 [ext_resource type="Texture2D" uid="uid://dr4xufhyjgk2t" path="res://icon.svg" id="6_qg80j"]
@@ -26,6 +26,15 @@ font_color = Color(0, 0, 0, 1)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_h5g1y")
+
+[node name="NPC" parent="." instance=ExtResource("6_u2i7p")]
+position = Vector2(527, 502)
+
+[node name="Pixil-frame-0-2025-05-24t120819_440" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(579.444, 326.5)
+scale = Vector2(9.06944, 9.06944)
+texture = ExtResource("12_kmnsd")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -55,12 +64,6 @@ script = ExtResource("2_wltqy")
 
 [node name="Timer" type="Timer" parent="CanvasLayer/Label2"]
 one_shot = true
-
-[node name="Pause Menu" parent="CanvasLayer" instance=ExtResource("1_83ytx")]
-visible = false
-
-[node name="Pause Menu Settings" parent="CanvasLayer" instance=ExtResource("2_amygn")]
-visible = false
 
 [node name="Magazyn_Button" type="TextureButton" parent="CanvasLayer"]
 anchors_preset = 3
@@ -140,13 +143,11 @@ offset_bottom = 62.0
 theme_override_font_sizes/font_size = 37
 script = ExtResource("10_kf8jr")
 
-[node name="NPC" parent="." instance=ExtResource("6_u2i7p")]
+[node name="Pause Menu" parent="CanvasLayer" instance=ExtResource("1_83ytx")]
+visible = false
 
-[node name="Pixil-frame-0-2025-05-24t120819_440" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(579.444, 326.5)
-scale = Vector2(9.06944, 9.06944)
-texture = ExtResource("12_kmnsd")
+[node name="Pause Menu Settings" parent="CanvasLayer" instance=ExtResource("2_amygn")]
+visible = false
 
 [connection signal="timeout" from="CanvasLayer/Label2/Timer" to="CanvasLayer/Label2" method="_on_timer_timeout"]
 [connection signal="pressed" from="CanvasLayer/Magazyn_Button" to="CanvasLayer/Magazyn_Button" method="_on_pressed"]

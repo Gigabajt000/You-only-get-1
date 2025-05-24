@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://ccs8hafnc58wy"]
+[gd_scene load_steps=6 format=3 uid="uid://ccs8hafnc58wy"]
 
 [ext_resource type="Script" uid="uid://frhse62uc8i5" path="res://UI/Credits/credits.gd" id="1_n4oh0"]
-[ext_resource type="Texture2D" uid="uid://b8jgqcfcu1663" path="res://Art/marek_button.png" id="2_4iuj4"]
+[ext_resource type="Texture2D" uid="uid://fb028kgu734v" path="res://Art/UI/Menu Buttons/Back/back_idle.png" id="2_4i5kg"]
+[ext_resource type="Script" uid="uid://bxy3unsqxrujp" path="res://UI/button.gd" id="3_gjm8c"]
+[ext_resource type="Texture2D" uid="uid://c1fdb5vxympc2" path="res://Art/UI/Menu Buttons/Back/back_pressed.png" id="3_n4oh0"]
+[ext_resource type="Texture2D" uid="uid://pxkj7ssd2r7v" path="res://Art/UI/Menu Buttons/Back/back_hover.png" id="4_lfta3"]
 
 [node name="Credits" type="Control"]
 process_mode = 3
@@ -29,21 +32,25 @@ horizontal_alignment = 1
 
 [node name="back" type="TextureButton" parent="."]
 texture_filter = 1
+custom_minimum_size = Vector2(256, 64)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -71.5
-offset_top = -48.0
-offset_right = 71.5
+offset_left = -128.0
+offset_top = -88.0
+offset_right = 128.0
 offset_bottom = -24.0
 grow_horizontal = 2
 grow_vertical = 0
+pivot_offset = Vector2(128, 32)
 size_flags_vertical = 3
-texture_normal = ExtResource("2_4iuj4")
-texture_pressed = ExtResource("2_4iuj4")
-texture_hover = ExtResource("2_4iuj4")
+texture_normal = ExtResource("2_4i5kg")
+texture_pressed = ExtResource("3_n4oh0")
+texture_hover = ExtResource("4_lfta3")
+stretch_mode = 0
+script = ExtResource("3_gjm8c")
 
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0v4ksnfuckjp"
-path="res://.godot/imported/options_hover.png-478943c66d284532d6c15af10ce747ec.ctex"
+uid="uid://64k13nt8fo0s"
+path="res://.godot/imported/back_pressed2.png-54d891b45159dfb64edc3fbdceb20df7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/UI/Menu Buttons/options_hover.png"
-dest_files=["res://.godot/imported/options_hover.png-478943c66d284532d6c15af10ce747ec.ctex"]
+source_file="res://Art/UI/Menu Buttons/Back/back_pressed2.png"
+dest_files=["res://.godot/imported/back_pressed2.png-54d891b45159dfb64edc3fbdceb20df7.ctex"]
 
 [params]
 

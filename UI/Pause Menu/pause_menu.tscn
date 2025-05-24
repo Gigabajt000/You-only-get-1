@@ -1,10 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://baeffjqt2pip1"]
+[gd_scene load_steps=7 format=3 uid="uid://baeffjqt2pip1"]
 
 [ext_resource type="Script" uid="uid://dfr4ev0ah2rh6" path="res://UI/Pause Menu/pause_menu.gd" id="1_e11wt"]
 [ext_resource type="Texture2D" uid="uid://b8jgqcfcu1663" path="res://Art/marek_button.png" id="2_8siy5"]
+[ext_resource type="Script" uid="uid://bxy3unsqxrujp" path="res://UI/button.gd" id="3_3ol4c"]
+[ext_resource type="Texture2D" uid="uid://bc0q4q7xqwtfe" path="res://Art/UI/Menu Buttons/Options/options_idle2.png" id="4_sludg"]
+[ext_resource type="Texture2D" uid="uid://dodbxkfr3tps8" path="res://Art/UI/Menu Buttons/Options/options_pressed2.png" id="5_dra6u"]
+[ext_resource type="Texture2D" uid="uid://dv7qwggxvmhy1" path="res://Art/UI/Menu Buttons/Options/options_hover2.png" id="6_xg370"]
 
 [node name="Pause Menu" type="Control"]
 process_mode = 3
+visibility_layer = 512
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -25,7 +30,7 @@ mouse_filter = 2
 [node name="ColorRect" type="ColorRect" parent="MarginContainer"]
 layout_mode = 2
 mouse_filter = 2
-color = Color(0, 0, 0, 0.466667)
+color = Color(0, 0, 0, 0.505882)
 
 [node name="MarginContainer2" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -45,35 +50,59 @@ grow_vertical = 2
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="Resume" type="TextureButton" parent="MarginContainer2/VBoxContainer"]
+[node name="Control" type="Control" parent="MarginContainer2/VBoxContainer"]
+custom_minimum_size = Vector2(256, 64)
+layout_mode = 2
+
+[node name="Resume" type="TextureButton" parent="MarginContainer2/VBoxContainer/Control"]
 texture_filter = 1
 layout_mode = 2
+offset_right = 256.0
+offset_bottom = 64.0
+pivot_offset = Vector2(128, 32)
 size_flags_vertical = 3
 texture_normal = ExtResource("2_8siy5")
 texture_pressed = ExtResource("2_8siy5")
 texture_hover = ExtResource("2_8siy5")
 stretch_mode = 0
+script = ExtResource("3_3ol4c")
 
-[node name="Settings" type="TextureButton" parent="MarginContainer2/VBoxContainer"]
+[node name="Control2" type="Control" parent="MarginContainer2/VBoxContainer"]
+custom_minimum_size = Vector2(256, 64)
+layout_mode = 2
+
+[node name="Settings" type="TextureButton" parent="MarginContainer2/VBoxContainer/Control2"]
 process_mode = 3
 texture_filter = 1
 layout_mode = 2
+offset_right = 256.0
+offset_bottom = 64.0
+pivot_offset = Vector2(128, 32)
 size_flags_vertical = 3
-texture_normal = ExtResource("2_8siy5")
-texture_pressed = ExtResource("2_8siy5")
-texture_hover = ExtResource("2_8siy5")
+texture_normal = ExtResource("4_sludg")
+texture_pressed = ExtResource("5_dra6u")
+texture_hover = ExtResource("6_xg370")
 stretch_mode = 0
+script = ExtResource("3_3ol4c")
 
-[node name="Main Menu" type="TextureButton" parent="MarginContainer2/VBoxContainer"]
+[node name="Control3" type="Control" parent="MarginContainer2/VBoxContainer"]
+custom_minimum_size = Vector2(256, 64)
+layout_mode = 2
+
+[node name="Main Menu" type="TextureButton" parent="MarginContainer2/VBoxContainer/Control3"]
 texture_filter = 1
 layout_mode = 2
+offset_right = 256.0
+offset_bottom = 64.0
+pivot_offset = Vector2(128, 32)
 size_flags_vertical = 3
 texture_normal = ExtResource("2_8siy5")
 texture_pressed = ExtResource("2_8siy5")
 texture_hover = ExtResource("2_8siy5")
 stretch_mode = 0
+script = ExtResource("3_3ol4c")
 
-[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer/Main Menu"]
+[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer/Control3/Main Menu"]
 layout_mode = 0
 offset_left = 293.0
 offset_top = -129.0
@@ -84,6 +113,6 @@ text = "<--		Resume
 <--		Main Menu"
 vertical_alignment = 3
 
-[connection signal="pressed" from="MarginContainer2/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
-[connection signal="pressed" from="MarginContainer2/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="MarginContainer2/VBoxContainer/Main Menu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="MarginContainer2/VBoxContainer/Control/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="MarginContainer2/VBoxContainer/Control2/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="MarginContainer2/VBoxContainer/Control3/Main Menu" to="." method="_on_main_menu_pressed"]
