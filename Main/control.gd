@@ -7,8 +7,7 @@ func _process(delta: float) -> void:
 		stat = load("res://Recourses/Products/%s.tres" % Global.Przedmiot)
 	if stat != null:
 		
-		texture_normal = preload("res://Maro_ZdjęcieOG.png") 
-		#texture_normal = stat.Textura -------> Tak Powinno Wygladac Gdy Tekstury Beda
+		texture_normal = stat.Textura 
 		
 		tooltip_text = stat.Tooltip
 		
