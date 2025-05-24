@@ -32,6 +32,7 @@ func _process(delta: float) -> void:
 		else:
 			Global.punkty_po_podaniu = -1
 			Global.Vdolce += Global.punkty_po_podaniu * 10
+		Global.Zarobione_Pieniadze += Global.punkty_po_podaniu * 10
 		$AnimationPlayer.play("odejscie")
 		
 		
@@ -68,10 +69,11 @@ func checkItem():
 	Global.Vdolce += Global.punkty_po_podaniu * 10
 	
 func losowanie():
-	$AnimationPlayer.play("przyjście")
-	random_kategoria()
-	random_podkategoria()
-	label.text = podkategoria.Dialog
+	if Global.Klient < 5:
+		$AnimationPlayer.play("przyjście")
+		random_kategoria()
+		random_podkategoria()
+		label.text = podkategoria.Dialog
 
 func random_kategoria():
 	kat_path = "res://NPC's/Dialog/Kategoria/"

@@ -11,4 +11,5 @@ func _on_pressed() -> void:
 	Global.Rzadowa_Dostawa(Global.ilosc_przedmiotow_od_rzadu)
 	visible = false
 	Global.Dostawa = false
+	Global.ilosc_przedmiotow_od_rzadu = Global.deafultowa_ilosc
 	get_parent().Rozstawienie()

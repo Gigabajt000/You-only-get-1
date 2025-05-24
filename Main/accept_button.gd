@@ -1,7 +1,8 @@
 extends TextureButton
 
-
-
+func _ready() -> void:
+	$"../Magazyn_Button".visible = true
+	visible = true
 #Podanie Przedmiotu Klientowi
 func _on_pressed() -> void:
 	#Animacja Podania Przedmiotu
@@ -11,11 +12,12 @@ func _on_pressed() -> void:
 	Global.Start_Timer = true
 	#klient
 	Global.Klient += 1
-	print("numer_kienta:",Global.Klient)
-	print("Dostawa:",Global.Dostawa)
-	print("Dzien:",Global.Dzien)
 	if Global.Klient == 5:
-		Global.Dzien +=1
 		Global.Klient = 0
 		Global.Dostawa = true
-	
+		$"../Magazyn_Button".visible = false
+		visible = false
+		$Timer.start()
+		
+func _on_timer_timeout() -> void:
+	Global.Dzien +=1
