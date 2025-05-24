@@ -169,9 +169,10 @@ _data = {
 &"przyjście": SubResource("Animation_4g4tx")
 }
 
-[node name="NPC" type="CharacterBody2D" node_paths=PackedStringArray("label")]
+[node name="NPC" type="CharacterBody2D" node_paths=PackedStringArray("label", "icon")]
 script = ExtResource("1_4g4tx")
 label = NodePath("CanvasLayer/Label")
+icon = NodePath("Node2D/Sprite2D")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

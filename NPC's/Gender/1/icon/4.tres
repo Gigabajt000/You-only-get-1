@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="png" load_steps=3 format=3 uid="uid://bpbrsoe7psfak"]
+
+[ext_resource type="Texture2D" uid="uid://b5h71rlauet0o" path="res://NPC's/Gender/1/icon/3.png" id="1_2a5xw"]
+[ext_resource type="Script" uid="uid://dax8bggfwaokf" path="res://NPC's/Gender/1/icon/!.gd" id="2_hvf77"]
+
+[resource]
+script = ExtResource("2_hvf77")
+icon = ExtResource("1_2a5xw")
+metadata/_custom_type_script = "uid://dax8bggfwaokf"

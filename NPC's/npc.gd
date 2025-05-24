@@ -8,8 +8,9 @@ var gender_path = "res://NPC's/Gender/"
 var kategoria : Kategoria
 var podkategoria : dialog
 
-var image
-var imie
+
+var image 
+var imie 
 
 var gender
 
@@ -26,6 +27,7 @@ var accept_button
 
 
 func _ready() -> void:
+	icon.scale = Vector2(0.7,0.7)
 	accept_button = get_node("/root/Main/CanvasLayer/accept_button")
 	
 	$Node2D/Sprite2D.scale=Vector2(1,1)
@@ -41,6 +43,7 @@ func _ready() -> void:
 	label.text = podkategoria.Dialog
 
 func _process(delta: float) -> void:
+	icon.scale = Vector2(0.7,0.7)
 	if Global.podany == true:
 		accept_button.visible = false
 		Global.podany = false
@@ -106,7 +109,7 @@ func _process(delta: float) -> void:
 #pokazuje accept button
 func ShowButton():
 	accept_button.visible = true
-	label.text = podkategoria.Dialog
+	label.text = imie + podkategoria.Dialog
 		
 func checkItem():
 	var przedmiot = Global.Podany_Przedmiot
@@ -121,6 +124,8 @@ func losowanie():
 		choseGender()
 		random_kategoria()
 		random_podkategoria()
+		icon.texture = image
+		icon.scale = Vector2(0.7,0.7)
 		
 		
 var kat
@@ -158,8 +163,11 @@ func random_podkategoria():
 
 func choseGender():
 	if Global.Play_Tutorial == true: 
-		image = "res://NPC's/Gender/1/3.png "
-		imie = "Michajov Pyckov"
+		var tut_image = "res://NPC's/Gender/1/icon/3.tres"
+		var o = ResourceLoader.load(tut_image)
+		image = o.icon
+		icon.scale = Vector2(0.7,0.7)
+		imie = "Michajov Pyckov: " 
 		#print(image,imie)
 	else :
 		gender = randi_range(0,1)
@@ -178,13 +186,15 @@ func female():
 	#icon 
 	var  i = randi_range(1,2)
 	i = str(i)
-	var genderimage_path = gender_path + str(gender) + "/icon/" + i + ".png"
-	image = genderimage_path
+	var genderimage_path = gender_path + str(gender) + "/icon/" + i + ".tres"
+	var o = ResourceLoader.load(genderimage_path)
+	image = o.icon
+	icon.scale = Vector2(0.7,0.7)
 	var gendername_path = gender_path + str(gender) + "/name/" + n+ ".tres"
 	var j = 0
 	j = ResourceLoader.load(gendername_path)
 	imie = j.name
-	print(image," " ,imie)
+	#print(image," " ,imie)
 
 func male():
 	gender_path = "res://NPC's/Gender/"
@@ -194,13 +204,15 @@ func male():
 	#icon
 	var  i = randi_range(1,5)
 	i = str(i)
-	var genderimage_path = gender_path + str(gender) + "/icon/" + i + ".png"
-	image = genderimage_path
+	var genderimage_path = gender_path + str(gender) + "/icon/" + i + ".tres"
+	var o = ResourceLoader.load(genderimage_path)
+	image = o.icon
+	icon.scale = Vector2(0.7,0.7)
 	var gendername_path = gender_path + str(gender) + "/name/" + n+ ".tres"
 	var j = 0
 	j = ResourceLoader.load(gendername_path)
 	imie = j.name
-	print(image," " ,imie)
+	#print(image," " ,imie)
 
 var dobre_zakonczenie = "res://UI/dobre_zakonczenie.tscn"
 var zue_zakonczenie = "res://UI/zue_zakonczenie.tscn"
