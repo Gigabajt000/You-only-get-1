@@ -1,18 +1,14 @@
-[gd_scene load_steps=19 format=3 uid="uid://4phe338d6ahn"]
+[gd_scene load_steps=16 format=3 uid="uid://4phe338d6ahn"]
 
 [ext_resource type="Texture2D" uid="uid://btni8xltipiom" path="res://Art/UI/kalendarz_.png" id="1_jlrc6"]
 [ext_resource type="Script" uid="uid://cj51b85pcf145" path="res://Main/week_end.gd" id="1_kpuyn"]
 [ext_resource type="Texture2D" uid="uid://bqb4bgi3clh12" path="res://Art/UI/obwódka.png" id="2_kpuyn"]
 [ext_resource type="Texture2D" uid="uid://bpjux1batlcjc" path="res://Art/UI/plajstik.png" id="3_m2mpv"]
-[ext_resource type="Script" uid="uid://djwqgfx1eddcg" path="res://Main/label.gd" id="4_g0hrr"]
+[ext_resource type="Script" path="res://Main/label.gd" id="4_g0hrr"]
+[ext_resource type="Texture2D" uid="uid://cfil5a87xiubf" path="res://Maro_ZdjęcieOG.png" id="4_u5pt0"]
 [ext_resource type="Script" uid="uid://cw2j532esa3w" path="res://Main/dostawa_rządowa.gd" id="5_1jwi6"]
 [ext_resource type="Script" uid="uid://dsepjrdnevdco" path="res://Main/zarobiona_kasa.gd" id="5_ic5xn"]
 [ext_resource type="Script" uid="uid://b68t1smyqje5l" path="res://Main/next_day.gd" id="6_1jwi6"]
-[ext_resource type="Texture2D" uid="uid://dc3i3ofvim0ri" path="res://Art/UI/bonus_suplies_button.png" id="6_q707i"]
-[ext_resource type="Texture2D" uid="uid://dssi41ncwpc56" path="res://Art/UI/bonus_suplies_button_hover_and_pressed.png" id="7_fd0cd"]
-[ext_resource type="Texture2D" uid="uid://b0fufgu5i3bv1" path="res://Art/UI/next_day_button.png" id="9_mwydr"]
-[ext_resource type="Texture2D" uid="uid://bryu6dfn6pmb0" path="res://Art/UI/next_day_button_pressed.png" id="10_na5xs"]
-[ext_resource type="Texture2D" uid="uid://drf0jw7cfbwyl" path="res://Art/UI/next_day_button_hover.png" id="11_6hsh4"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ic5xn"]
 font_size = 32
@@ -21,6 +17,9 @@ font_color = Color(1, 1, 0, 1)
 [sub_resource type="LabelSettings" id="LabelSettings_m4n8e"]
 font_size = 32
 font_color = Color(0, 1, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_g0hrr"]
+font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="Animation" id="Animation_m2mpv"]
 length = 0.001
@@ -129,31 +128,23 @@ label_settings = SubResource("LabelSettings_m4n8e")
 script = ExtResource("5_ic5xn")
 
 [node name="Dostawa_Rządowa" type="TextureButton" parent="."]
-texture_filter = 1
-custom_minimum_size = Vector2(64, 64)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 124.0
-offset_top = 75.0
-offset_right = 188.0
-offset_bottom = 139.0
+offset_left = 167.0
+offset_top = -48.0
+offset_right = 310.0
+offset_bottom = 152.0
 grow_horizontal = 2
 grow_vertical = 2
-pivot_offset = Vector2(32, 32)
 tooltip_text = "Pay 20 Reputation for additional government supplies"
-texture_normal = ExtResource("6_q707i")
-texture_pressed = ExtResource("7_fd0cd")
-texture_hover = ExtResource("7_fd0cd")
-stretch_mode = 0
+texture_normal = ExtResource("4_u5pt0")
 script = ExtResource("5_1jwi6")
 metadata/_edit_use_anchors_ = true
 
-<<<<<<< HEAD
-=======
 [node name="Label" type="Label" parent="Dostawa_Rządowa"]
 layout_mode = 1
 anchors_preset = 5
@@ -167,29 +158,34 @@ text = "Bonus Supplies"
 label_settings = SubResource("LabelSettings_g0hrr")
 metadata/_edit_use_anchors_ = true
 
->>>>>>> c0937543c801a2d4907ee6cc3a352bcc99a17a44
 [node name="Next_Day" type="TextureButton" parent="."]
-texture_filter = 1
-custom_minimum_size = Vector2(256, 64)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -192.0
-offset_top = 75.0
-offset_right = 64.0
-offset_bottom = 139.0
+offset_left = -117.0
+offset_top = -49.0
+offset_right = 26.0
+offset_bottom = 151.0
 grow_horizontal = 2
 grow_vertical = 2
-pivot_offset = Vector2(128, 32)
-texture_normal = ExtResource("9_mwydr")
-texture_pressed = ExtResource("10_na5xs")
-texture_hover = ExtResource("11_6hsh4")
-stretch_mode = 0
+texture_normal = ExtResource("4_u5pt0")
 script = ExtResource("6_1jwi6")
 metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Next_Day"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Next Day"
+label_settings = SubResource("LabelSettings_g0hrr")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
