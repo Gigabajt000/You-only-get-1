@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="name" load_steps=2 format=3 uid="uid://4bp6q0hmiy01"]
-
-[ext_resource type="Script" uid="uid://nlwsptc1bsm6" path="res://NPC's/Gender/0/name/!.gd" id="1_86io3"]
-
-[resource]
-script = ExtResource("1_86io3")
-name = "Marika Iterova: "
-metadata/_custom_type_script = "uid://nlwsptc1bsm6"

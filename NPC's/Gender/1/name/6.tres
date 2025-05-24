@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="name" load_steps=2 format=3 uid="uid://c2k7hl2ufgy64"]
-
-[ext_resource type="Script" uid="uid://nlwsptc1bsm6" path="res://NPC's/Gender/0/name/!.gd" id="1_y5s2j"]
-
-[resource]
-script = ExtResource("1_y5s2j")
-name = "Michajov Pyckov: "
-metadata/_custom_type_script = "uid://nlwsptc1bsm6"
