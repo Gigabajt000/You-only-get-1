@@ -35,6 +35,29 @@ func _process(delta: float) -> void:
 		$AnimationPlayer.play("odejscie")
 		
 		
+		#Komentarz Koncowy
+		if Global.punkty_po_podaniu == 1.0 and Global.Podany_Przedmiot == "alkohol" or Global.Podany_Przedmiot == "fajki":
+			label.text = "That'll always do"
+		elif Global.punkty_po_podaniu > 0.5:
+			label.text = "Dear Companion, you saved my day"
+		elif Global.punkty_po_podaniu > 0.0:
+			var x = randi_range(0,2)
+			if x == 0:
+				label.text = "That'll Do"
+			elif x == 1:
+				label.text = "Sure, that'll work"
+			elif x == 2:
+				label.text = "I guess that's good enough"
+		elif Global.punkty_po_podaniu > -0.5:
+			var x = randi_range(0,1)
+			if x == 0:
+				label.text = "I Guess that'll have to make it"
+			if x == 1:
+				label.text = "really? Well, could've been worse"
+		elif Global.punkty_po_podaniu >= -1.0:
+			label.text = "Are you fucking joking?"
+		else:
+			label.text = "Are you fucking deaf or what?"
 
 	if $AnimationPlayer.is_playing() == false:
 		$AnimationPlayer.play("idle")
