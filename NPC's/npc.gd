@@ -31,8 +31,17 @@ func _process(delta: float) -> void:
 	if Global.podany == true:
 		accept_button.visible = false
 		Global.podany = false
+		if podkategoria.Specjalne == true:
+			Global.Dodatkowy_Hajs = 2
+		else:
+			Global.Dodatkowy_Hajs = 1
+		
 		if Global.Podany_Przedmiot != "":
 			checkItem()
+		elif Global.Podany_Przedmiot == "" and podkategoria.Bezdomny == true:
+			Global.punkty_po_podaniu = 0.0
+			Global.Vdolce += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
+			Global.Zarobione_Pieniadze += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
 		else:
 			Global.punkty_po_podaniu = -1
 			Global.Vdolce += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
@@ -41,7 +50,11 @@ func _process(delta: float) -> void:
 		
 		
 		#Komentarz Koncowy
-		if Global.punkty_po_podaniu == 1.0 and Global.Podany_Przedmiot == "alkohol" or Global.Podany_Przedmiot == "fajki":
+		if podkategoria.Bezdomny == true and Global.punkty_po_podaniu == 0.5:
+			label.text = "Man... I just got a spaceship... but I’m too drunk to fly."
+		elif podkategoria.Bezdomny == true and Global.punkty_po_podaniu == 0.0:
+			label.text = "Man... Really? Huh... thats life"
+		elif Global.punkty_po_podaniu == 1.0 and Global.Podany_Przedmiot == "alkohol" or Global.Podany_Przedmiot == "fajki":
 			label.text = "That'll always do"
 		elif Global.punkty_po_podaniu > 0.5:
 			label.text = "Dear Companion, you saved my day"
@@ -86,14 +99,10 @@ func losowanie():
 		random_podkategoria()
 		
 		
-
+var kat
 func random_kategoria():
 	kat_path = "res://NPC's/Dialog/Kategoria/"
-	var kat = randi_range(0,4)
-	if kat ==4:
-		Global.Dodatkowy_Hajs = 2
-	else:
-		Global.Dodatkowy_Hajs = 1
+	kat = randi_range(0,4)
 	kat = str(kat)
 	#print(kat)
 	kat_path = kat_path+ kat + ".tres"
@@ -111,6 +120,7 @@ func random_podkategoria():
 	podkat_path = podkat_path+"/"+name_kat+"/"+pkat+".tres"
 	#print(podkat_path)
 	podkategoria = ResourceLoader.load(podkat_path)
+	
 	if podkategoria == null:
 		random_podkategoria() 
 	Global.klient_res = podkategoria

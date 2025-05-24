@@ -1,29 +1,29 @@
-[gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://bbrclmcgvq6r5"]
+[gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://btpp6dtfbwout"]
 
-[ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_d7vb8"]
+[ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_1mcs2"]
 
 [resource]
-script = ExtResource("1_d7vb8")
-Dialog = "specjalne3"
+script = ExtResource("1_1mcs2")
+Dialog = "specjal2"
 Specjalne = true
 Items = {
 "alkohol": 1.0,
-"chleb": 0.4,
-"fajki": 1.0,
+"chleb": 1.0,
+"fajki": 0.8,
 "farba": -1.0,
 "gazeta": -1.0,
 "gwoździe": -1.0,
-"jabłko": 1.0,
-"kiełbasa": 0.3,
+"jabłko": 0.5,
+"kiełbasa": 1.0,
 "klej": -0.7,
-"klucz hydrauliczny": 0.6,
-"konserwa": 0.9,
-"książka marola karksa": -0.6,
-"mleko": -0.8,
-"ocet": -0.8,
-"papier toaletowy": -0.8,
-"pasta do zębów": -0.6,
-"szare mydło": -0.8,
+"klucz hydrauliczny": -1.0,
+"konserwa": 1.0,
+"książka marola karksa": -1.0,
+"mleko": 0.3,
+"ocet": -0.5,
+"papier toaletowy": -0.5,
+"pasta do zębów": 0.3,
+"szare mydło": -0.3,
 "szczototka do kibla": -0.5,
 "ziemniak": 1.0
 }
