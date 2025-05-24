@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dr4xufhyjgk2t" path="res://icon.svg" id="1_7o363"]
 [ext_resource type="Script" uid="uid://cndqmucc6qnt2" path="res://Main/shop_magazyn.gd" id="1_xlw5q"]
-[ext_resource type="Script" uid="uid://cneq0x2fomwd0" path="res://Main/dostawa_od_rządu.gd" id="3_6kdoj"]
+[ext_resource type="Script" path="res://Main/dostawa_od_rządu.gd" id="3_6kdoj"]
 [ext_resource type="Texture2D" uid="uid://cfil5a87xiubf" path="res://Maro_ZdjęcieOG.png" id="4_27yh6"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xlw5q"]

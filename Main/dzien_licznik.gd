@@ -2,6 +2,6 @@ extends Label
 
 var dzien : int 
 
-func _ready() -> void:
+func _process(delta: float) -> void:
 	dzien = Global.Dzien
-	print(dzien)
+	text = "Dzien:" + str(dzien)
