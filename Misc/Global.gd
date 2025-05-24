@@ -27,7 +27,7 @@ var Podany_Przedmiot: String = ""    #przedmiot podany klientowi
 var punkty_po_podaniu: float
 var podany = false
 #klient Resource---------------------------------------------------------------------
-var Vdolce: int = 100
+var Vdolce: int = 10
 var Start_Timer: bool = false        #start timer w labelu 
 
 #Dialog klienta---------------------------------------------------------------------
@@ -41,8 +41,8 @@ var Klient : int = 0
 var Dzien : int 
 var Dostawa : bool
 #tutorial and End--------------------------------------------------------------------------
-var Play_Tutorial: bool = false
-var Play_End: bool = true
+var Play_Tutorial: bool = true
+var Play_End: bool = false
 
 func _ready() -> void:
 	deafultowa_ilosc = 5

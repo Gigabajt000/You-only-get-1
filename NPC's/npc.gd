@@ -29,7 +29,11 @@ func _ready() -> void:
 	accept_button = get_node("/root/Main/CanvasLayer/accept_button")
 	
 	$Node2D/Sprite2D.scale=Vector2(1,1)
-	if Global.klient_res == null:
+	if Global.Play_End == true:
+		podkategoria = ResourceLoader.load("res://NPC's/Dialog/Kategoria/End.tres")
+		Start_Timer()
+		$Node2D/Sprite2D.position.x=893.0
+	elif Global.klient_res == null:
 		losowanie()
 	else:
 		podkategoria = Global.klient_res
@@ -197,3 +201,21 @@ func male():
 	j = ResourceLoader.load(gendername_path)
 	imie = j.name
 	print(image," " ,imie)
+
+var dobre_zakonczenie = "res://UI/dobre_zakonczenie.tscn"
+var zue_zakonczenie = "res://UI/zue_zakonczenie.tscn"
+
+func Start_Timer():
+	if Global.Play_End == true:
+		$Timer.start()
+
+func Zakonczenie():
+	if Global.Vdolce > 0:
+		get_tree().change_scene_to_file(dobre_zakonczenie)
+	else:
+		get_tree().change_scene_to_file(zue_zakonczenie)
+
+
+func _on_timer_timeout() -> void:
+	#Fade out
+	Zakonczenie()

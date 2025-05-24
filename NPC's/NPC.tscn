@@ -149,11 +149,14 @@ tracks/2/path = NodePath("../..")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(1),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0.9, 0.966667),
+"transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
 "method": &"ShowButton"
+}, {
+"args": [],
+"method": &"Start_Timer"
 }]
 }
 
@@ -199,3 +202,9 @@ libraries = {
 position = Vector2(1317, 352)
 scale = Vector2(1.281, 7.792)
 texture = ExtResource("2_4g4tx")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
