@@ -9,21 +9,28 @@ var podkategoria : dialog
 var k = "i"
 var name_kat = 0 
 
+
 @export var label : Label
 
 
 func _ready() -> void:
+	$Node2D/Sprite2D.scale=Vector2(1,1)
 	if Global.klient_res == null:
 		losowanie()
 	else:
 		podkategoria = Global.klient_res
+		$Node2D/Sprite2D.position.x=893.0
 	label.text = podkategoria.Dialog
 
 func _process(delta: float) -> void:
 	if Global.podany == true:
 		Global.podany = false
 		checkItem()
+		$AnimationPlayer.play("odejscie")
 
+	if $AnimationPlayer.is_playing() == false:
+		$AnimationPlayer.play("idle")
+		
 func checkItem():
 	var przedmiot = Global.Podany_Przedmiot
 	Global.punkty_po_podaniu = podkategoria.Items[przedmiot]
@@ -31,8 +38,10 @@ func checkItem():
 	
 
 func losowanie():
+	$AnimationPlayer.play("przyjście")
 	random_kategoria()
 	random_podkategoria()
+	label.text = podkategoria.Dialog
 
 func random_kategoria():
 	kat_path = "res://NPC's/Dialog/Kategoria/"
