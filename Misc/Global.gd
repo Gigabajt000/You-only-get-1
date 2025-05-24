@@ -29,7 +29,14 @@ var podany = false
 var Vdolce: int = 10
 var Start_Timer: bool = false        #start timer w labelu 
 
+#Dialog klienta---------------------------------------------------------------------
 var klient_res : Resource
+
+
+#system dni---------------------------------------------------------------------
+var Dzien : int 
+var Dostawa : bool
+
 
 func _ready() -> void:
 	Rzadowa_Dostawa(10)

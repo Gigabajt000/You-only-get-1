@@ -1,15 +1,16 @@
-[gd_scene load_steps=14 format=3 uid="uid://66h1j5trsblh"]
+[gd_scene load_steps=15 format=3 uid="uid://66h1j5trsblh"]
 
 [ext_resource type="PackedScene" uid="uid://baeffjqt2pip1" path="res://UI/Pause Menu/pause_menu.tscn" id="1_83ytx"]
-[ext_resource type="Script" uid="uid://djwqgfx1eddcg" path="res://Main/label.gd" id="1_bor5n"]
+[ext_resource type="Script" path="res://Main/label.gd" id="1_bor5n"]
 [ext_resource type="PackedScene" uid="uid://bm1vquy3vqvrc" path="res://UI/Settings/pause_menu_settings.tscn" id="2_amygn"]
-[ext_resource type="Script" uid="uid://bxt26po2nixjj" path="res://Main/label_2.gd" id="2_wltqy"]
+[ext_resource type="Script" path="res://Main/label_2.gd" id="2_wltqy"]
 [ext_resource type="Texture2D" uid="uid://cfil5a87xiubf" path="res://Maro_ZdjęcieOG.png" id="3_amygn"]
-[ext_resource type="Script" uid="uid://defeswvoqx7w4" path="res://Main/magazyn_button.gd" id="4_ps1la"]
+[ext_resource type="Script" path="res://Main/magazyn_button.gd" id="4_ps1la"]
 [ext_resource type="Script" uid="uid://c2eg2q2q2x2t4" path="res://Main/control.gd" id="5_6aewd"]
 [ext_resource type="Script" uid="uid://b1b1cbubo5op8" path="res://Main/accept_button.gd" id="6_hh5pf"]
 [ext_resource type="Texture2D" uid="uid://dr4xufhyjgk2t" path="res://icon.svg" id="6_qg80j"]
 [ext_resource type="PackedScene" uid="uid://bk1wd1ukqspqx" path="res://NPC's/NPC.tscn" id="6_u2i7p"]
+[ext_resource type="Script" uid="uid://dmkunh8xetibq" path="res://Main/dzien_licznik.gd" id="10_kf8jr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_qg80j"]
 font_size = 32
@@ -122,6 +123,12 @@ offset_right = 20.0
 offset_bottom = 23.0
 grow_horizontal = 2
 text = "accept"
+
+[node name="Dzien" type="Label" parent="CanvasLayer"]
+offset_right = 157.0
+offset_bottom = 62.0
+theme_override_font_sizes/font_size = 37
+script = ExtResource("10_kf8jr")
 
 [node name="NPC" parent="." instance=ExtResource("6_u2i7p")]
 
