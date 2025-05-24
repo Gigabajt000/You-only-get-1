@@ -35,6 +35,9 @@ var klient_res : Resource
 
 var Dodatkowy_Hajs: int = 1
 
+#Klient icon -----------------------------------------------------------------------
+var Klient_icon 
+
 #system dni---------------------------------------------------------------------
 var Zarobione_Pieniadze: int = 0
 var Klient : int = 0
