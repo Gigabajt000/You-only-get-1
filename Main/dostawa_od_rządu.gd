@@ -12,4 +12,4 @@ func _on_pressed() -> void:
 	visible = false
 	Global.Dostawa = false
 	Global.ilosc_przedmiotow_od_rzadu = Global.deafultowa_ilosc
-	get_parent().Rozstawienie()
+	get_tree().reload_current_scene()
