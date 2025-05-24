@@ -1,37 +1,47 @@
-[gd_scene load_steps=18 format=3 uid="uid://66h1j5trsblh"]
+[gd_scene load_steps=20 format=3 uid="uid://66h1j5trsblh"]
 
 [ext_resource type="PackedScene" uid="uid://baeffjqt2pip1" path="res://UI/Pause Menu/pause_menu.tscn" id="1_83ytx"]
 [ext_resource type="Script" uid="uid://bdstl6kju6cnu" path="res://Main/main.gd" id="1_h5g1y"]
 [ext_resource type="PackedScene" uid="uid://bm1vquy3vqvrc" path="res://UI/Settings/pause_menu_settings.tscn" id="2_amygn"]
 [ext_resource type="Script" uid="uid://bxt26po2nixjj" path="res://Main/label_2.gd" id="2_wltqy"]
-[ext_resource type="Texture2D" uid="uid://cfil5a87xiubf" path="res://Maro_ZdjęcieOG.png" id="3_amygn"]
-[ext_resource type="Script" path="res://Main/magazyn_button.gd" id="4_ps1la"]
+[ext_resource type="Script" uid="uid://defeswvoqx7w4" path="res://Main/magazyn_button.gd" id="4_ps1la"]
 [ext_resource type="Texture2D" uid="uid://1er4nvd3tp1c" path="res://Art/scale.png" id="4_qd626"]
 [ext_resource type="Script" uid="uid://c2eg2q2q2x2t4" path="res://Main/control.gd" id="5_6aewd"]
 [ext_resource type="Script" uid="uid://dgoc77wsh71a" path="res://Main/texture_progress_bar.gd" id="5_6ivxk"]
 [ext_resource type="Texture2D" uid="uid://c8aih30kbm0xt" path="res://Art/znacznik.png" id="6_6ivxk"]
 [ext_resource type="Script" uid="uid://b1b1cbubo5op8" path="res://Main/accept_button.gd" id="6_hh5pf"]
-[ext_resource type="Texture2D" uid="uid://dr4xufhyjgk2t" path="res://icon.svg" id="6_qg80j"]
 [ext_resource type="PackedScene" uid="uid://bk1wd1ukqspqx" path="res://NPC's/NPC.tscn" id="6_u2i7p"]
+[ext_resource type="Texture2D" uid="uid://173lpstksulq" path="res://Art/UI/warehouse_button.png" id="8_r2ac1"]
+[ext_resource type="Texture2D" uid="uid://cphntayxhsty3" path="res://Art/UI/warehouse_button_hover.png" id="9_d3r6l"]
 [ext_resource type="Script" uid="uid://dmkunh8xetibq" path="res://Main/dzien_licznik.gd" id="10_kf8jr"]
+[ext_resource type="Texture2D" uid="uid://tih4c2pxdp1l" path="res://Art/UI/accept_button.png" id="12_fayjp"]
 [ext_resource type="Texture2D" uid="uid://dp4dx0vpw14wt" path="res://Art/pixil-frame-0 - 2025-05-24T120819.440.png" id="12_kmnsd"]
+[ext_resource type="Texture2D" uid="uid://chid4tq6ejmaq" path="res://Art/UI/accept_button_pressed.png" id="13_j2iu7"]
+[ext_resource type="Texture2D" uid="uid://qr4o6wxx5odc" path="res://Art/UI/accept_button_hover.png" id="14_j4nmm"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_bor5n"]
 font_size = 32
 
-[sub_resource type="LabelSettings" id="LabelSettings_ps1la"]
-font_color = Color(0, 0, 0, 1)
-
-[node name="Main" type="Node2D"]
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_h5g1y")
 
 [node name="NPC" parent="." instance=ExtResource("6_u2i7p")]
-position = Vector2(-105, -261)
+position = Vector2(-105, -203)
 
-[node name="Pixil-frame-0-2025-05-24t120819_440" type="Sprite2D" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
-position = Vector2(579.444, 326.5)
-scale = Vector2(9.06944, 9.06944)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("12_kmnsd")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -77,72 +87,64 @@ script = ExtResource("2_wltqy")
 one_shot = true
 
 [node name="Magazyn_Button" type="TextureButton" parent="CanvasLayer"]
+texture_filter = 1
+custom_minimum_size = Vector2(128, 192)
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -40.0
-offset_top = -40.0
+offset_left = -134.0
+offset_top = -200.0
+offset_right = -6.0
+offset_bottom = -8.0
 grow_horizontal = 0
 grow_vertical = 0
-texture_normal = ExtResource("3_amygn")
+pivot_offset = Vector2(64, 96)
+texture_normal = ExtResource("8_r2ac1")
+texture_pressed = ExtResource("9_d3r6l")
+texture_hover = ExtResource("9_d3r6l")
+stretch_mode = 0
 script = ExtResource("4_ps1la")
-
-[node name="Label" type="Label" parent="CanvasLayer/Magazyn_Button"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -20.0
-offset_right = 20.0
-offset_bottom = 23.0
-grow_horizontal = 2
-text = "Magazyn"
-label_settings = SubResource("LabelSettings_ps1la")
 
 [node name="Control" type="TextureButton" parent="CanvasLayer"]
 texture_filter = 1
-custom_minimum_size = Vector2(120, 120)
+custom_minimum_size = Vector2(128, 128)
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -55.0
-offset_top = -8.0
-offset_right = -15.0
-offset_bottom = 32.0
+offset_left = -95.0
+offset_top = -48.0
+offset_right = 33.0
+offset_bottom = 80.0
 grow_horizontal = 2
 grow_vertical = 2
+pivot_offset = Vector2(64, 64)
 stretch_mode = 0
 script = ExtResource("5_6aewd")
 
 [node name="accept_button" type="TextureButton" parent="CanvasLayer"]
+texture_filter = 1
+custom_minimum_size = Vector2(192, 64)
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -133.0
-offset_top = -337.0
-offset_right = -5.0
-offset_bottom = -209.0
+offset_left = -195.0
+offset_top = -303.0
+offset_right = -3.0
+offset_bottom = -239.0
 grow_horizontal = 0
 grow_vertical = 0
-texture_normal = ExtResource("6_qg80j")
+pivot_offset = Vector2(96, 32)
+texture_normal = ExtResource("12_fayjp")
+texture_pressed = ExtResource("13_j2iu7")
+texture_hover = ExtResource("14_j4nmm")
+stretch_mode = 0
 script = ExtResource("6_hh5pf")
-
-[node name="Label" type="Label" parent="CanvasLayer/accept_button"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -20.0
-offset_right = 20.0
-offset_bottom = 23.0
-grow_horizontal = 2
-text = "accept"
 
 [node name="Timer" type="Timer" parent="CanvasLayer/accept_button"]
 wait_time = 1.5
