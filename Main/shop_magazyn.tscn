@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bh01dykrpth4o"]
+[gd_scene load_steps=6 format=3 uid="uid://bh01dykrpth4o"]
 
 [ext_resource type="Texture2D" uid="uid://dr4xufhyjgk2t" path="res://icon.svg" id="1_7o363"]
 [ext_resource type="Script" uid="uid://cndqmucc6qnt2" path="res://Main/shop_magazyn.gd" id="1_xlw5q"]
+[ext_resource type="Script" uid="uid://cneq0x2fomwd0" path="res://Main/dostawa_od_rządu.gd" id="3_6kdoj"]
+[ext_resource type="Texture2D" uid="uid://cfil5a87xiubf" path="res://Maro_ZdjęcieOG.png" id="4_27yh6"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xlw5q"]
 font_color = Color(0, 0, 0, 1)
@@ -14,6 +16,29 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_xlw5q")
+
+[node name="Back" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -64.0
+offset_right = 64.0
+offset_bottom = 128.0
+grow_horizontal = 2
+texture_normal = ExtResource("1_7o363")
+
+[node name="Label" type="Label" parent="Back"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Back"
+label_settings = SubResource("LabelSettings_xlw5q")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -45,31 +70,26 @@ theme_override_constants/separation = 50
 layout_mode = 2
 theme_override_constants/separation = 50
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="Dostawa Od Rządu" type="Control" parent="."]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -130.0
-offset_right = 130.0
-offset_bottom = 128.0
-grow_horizontal = 2
-theme_override_constants/separation = 500
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -151.0
+offset_top = -208.0
+offset_right = -111.0
+offset_bottom = -168.0
+grow_horizontal = 0
+grow_vertical = 0
+script = ExtResource("3_6kdoj")
 
-[node name="Back" type="TextureButton" parent="HBoxContainer"]
-layout_mode = 2
-texture_normal = ExtResource("1_7o363")
+[node name="TextureButton" type="TextureButton" parent="Dostawa Od Rządu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("4_27yh6")
 
-[node name="Label" type="Label" parent="HBoxContainer/Back"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -20.0
-offset_right = 20.0
-offset_bottom = 23.0
-grow_horizontal = 2
-text = "Back"
-label_settings = SubResource("LabelSettings_xlw5q")
-
-[connection signal="pressed" from="HBoxContainer/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Dostawa Od Rządu/TextureButton" to="Dostawa Od Rządu" method="_on_texture_button_pressed"]
