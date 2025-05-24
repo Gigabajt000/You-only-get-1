@@ -26,7 +26,7 @@ font_color = Color(0, 0, 0, 1)
 script = ExtResource("1_h5g1y")
 
 [node name="NPC" parent="." instance=ExtResource("6_u2i7p")]
-position = Vector2(-105, -261)
+position = Vector2(-105, -203)
 
 [node name="Pixil-frame-0-2025-05-24t120819_440" type="Sprite2D" parent="."]
 texture_filter = 1

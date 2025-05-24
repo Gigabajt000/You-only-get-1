@@ -27,6 +27,7 @@ var accept_button
 
 
 func _ready() -> void:
+	icon.texture = Global.Klient_icon
 	icon.scale = Vector2(0.7,0.7)
 	accept_button = get_node("/root/Main/CanvasLayer/accept_button")
 	
@@ -189,6 +190,7 @@ func female():
 	var genderimage_path = gender_path + str(gender) + "/icon/" + i + ".tres"
 	var o = ResourceLoader.load(genderimage_path)
 	image = o.icon
+	Global.Klient_icon = o.icon
 	icon.scale = Vector2(0.7,0.7)
 	var gendername_path = gender_path + str(gender) + "/name/" + n+ ".tres"
 	var j = 0
@@ -207,6 +209,7 @@ func male():
 	var genderimage_path = gender_path + str(gender) + "/icon/" + i + ".tres"
 	var o = ResourceLoader.load(genderimage_path)
 	image = o.icon
+	Global.Klient_icon = o.icon
 	icon.scale = Vector2(0.7,0.7)
 	var gendername_path = gender_path + str(gender) + "/name/" + n+ ".tres"
 	var j = 0
