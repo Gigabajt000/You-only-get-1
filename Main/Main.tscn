@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://66h1j5trsblh"]
+[gd_scene load_steps=20 format=3 uid="uid://66h1j5trsblh"]
 
 [ext_resource type="PackedScene" uid="uid://baeffjqt2pip1" path="res://UI/Pause Menu/pause_menu.tscn" id="1_83ytx"]
 [ext_resource type="Script" uid="uid://bdstl6kju6cnu" path="res://Main/main.gd" id="1_h5g1y"]
@@ -13,12 +13,11 @@
 [ext_resource type="PackedScene" uid="uid://bk1wd1ukqspqx" path="res://NPC's/NPC.tscn" id="6_u2i7p"]
 [ext_resource type="Texture2D" uid="uid://173lpstksulq" path="res://Art/UI/warehouse_button.png" id="8_r2ac1"]
 [ext_resource type="Texture2D" uid="uid://cphntayxhsty3" path="res://Art/UI/warehouse_button_hover.png" id="9_d3r6l"]
-[ext_resource type="Script" path="res://Main/dzien_licznik.gd" id="10_kf8jr"]
+[ext_resource type="Script" uid="uid://dmkunh8xetibq" path="res://Main/dzien_licznik.gd" id="10_kf8jr"]
 [ext_resource type="Texture2D" uid="uid://tih4c2pxdp1l" path="res://Art/UI/accept_button.png" id="12_fayjp"]
 [ext_resource type="Texture2D" uid="uid://dp4dx0vpw14wt" path="res://Art/pixil-frame-0 - 2025-05-24T120819.440.png" id="12_kmnsd"]
 [ext_resource type="Texture2D" uid="uid://chid4tq6ejmaq" path="res://Art/UI/accept_button_pressed.png" id="13_j2iu7"]
 [ext_resource type="Texture2D" uid="uid://qr4o6wxx5odc" path="res://Art/UI/accept_button_hover.png" id="14_j4nmm"]
-[ext_resource type="Texture2D" uid="uid://duevshwleiqhm" path="res://Art/pixil-frame-0 - 2025-05-24T133954.230.png" id="19_d3r6l"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_bor5n"]
 font_size = 32
@@ -163,7 +162,6 @@ visible = false
 [node name="Pause Menu Settings" parent="CanvasLayer" instance=ExtResource("2_amygn")]
 visible = false
 
-<<<<<<< HEAD
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer2"]
@@ -281,14 +279,6 @@ visible = false
 
 [node name="Pause Menu Settings" parent="CanvasLayer2" instance=ExtResource("2_amygn")]
 visible = false
-=======
-[node name="Pixil-frame-0-2025-05-24t133954_230" type="Sprite2D" parent="."]
-z_index = -1
-texture_filter = 1
-position = Vector2(576, 326)
-scale = Vector2(9.069, 9.069)
-texture = ExtResource("19_d3r6l")
->>>>>>> 00b0688890c73926d0487fa41f31d09d002a0f99
 
 [connection signal="timeout" from="CanvasLayer/Label2/Timer" to="CanvasLayer/Label2" method="_on_timer_timeout"]
 [connection signal="pressed" from="CanvasLayer/Magazyn_Button" to="CanvasLayer/Magazyn_Button" method="_on_pressed"]
