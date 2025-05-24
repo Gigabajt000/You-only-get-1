@@ -4,27 +4,27 @@
 
 [resource]
 script = ExtResource("1_bo2n6")
-Dialog = "“My wife threw me out of the house, give me something I can give her to let me back in..”"
+Dialog = "“Something to throw when I lose at bingo again.”"
 Specjalne = false
 Bezdomny = false
 Items = {
-"alkohol": 1.5,
-"chleb": -0.1,
+"alkohol": 1.0,
+"chleb": 0.4,
 "fajki": 1.0,
-"farba": -0.2,
+"farba": 0.4,
 "gazeta": 0.2,
-"gwoździe": -0.5,
-"jabłko": -0.1,
-"kiełbasa": 0.4,
-"klej": -0.5,
-"klucz hydrauliczny": -1.0,
-"konserwa": 0.0,
-"książka marola karksa": 0.6,
+"gwoździe": -0.2,
+"jabłko": 1.0,
+"kiełbasa": 0.3,
+"klej": -0.7,
+"klucz hydrauliczny": 0.3,
+"konserwa": 0.9,
+"książka marola karksa": 0.2,
 "mleko": -0.8,
-"ocet": -2.0,
-"papier toaletowy": 0.2,
-"pasta do zębów": -0.7,
-"szare mydło": -0.5,
-"szczototka do kibla": -2.0,
-"ziemniak": -2.0
+"ocet": -0.8,
+"papier toaletowy": 0.1,
+"pasta do zębów": -0.6,
+"szare mydło": -0.2,
+"szczototka do kibla": -0.5,
+"ziemniak": 0.5
 }
