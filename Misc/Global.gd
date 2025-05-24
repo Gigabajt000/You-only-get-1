@@ -43,7 +43,7 @@ var Dostawa : bool
 
 func _ready() -> void:
 	deafultowa_ilosc = 5
-	Rzadowa_Dostawa(5)
+	Rzadowa_Dostawa(7)
 
 func Rzadowa_Dostawa(x):
 	for i in range(0,x):

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" load_steps=3 format=3 uid="uid://bwvf1yx8hydiy"]
 
-[ext_resource type="Texture2D" uid="uid://cfil5a87xiubf" path="res://Maro_ZdjęcieOG.png" id="1_usjp2"]
+[ext_resource type="Texture2D" uid="uid://b5aky1goqjonq" path="res://Art/Itemki/gwozdzie.png" id="1_usjp2"]
 [ext_resource type="Script" uid="uid://yofnken1ay5c" path="res://Recourses/Products/Product.gd" id="1_x0qaj"]
 
 [resource]

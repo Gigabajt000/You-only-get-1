@@ -22,7 +22,7 @@ Items = {
 "ocet": -0.7,
 "papier toaletowy": 0.5,
 "pasta do zębów": -0.2,
-"szare mydło": -0.7,
+"szare mydło": 0.0,
 "szczototka do kibla": 0.3,
 "ziemniak": 0.4
 }
