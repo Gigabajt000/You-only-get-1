@@ -1,7 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://bk1wd1ukqspqx"]
+[gd_scene load_steps=10 format=3 uid="uid://bk1wd1ukqspqx"]
 
 [ext_resource type="Script" uid="uid://c4r5eq7pdidem" path="res://NPC's/npc.gd" id="1_4g4tx"]
 [ext_resource type="Texture2D" uid="uid://cfil5a87xiubf" path="res://Maro_ZdjęcieOG.png" id="2_4g4tx"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_4g4tx"]
 
 [sub_resource type="Animation" id="Animation_wfqlo"]
 length = 0.001
@@ -178,10 +180,12 @@ offset_bottom = 620.0
 color = Color(0.154876, 0.154876, 0.154876, 1)
 
 [node name="Label" type="Label" parent="CanvasLayer"]
-offset_left = 255.0
+offset_left = 145.0
 offset_top = 471.0
-offset_right = 881.0
+offset_right = 1004.0
 offset_bottom = 602.0
+label_settings = SubResource("LabelSettings_4g4tx")
+autowrap_mode = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../Node2D/Sprite2D")
