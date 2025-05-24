@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://cj51b85pcf145" path="res://Main/week_end.gd" id="1_kpuyn"]
 [ext_resource type="Texture2D" uid="uid://bqb4bgi3clh12" path="res://Art/UI/obwódka.png" id="2_kpuyn"]
 [ext_resource type="Texture2D" uid="uid://bpjux1batlcjc" path="res://Art/UI/plajstik.png" id="3_m2mpv"]
-[ext_resource type="Script" path="res://Main/label.gd" id="4_g0hrr"]
+[ext_resource type="Script" uid="uid://djwqgfx1eddcg" path="res://Main/label.gd" id="4_g0hrr"]
 [ext_resource type="Texture2D" uid="uid://cfil5a87xiubf" path="res://Maro_ZdjęcieOG.png" id="4_u5pt0"]
 [ext_resource type="Script" uid="uid://cw2j532esa3w" path="res://Main/dostawa_rządowa.gd" id="5_1jwi6"]
 [ext_resource type="Script" uid="uid://dsepjrdnevdco" path="res://Main/zarobiona_kasa.gd" id="5_ic5xn"]
@@ -67,16 +67,30 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_kpuyn")
 
-[node name="Kalendarz" type="Sprite2D" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
-position = Vector2(576, 324)
-scale = Vector2(4.5, 5.06)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_jlrc6")
 
-[node name="Plajstik" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 1, 0.0666667)
-position = Vector2(576, 567)
-scale = Vector2(4.5, 5.06)
+[node name="TextureRect2" type="TextureRect" parent="."]
+self_modulate = Color(1, 1, 1, 0.121569)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -577.0
+offset_top = -116.0
+offset_right = 577.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 0
 texture = ExtResource("3_m2mpv")
 
 [node name="Label" type="Label" parent="."]
@@ -86,10 +100,10 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -94.0
-offset_top = 71.0
-offset_right = -29.0
-offset_bottom = 116.0
+offset_left = -89.0
+offset_top = 70.0
+offset_right = -24.0
+offset_bottom = 115.0
 grow_horizontal = 0
 grow_vertical = 2
 text = "dfgz"
@@ -103,10 +117,10 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -163.0
-offset_top = 71.0
-offset_right = -98.0
-offset_bottom = 116.0
+offset_left = -179.0
+offset_top = 70.0
+offset_right = -114.0
+offset_bottom = 115.0
 grow_horizontal = 0
 grow_vertical = 2
 text = "dfgz"
@@ -129,6 +143,7 @@ grow_vertical = 2
 tooltip_text = "Pay 20 Reputation for additional government supplies"
 texture_normal = ExtResource("4_u5pt0")
 script = ExtResource("5_1jwi6")
+metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="Dostawa_Rządowa"]
 layout_mode = 1
@@ -141,6 +156,7 @@ offset_bottom = 23.0
 grow_horizontal = 2
 text = "Bonus Supplies"
 label_settings = SubResource("LabelSettings_g0hrr")
+metadata/_edit_use_anchors_ = true
 
 [node name="Next_Day" type="TextureButton" parent="."]
 layout_mode = 1
@@ -157,6 +173,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("4_u5pt0")
 script = ExtResource("6_1jwi6")
+metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="Next_Day"]
 layout_mode = 1
