@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://ccs8hafnc58wy"]
+[gd_scene load_steps=7 format=3 uid="uid://ccs8hafnc58wy"]
 
 [ext_resource type="Script" uid="uid://frhse62uc8i5" path="res://UI/Credits/credits.gd" id="1_n4oh0"]
 [ext_resource type="Texture2D" uid="uid://fb028kgu734v" path="res://Art/UI/Menu Buttons/Back/back_idle.png" id="2_4i5kg"]
+[ext_resource type="FontFile" uid="uid://dqc18vmk7m5o3" path="res://Misc/Orange Kid.otf" id="2_n4oh0"]
 [ext_resource type="Script" uid="uid://bxy3unsqxrujp" path="res://UI/button.gd" id="3_gjm8c"]
 [ext_resource type="Texture2D" uid="uid://c1fdb5vxympc2" path="res://Art/UI/Menu Buttons/Back/back_pressed.png" id="3_n4oh0"]
 [ext_resource type="Texture2D" uid="uid://pxkj7ssd2r7v" path="res://Art/UI/Menu Buttons/Back/back_hover.png" id="4_lfta3"]
@@ -16,18 +17,18 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_n4oh0")
 
-[node name="Label" type="RichTextLabel" parent="."]
+[node name="Label" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -285.5
 offset_right = 285.5
-offset_bottom = 154.0
+offset_bottom = 175.0
 grow_horizontal = 2
-theme_override_font_sizes/normal_font_size = 128
+theme_override_fonts/font = ExtResource("2_n4oh0")
+theme_override_font_sizes/font_size = 120
 text = "CREDITS"
-fit_content = true
 horizontal_alignment = 1
 
 [node name="back" type="TextureButton" parent="."]

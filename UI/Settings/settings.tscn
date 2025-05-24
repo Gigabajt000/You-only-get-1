@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bcjt7iyff2kjg"]
+[gd_scene load_steps=8 format=3 uid="uid://bcjt7iyff2kjg"]
 
+[ext_resource type="Theme" uid="uid://xu804sr430ul" path="res://Misc/ui.tres" id="1_v3ito"]
 [ext_resource type="Script" uid="uid://bj2gahfarupoh" path="res://UI/Settings/settings.gd" id="1_wnv0n"]
 [ext_resource type="Texture2D" uid="uid://w0gaoqxc6cqu" path="res://Art/UI/Menu Buttons/Back/back_idle2.png" id="2_eeom4"]
+[ext_resource type="FontFile" uid="uid://dqc18vmk7m5o3" path="res://Misc/Orange Kid.otf" id="2_hfoeg"]
 [ext_resource type="Script" uid="uid://bxy3unsqxrujp" path="res://UI/button.gd" id="3_6ukun"]
 [ext_resource type="Texture2D" uid="uid://64k13nt8fo0s" path="res://Art/UI/Menu Buttons/Back/back_pressed2.png" id="3_hfoeg"]
 [ext_resource type="Texture2D" uid="uid://cbixvw6e64d65" path="res://Art/UI/Menu Buttons/Back/back_hover2.png" id="4_wnv0n"]
@@ -14,6 +16,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_v3ito")
 script = ExtResource("1_wnv0n")
 
 [node name="MarginContainer2" type="MarginContainer" parent="."]
@@ -113,7 +116,7 @@ theme_override_constants/separation = 102
 [node name="Label2" type="Label" parent="MarginContainer3/VBoxContainer2/HBoxContainer2"]
 texture_filter = 1
 layout_mode = 2
-text = "fullscreen mode"
+text = "Fullscreen mode"
 
 [node name="fullscreen" type="OptionButton" parent="MarginContainer3/VBoxContainer2/HBoxContainer2"]
 texture_filter = 1
@@ -129,18 +132,19 @@ popup/item_1/id = 1
 popup/item_2/text = "Winowed Borderless"
 popup/item_2/id = 2
 
-[node name="Label" type="RichTextLabel" parent="."]
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -285.5
-offset_right = 285.5
-offset_bottom = 154.0
+offset_left = -219.0
+offset_right = 220.0
+offset_bottom = 145.0
 grow_horizontal = 2
-theme_override_font_sizes/normal_font_size = 100
-text = "SETTINGS"
-fit_content = true
+theme_override_fonts/font = ExtResource("2_hfoeg")
+theme_override_font_sizes/font_size = 120
+text = "OPTIONS"
 horizontal_alignment = 1
 
 [node name="back" type="TextureButton" parent="."]
