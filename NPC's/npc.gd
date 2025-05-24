@@ -87,7 +87,7 @@ func losowanie():
 
 func random_kategoria():
 	kat_path = "res://NPC's/Dialog/Kategoria/"
-	var kat = randi_range(0,3)
+	var kat = randi_range(0,4)
 	kat = str(kat)
 	#print(kat)
 	kat_path = kat_path+ kat + ".tres"
@@ -100,7 +100,7 @@ func random_kategoria():
 func random_podkategoria():
 	podkat_path = "res://NPC's/Dialog/Podkategorie"
 	#range musi byc powyzej 1 (np: od 2 do 6)
-	var pkat = randi_range(2,6)
+	var pkat = randi_range(2,5)
 	pkat = str(pkat)
 	podkat_path = podkat_path+"/"+name_kat+"/"+pkat+".tres"
 	#print(podkat_path)

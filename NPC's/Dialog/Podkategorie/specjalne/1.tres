@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://cc8ps0p4f3m04"]
+
+[ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_cilc7"]
+
+[resource]
+script = ExtResource("1_cilc7")
+Dialog = "specjal1"
+Items = {
+"alkohol": 0.8,
+"chleb": 1.0,
+"fajki": 0.5,
+"farba": -1.0,
+"gazeta": -0.7,
+"gwoździe": -1.0,
+"jabłko": 1.0,
+"kiełbasa": 1.0,
+"klej": -0.7,
+"klucz hydrauliczny": -1.0,
+"konserwa": 1.0,
+"książka marola karksa": -1.0,
+"mleko": 0.3,
+"ocet": -0.3,
+"papier toaletowy": -0.3,
+"pasta do zębów": 0.0,
+"szare mydło": 0.3,
+"szczototka do kibla": -0.5,
+"ziemniak": 1.0
+}
