@@ -40,7 +40,7 @@ var Dostawa : bool
 
 
 func _ready() -> void:
-	Rzadowa_Dostawa(10)
+	Rzadowa_Dostawa(5)
 
 func Rzadowa_Dostawa(x):
 	for i in range(0,x):
