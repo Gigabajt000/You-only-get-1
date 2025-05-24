@@ -5,6 +5,8 @@
 [resource]
 script = ExtResource("1_iholm")
 Dialog = "\"I need a gift. Something between ‘I tried’ and ‘I found this on the floor.’\""
+Specjalne = false
+Bezdomny = false
 Items = {
 "alkohol": 1.0,
 "chleb": -0.3,

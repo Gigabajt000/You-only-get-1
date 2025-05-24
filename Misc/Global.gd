@@ -41,8 +41,8 @@ var Klient : int = 0
 var Dzien : int 
 var Dostawa : bool
 #tutorial and End--------------------------------------------------------------------------
-var Play_Tutorial: bool = true
-var Play_End: bool = false
+var Play_Tutorial: bool = false
+var Play_End: bool = true
 
 func _ready() -> void:
 	deafultowa_ilosc = 5

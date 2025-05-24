@@ -6,7 +6,7 @@
 script = ExtResource("1_essux")
 Dialog = "“I think the tomatoes are plotting. Need a weapon.”"
 Specjalne = false
-Bezdomny = true
+Bezdomny = false
 Items = {
 "alkohol": 1.0,
 "chleb": -1.0,

@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_54mjl")
-Dialog = "Come With, Comrade"
+Dialog = "Come With Me, Comrade"
 Specjalne = false
 Bezdomny = false
 Items = {

@@ -5,6 +5,8 @@
 [resource]
 script = ExtResource("1_ictip")
 Dialog = "\"I’m looking for something to share with a comrade. Or bribe him.\""
+Specjalne = false
+Bezdomny = false
 Items = {
 "alkohol": 1.0,
 "chleb": -0.2,
