@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=18 format=3 uid="uid://66h1j5trsblh"]
+=======
+[gd_scene load_steps=20 format=3 uid="uid://66h1j5trsblh"]
+>>>>>>> parent of 50d4eb0 (grapa ice)
 
 [ext_resource type="PackedScene" uid="uid://baeffjqt2pip1" path="res://UI/Pause Menu/pause_menu.tscn" id="1_83ytx"]
 [ext_resource type="Script" uid="uid://bdstl6kju6cnu" path="res://Main/main.gd" id="1_h5g1y"]
@@ -13,8 +17,18 @@
 [ext_resource type="Script" uid="uid://b1b1cbubo5op8" path="res://Main/accept_button.gd" id="6_hh5pf"]
 [ext_resource type="Texture2D" uid="uid://dr4xufhyjgk2t" path="res://icon.svg" id="6_qg80j"]
 [ext_resource type="PackedScene" uid="uid://bk1wd1ukqspqx" path="res://NPC's/NPC.tscn" id="6_u2i7p"]
+<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://dmkunh8xetibq" path="res://Main/dzien_licznik.gd" id="10_kf8jr"]
 [ext_resource type="Texture2D" uid="uid://dp4dx0vpw14wt" path="res://Art/pixil-frame-0 - 2025-05-24T120819.440.png" id="12_kmnsd"]
+=======
+[ext_resource type="Texture2D" uid="uid://173lpstksulq" path="res://Art/UI/warehouse_button.png" id="8_r2ac1"]
+[ext_resource type="Texture2D" uid="uid://cphntayxhsty3" path="res://Art/UI/warehouse_button_hover.png" id="9_d3r6l"]
+[ext_resource type="Script" uid="uid://dmkunh8xetibq" path="res://Main/dzien_licznik.gd" id="10_kf8jr"]
+[ext_resource type="Texture2D" uid="uid://tih4c2pxdp1l" path="res://Art/UI/accept_button.png" id="12_fayjp"]
+[ext_resource type="Texture2D" uid="uid://dp4dx0vpw14wt" path="res://Art/pixil-frame-0 - 2025-05-24T120819.440.png" id="12_kmnsd"]
+[ext_resource type="Texture2D" uid="uid://chid4tq6ejmaq" path="res://Art/UI/accept_button_pressed.png" id="13_j2iu7"]
+[ext_resource type="Texture2D" uid="uid://qr4o6wxx5odc" path="res://Art/UI/accept_button_hover.png" id="14_j4nmm"]
+>>>>>>> parent of 50d4eb0 (grapa ice)
 
 [sub_resource type="LabelSettings" id="LabelSettings_bor5n"]
 font_size = 32
