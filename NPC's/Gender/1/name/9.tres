@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="name" load_steps=2 format=3 uid="uid://tta1yveje2un"]
+
+[ext_resource type="Script" uid="uid://nlwsptc1bsm6" path="res://NPC's/Gender/0/name/!.gd" id="1_ikphv"]
+
+[resource]
+script = ExtResource("1_ikphv")
+name = "Grigoriy Braunov: "
+metadata/_custom_type_script = "uid://nlwsptc1bsm6"
