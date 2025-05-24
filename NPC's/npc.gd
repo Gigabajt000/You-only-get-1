@@ -3,10 +3,18 @@ extends CharacterBody2D
 var kat_path = "res://NPC's/Dialog/Kategoria/"
 var podkat_path = "res://NPC's/Dialog/Podkategorie"
 
+var gender_path = "res://NPC's/Gender/"
+
 var kategoria : Kategoria
 var podkategoria : dialog
 
-var k = "i"
+var image
+var imie
+
+var gender
+
+var k 
+
 var name_kat = 0 
 
 var numer_klienta : int
@@ -14,6 +22,7 @@ var numer_klienta : int
 var accept_button
 
 @export var label : Label
+@export var icon : Sprite2D
 
 
 func _ready() -> void:
@@ -105,6 +114,7 @@ func checkItem():
 func losowanie():
 	if Global.Klient < 5:
 		$AnimationPlayer.play("przyjście")
+		choseGender()
 		random_kategoria()
 		random_podkategoria()
 		
@@ -138,6 +148,52 @@ func random_podkategoria():
 			random_podkategoria() 
 	Global.klient_res = podkategoria
 	
+
+# if Global.tutorial = jedna postac 
+#POSTACIE-------------------------------------------------------------------
+
+func choseGender():
+	if Global.Play_Tutorial == true: 
+		image = "res://NPC's/Gender/1/3.png "
+		imie = "Michajov Pyckov"
+		#print(image,imie)
+	else :
+		gender = randi_range(0,1)
+	#0=kobieta 1=facet
+		if gender == 0:
+			female()
+		else:
+			male()
 	
-	
-	
+
+func female():
+	gender_path = "res://NPC's/Gender/"
+	#name
+	var n = randi_range(1,4)
+	n = str(n)
+	#icon 
+	var  i = randi_range(1,2)
+	i = str(i)
+	var genderimage_path = gender_path + str(gender) + "/icon/" + i + ".png"
+	image = genderimage_path
+	var gendername_path = gender_path + str(gender) + "/name/" + n+ ".tres"
+	var j = 0
+	j = ResourceLoader.load(gendername_path)
+	imie = j.name
+	print(image," " ,imie)
+
+func male():
+	gender_path = "res://NPC's/Gender/"
+	#name
+	var n = randi_range(1,4)
+	n = str(n)
+	#icon
+	var  i = randi_range(1,5)
+	i = str(i)
+	var genderimage_path = gender_path + str(gender) + "/icon/" + i + ".png"
+	image = genderimage_path
+	var gendername_path = gender_path + str(gender) + "/name/" + n+ ".tres"
+	var j = 0
+	j = ResourceLoader.load(gendername_path)
+	imie = j.name
+	print(image," " ,imie)

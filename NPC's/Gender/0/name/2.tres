@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="name" load_steps=2 format=3 uid="uid://dl3esrhxk5o57"]
+
+[ext_resource type="Script" uid="uid://nlwsptc1bsm6" path="res://NPC's/Gender/0/name/!.gd" id="1_aqkap"]
+
+[resource]
+script = ExtResource("1_aqkap")
+name = "Dorota Hassenko"
+metadata/_custom_type_script = "uid://nlwsptc1bsm6"
