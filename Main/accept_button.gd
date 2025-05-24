@@ -3,8 +3,7 @@ extends TextureButton
 #Podanie Przedmiotu Klientowi
 func _on_pressed() -> void:
 	#Animacja Podania Przedmiotu
-	if Global.Przedmiot != "":
-		Global.Podany_Przedmiot = Global.Przedmiot
-		Global.Przedmiot = ""
-		Global.podany = true
-		Global.Start_Timer = true
+	Global.Podany_Przedmiot = Global.Przedmiot
+	Global.Przedmiot = ""
+	Global.podany = true
+	Global.Start_Timer = true

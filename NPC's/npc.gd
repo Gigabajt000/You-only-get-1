@@ -25,7 +25,11 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if Global.podany == true:
 		Global.podany = false
-		checkItem()
+		if Global.Podany_Przedmiot != "":
+			checkItem()
+		else:
+			Global.punkty_po_podaniu = -1
+			Global.Vdolce += Global.punkty_po_podaniu * 10
 		$AnimationPlayer.play("odejscie")
 
 	if $AnimationPlayer.is_playing() == false:
