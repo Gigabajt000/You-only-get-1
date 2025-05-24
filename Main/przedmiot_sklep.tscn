@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://6cx08pd2ju8l"]
+[gd_scene load_steps=4 format=3 uid="uid://6cx08pd2ju8l"]
 
+[ext_resource type="Theme" uid="uid://dw53pyo4y180v" path="res://Misc/popup.tres" id="1_uo4qn"]
 [ext_resource type="Texture2D" uid="uid://dr4xufhyjgk2t" path="res://icon.svg" id="1_v3sqd"]
 [ext_resource type="Script" uid="uid://c5h42idfktyvb" path="res://Main/przedmiot_sklep.gd" id="2_ea3s0"]
 
@@ -13,6 +14,7 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(5, 5)
 size_flags_stretch_ratio = 0.0
+theme = ExtResource("1_uo4qn")
 texture_normal = ExtResource("1_v3sqd")
 stretch_mode = 0
 script = ExtResource("2_ea3s0")
