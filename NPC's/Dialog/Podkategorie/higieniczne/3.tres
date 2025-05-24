@@ -5,6 +5,8 @@
 [resource]
 script = ExtResource("1_drcv5")
 Dialog = "\"I need something to scrub reality away.\""
+Specjalne = false
+Bezdomny = true
 Items = {
 "alkohol": 1.0,
 "chleb": -0.3,

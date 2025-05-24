@@ -36,7 +36,11 @@ func _process(delta: float) -> void:
 		else:
 			Global.Dodatkowy_Hajs = 1
 		
-		if Global.Podany_Przedmiot != "":
+		if Global.Play_Tutorial == true and Global.Podany_Przedmiot != "":
+			checkItem()
+		elif Global.Play_Tutorial == true:
+			pass
+		elif Global.Podany_Przedmiot != "":
 			checkItem()
 		elif Global.Podany_Przedmiot == "" and podkategoria.Bezdomny == true:
 			Global.punkty_po_podaniu = 0.0
@@ -50,7 +54,13 @@ func _process(delta: float) -> void:
 		
 		
 		#Komentarz Koncowy
-		if podkategoria.Bezdomny == true and Global.punkty_po_podaniu == 0.5:
+		if Global.Play_Tutorial == true and Global.punkty_po_podaniu == 1.0:
+			label.text = "Oh... thanks! I'll Gladly Take This"
+			Global.Play_Tutorial = false
+		elif Global.Play_Tutorial == true:
+			label.text = "See You Around, and Beaware... We are Watching You"
+			Global.Play_Tutorial = false
+		elif podkategoria.Bezdomny == true and Global.punkty_po_podaniu == 0.5:
 			label.text = "Man... I just got a spaceship... but I’m too drunk to fly."
 		elif podkategoria.Bezdomny == true and Global.punkty_po_podaniu == 0.0:
 			label.text = "Man... Really? Huh... thats life"
@@ -113,16 +123,19 @@ func random_kategoria():
 	#print(name_kat)
 
 func random_podkategoria():
-	podkat_path = "res://NPC's/Dialog/Podkategorie"
-	#range musi byc powyzej 1 (np: od 2 do 6)
-	var pkat = randi_range(2,5)
-	pkat = str(pkat)
-	podkat_path = podkat_path+"/"+name_kat+"/"+pkat+".tres"
-	#print(podkat_path)
-	podkategoria = ResourceLoader.load(podkat_path)
+	if Global.Play_Tutorial == true:
+		podkategoria = ResourceLoader.load("res://NPC's/Dialog/Kategoria/Tutorial.tres")
+	else:
+		podkat_path = "res://NPC's/Dialog/Podkategorie"
+		#range musi byc powyzej 1 (np: od 2 do 6)
+		var pkat = randi_range(2,5)
+		pkat = str(pkat)
+		podkat_path = podkat_path+"/"+name_kat+"/"+pkat+".tres"
+		#print(podkat_path)
+		podkategoria = ResourceLoader.load(podkat_path)
 	
-	if podkategoria == null:
-		random_podkategoria() 
+		if podkategoria == null:
+			random_podkategoria() 
 	Global.klient_res = podkategoria
 	
 	
