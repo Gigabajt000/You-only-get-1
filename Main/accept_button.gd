@@ -7,7 +7,6 @@ func _ready() -> void:
 func _on_pressed() -> void:
 	#Animacja Podania Przedmiotu
 	if Global.Play_Tutorial == false:
-		print("NIGGA")
 		Global.klient_res = null
 		Global.Podany_Przedmiot = Global.Przedmiot
 		Global.Przedmiot = ""

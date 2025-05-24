@@ -1,4 +1,4 @@
 extends TextureProgressBar
 
 func _process(delta: float) -> void:
-	value = Global.Vdolce
+	$TextureRect.position.x = Global.Vdolce + 75

@@ -8,8 +8,6 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if dzien != Global.Dzien:
 		dzien = Global.Dzien
+		Transition.transition()
+		await Transition.on_transition_finished
 		get_tree().change_scene_to_file("res://Main/week_end.tscn")
-
-
-func _on_timer_timeout() -> void:
-	pass # Replace with function body.
