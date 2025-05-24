@@ -33,14 +33,7 @@ func _process(delta: float) -> void:
 			Global.punkty_po_podaniu = -1
 			Global.Vdolce += Global.punkty_po_podaniu * 10
 		$AnimationPlayer.play("odejscie")
-		numer_klienta += 1
-		if numer_klienta == 5:
-			Global.Dzien +=1
-			numer_klienta =0 
-			Global.Dostawa = true
-		print("numer_kienta:",numer_klienta)
-		print("Dostawa:",Global.Dostawa)
-		print("Dzien:",Global.Dzien)
+		
 		
 
 	if $AnimationPlayer.is_playing() == false:

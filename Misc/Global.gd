@@ -34,6 +34,7 @@ var klient_res : Resource
 
 
 #system dni---------------------------------------------------------------------
+var Klient : int = 0
 var Dzien : int 
 var Dostawa : bool
 
