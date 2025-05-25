@@ -1,7 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://mjmxpufdfxck"]
+[gd_scene load_steps=9 format=3 uid="uid://mjmxpufdfxck"]
 
 [ext_resource type="Script" uid="uid://bcp3ey6sewvqr" path="res://Audio/audio_manager.gd" id="1_lswcb"]
 [ext_resource type="AudioStream" uid="uid://c0mwsog3uw6nv" path="res://Audio/SFX/button_hover.wav" id="2_shxvs"]
+[ext_resource type="AudioStream" uid="uid://cqckroy3lqtmy" path="res://Audio/SFX/menu button down.mp3" id="3_dco0l"]
+[ext_resource type="AudioStream" uid="uid://bhrs6023dkiu" path="res://Audio/SFX/menu button up.mp3" id="4_bfoa7"]
+[ext_resource type="AudioStream" uid="uid://dfwenj7ha72ng" path="res://Audio/Music/Soviet March _ Royalty Free Russian Orchestral Music.mp3" id="5_bfoa7"]
 [ext_resource type="AudioStream" uid="uid://c070n2k6okja2" path="res://Audio/SFX/buy1.mp3" id="5_rap6d"]
 [ext_resource type="AudioStream" uid="uid://lseiwku78amy" path="res://Audio/SFX/buy2.mp3" id="6_kuol1"]
 [ext_resource type="AudioStream" uid="uid://cnx7uj78jypjx" path="res://Audio/SFX/buy3.mp3" id="7_7ko5i"]
@@ -11,6 +14,19 @@ script = ExtResource("1_lswcb")
 
 [node name="ButtonHover" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_shxvs")
+
+[node name="MenuButtonDown" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_dco0l")
+
+[node name="MenuButtonUp" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_bfoa7")
+
+[node name="SovietMarchRoyaltyFreeRussianOrchestralMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_bfoa7")
+volume_db = -20.0
+autoplay = true
+bus = &"Music"
+parameters/looping = false
 
 [node name="Buy" type="Node" parent="."]
 
