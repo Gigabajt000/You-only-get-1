@@ -5,6 +5,9 @@
 [resource]
 script = ExtResource("1_64w11")
 Dialog = "\"Anything to chew on that won't chew back?\""
+Specjalne = false
+Bezdomny = false
+Oficer = false
 Items = {
 "alkohol": 0.8,
 "chleb": 1.0,
@@ -18,7 +21,7 @@ Items = {
 "klucz hydrauliczny": -1.0,
 "konserwa": 1.0,
 "książka marola karksa": -1.0,
-"mleko": 0.3,
+"mleko": 0.4,
 "ocet": -0.3,
 "papier toaletowy": -0.3,
 "pasta do zębów": 0.0,

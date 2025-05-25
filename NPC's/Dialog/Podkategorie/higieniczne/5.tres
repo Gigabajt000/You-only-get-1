@@ -4,27 +4,28 @@
 
 [resource]
 script = ExtResource("1_g8i85")
-Dialog = "“I think the tomatoes are plotting. Need a weapon.”"
+Dialog = ""
 Specjalne = false
 Bezdomny = false
+Oficer = false
 Items = {
-"alkohol": 1.0,
-"chleb": -1.0,
-"fajki": 1.0,
-"farba": 0.6,
-"gazeta": -0.3,
-"gwoździe": 0.6,
-"jabłko": -1.0,
-"kiełbasa": -1.0,
-"klej": 0.5,
-"klucz hydrauliczny": 1.0,
-"konserwa": 0.3,
-"książka marola karksa": -0.8,
-"mleko": -0.7,
-"ocet": -0.7,
-"papier toaletowy": -0.4,
-"pasta do zębów": -0.4,
-"szare mydło": -0.7,
-"szczototka do kibla": 0.4,
-"ziemniak": -1.0
+"alkohol": 0.0,
+"chleb": 0.0,
+"fajki": 0.0,
+"farba": 0.0,
+"gazeta": 0.0,
+"gwoździe": 0.0,
+"jabłko": 0.0,
+"kiełbasa": 0.0,
+"klej": 0.0,
+"klucz hydrauliczny": 0.0,
+"konserwa": 0.0,
+"książka marola karksa": 0.0,
+"mleko": 0.0,
+"ocet": 0.0,
+"papier toaletowy": 0.0,
+"pasta do zębów": 0.0,
+"szare mydło": 0.0,
+"szczototka do kibla": 0.0,
+"ziemniak": 0.0
 }

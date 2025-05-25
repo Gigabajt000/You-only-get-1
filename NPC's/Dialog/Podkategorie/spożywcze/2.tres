@@ -5,6 +5,9 @@
 [resource]
 script = ExtResource("1_vu4us")
 Dialog = "\"My teacher says I can’t paint with bread again. Need something better.\""
+Specjalne = false
+Bezdomny = false
+Oficer = false
 Items = {
 "alkohol": 0.0,
 "chleb": -10.0,
@@ -14,15 +17,15 @@ Items = {
 "gwoździe": -1.0,
 "jabłko": -1.0,
 "kiełbasa": -1.0,
-"klej": -0.3,
+"klej": 0.3,
 "klucz hydrauliczny": -1.0,
 "konserwa": -1.0,
 "książka marola karksa": 0.7,
-"mleko": -1.0,
-"ocet": -1.0,
-"papier toaletowy": 0.8,
+"mleko": 0.2,
+"ocet": 0.1,
+"papier toaletowy": -0.8,
 "pasta do zębów": 0.2,
-"szare mydło": -1.0,
+"szare mydło": 0.4,
 "szczototka do kibla": 1.0,
-"ziemniak": 0.7
+"ziemniak": -1.0
 }

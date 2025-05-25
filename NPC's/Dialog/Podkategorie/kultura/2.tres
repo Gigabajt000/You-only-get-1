@@ -23,9 +23,9 @@ Items = {
 "książka marola karksa": 1.0,
 "mleko": -0.5,
 "ocet": -0.7,
-"papier toaletowy": -0.3,
+"papier toaletowy": 0.5,
 "pasta do zębów": -0.7,
 "szare mydło": -0.2,
 "szczototka do kibla": 0.3,
-"ziemniak": 0.3
+"ziemniak": 0.1
 }

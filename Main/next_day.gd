@@ -2,6 +2,7 @@ extends TextureButton
 
 
 func _on_pressed() -> void:
+	Global.Dostawa = true
 	Global.Zarobione_Pieniadze = 0
 	Global.Klient = 0
 	if Global.Dzien == 6:

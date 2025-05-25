@@ -4,28 +4,28 @@
 
 [resource]
 script = ExtResource("1_d7vb8")
-Dialog = "specjalne3"
+Dialog = ""
 Specjalne = true
 Bezdomny = false
 Oficer = false
 Items = {
-"alkohol": 1.0,
-"chleb": 0.4,
-"fajki": 1.0,
-"farba": -1.0,
-"gazeta": -1.0,
-"gwoździe": -1.0,
-"jabłko": 1.0,
-"kiełbasa": 0.3,
-"klej": -0.7,
-"klucz hydrauliczny": 0.6,
-"konserwa": 0.9,
-"książka marola karksa": -0.6,
-"mleko": -0.8,
-"ocet": -0.8,
-"papier toaletowy": -0.8,
-"pasta do zębów": -0.6,
-"szare mydło": -0.8,
-"szczototka do kibla": -0.5,
-"ziemniak": 1.0
+"alkohol": 0.0,
+"chleb": 0.0,
+"fajki": 0.0,
+"farba": 0.0,
+"gazeta": 0.0,
+"gwoździe": 0.0,
+"jabłko": 0.0,
+"kiełbasa": 0.0,
+"klej": 0.0,
+"klucz hydrauliczny": 0.0,
+"konserwa": 0.0,
+"książka marola karksa": 0.0,
+"mleko": 0.0,
+"ocet": 0.0,
+"papier toaletowy": 0.0,
+"pasta do zębów": 0.0,
+"szare mydło": 0.0,
+"szczototka do kibla": 0.0,
+"ziemniak": 0.0
 }

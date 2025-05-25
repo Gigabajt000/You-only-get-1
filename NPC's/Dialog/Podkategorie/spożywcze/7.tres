@@ -7,24 +7,25 @@ script = ExtResource("1_bo2n6")
 Dialog = "“Something to throw when I lose at bingo again.”"
 Specjalne = false
 Bezdomny = false
+Oficer = false
 Items = {
 "alkohol": 1.0,
 "chleb": 0.4,
 "fajki": 1.0,
-"farba": 0.4,
-"gazeta": 0.2,
-"gwoździe": -0.2,
-"jabłko": 1.0,
-"kiełbasa": 0.3,
+"farba": 1.0,
+"gazeta": -0.5,
+"gwoździe": 0.5,
+"jabłko": 0.4,
+"kiełbasa": -0.2,
 "klej": -0.7,
 "klucz hydrauliczny": 0.3,
-"konserwa": 0.9,
+"konserwa": -0.1,
 "książka marola karksa": 0.2,
 "mleko": -0.8,
 "ocet": -0.8,
-"papier toaletowy": 0.1,
+"papier toaletowy": 0.5,
 "pasta do zębów": -0.6,
 "szare mydło": -0.2,
 "szczototka do kibla": -0.5,
-"ziemniak": 0.5
+"ziemniak": -0.1
 }

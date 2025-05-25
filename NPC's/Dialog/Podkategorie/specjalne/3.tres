@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_1mcs2")
-Dialog = "specjalne2"
+Dialog = ""
 Specjalne = true
 Bezdomny = false
 Oficer = false

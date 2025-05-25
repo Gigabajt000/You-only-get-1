@@ -5,6 +5,9 @@
 [resource]
 script = ExtResource("1_ktxa3")
 Dialog = "\"Anything that makes you cleaner, or at least feel that way for a few minutes?\""
+Specjalne = false
+Bezdomny = false
+Oficer = false
 Items = {
 "alkohol": 1.0,
 "chleb": 0.0,
@@ -18,11 +21,11 @@ Items = {
 "klucz hydrauliczny": -1.0,
 "konserwa": -1.0,
 "książka marola karksa": -1.0,
-"mleko": 0.5,
-"ocet": 0.5,
+"mleko": 0.6,
+"ocet": 0.2,
 "papier toaletowy": 1.0,
 "pasta do zębów": 1.0,
 "szare mydło": 1.0,
 "szczototka do kibla": 0.7,
-"ziemniak": -1.0
+"ziemniak": -0.8
 }
