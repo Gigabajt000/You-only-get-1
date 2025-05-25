@@ -52,7 +52,16 @@ func _process(delta: float) -> void:
 			Global.Dodatkowy_Hajs = 2
 		else:
 			Global.Dodatkowy_Hajs = 1
-		
+			
+		if podkategoria.Oficer == true:
+			if len(Global.Lista) > 8:
+				Global.punkty_po_podaniu = 0.1 * len(Global.Lista)
+				Global.Vdolce += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
+				Global.Zarobione_Pieniadze += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
+			else:
+				Global.punkty_po_podaniu = -0.1 * (21 - len(Global.Lista))
+				Global.Vdolce += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
+				Global.Zarobione_Pieniadze += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
 		if Global.Play_Tutorial == true and Global.Podany_Przedmiot != "":
 			checkItem()
 		elif Global.Play_Tutorial == true:
@@ -71,7 +80,11 @@ func _process(delta: float) -> void:
 		
 		
 		#Komentarz Koncowy
-		if Global.Play_Tutorial == true and Global.punkty_po_podaniu == 1.0:
+		if podkategoria.Oficer == true and len(Global.Lista) > 8:
+			label.text = "It Seems You are Doing Well. Goodbye Comrade"
+		elif podkategoria.Oficer == true and len(Global.Lista) < 8:
+			label.text = "You THINK It's Just A Game Don't You! You Are On A Thin Ice You Know."
+		elif Global.Play_Tutorial == true and Global.punkty_po_podaniu == 1.0:
 			label.text = "Oh... thanks! I'll Gladly Take This"
 			Global.Play_Tutorial = false
 		elif Global.Play_Tutorial == true:
@@ -121,7 +134,6 @@ func checkItem():
 	
 func losowanie():
 	if Global.Klient <= 4:
-		print(Global.Klient)
 		Global.Klient += 1
 		$AnimationPlayer.play("przyjście")
 		choseGender()
@@ -129,6 +141,8 @@ func losowanie():
 		random_podkategoria()
 		icon.texture = image
 		icon.scale = Vector2(0.7,0.7)
+		if Global.Dzien == 3 and Global.Oficer_Played == false:
+			Global.Play_Oficer = true
 		
 		
 var kat
@@ -148,6 +162,10 @@ func random_podkategoria():
 	if Global.Play_Tutorial == true:
 		podkategoria = ResourceLoader.load("res://NPC's/Dialog/Kategoria/Tutorial.tres")
 		Global.klient_res = podkategoria
+	elif Global.Play_Oficer == true:
+		podkategoria = ResourceLoader.load("res://NPC's/Dialog/Kategoria/Oficer.tres")
+		Global.klient_res = podkategoria
+		Global.Oficer_Played = true
 	else:
 		podkat_path = "res://NPC's/Dialog/Podkategorie"
 		#range musi byc powyzej 1 (np: od 2 do 6)

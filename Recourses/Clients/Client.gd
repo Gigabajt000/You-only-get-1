@@ -6,6 +6,7 @@ class_name dialog
 
 @export var Specjalne: bool = false
 @export var Bezdomny: bool = false
+@export var Oficer: bool = false
 
 @export var Items = {"jabłko" : 0.0,
 "chleb" : 0.0,

@@ -47,6 +47,8 @@ var Dostawa : bool
 #tutorial and End--------------------------------------------------------------------------
 var Play_Tutorial: bool = true
 var Play_End: bool = false
+var Play_Oficer: bool = false
+var Oficer_Played: bool = false
 
 func _ready() -> void:
 	deafultowa_ilosc = 5

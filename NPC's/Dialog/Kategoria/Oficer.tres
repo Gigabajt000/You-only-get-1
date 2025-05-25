@@ -1,15 +1,15 @@
-[gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://cmfnqgntl67sl"]
+[gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://6byxqv10nrtk"]
 
-[ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_54mjl"]
+[ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_f17ys"]
 
 [resource]
-script = ExtResource("1_54mjl")
-Dialog = "Come With Me, Comrade"
+script = ExtResource("1_f17ys")
+Dialog = "Oficer"
 Specjalne = false
 Bezdomny = false
-Oficer = false
+Oficer = true
 Items = {
-"alkohol": 1.0,
+"alkohol": 0.0,
 "chleb": 0.0,
 "fajki": 0.0,
 "farba": 0.0,

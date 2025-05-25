@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://4phe338d6ahn"]
+[gd_scene load_steps=18 format=3 uid="uid://4phe338d6ahn"]
 
 [ext_resource type="Texture2D" uid="uid://btni8xltipiom" path="res://Art/UI/kalendarz_.png" id="1_jlrc6"]
 [ext_resource type="Script" uid="uid://cj51b85pcf145" path="res://Main/week_end.gd" id="1_kpuyn"]
@@ -8,7 +8,12 @@
 [ext_resource type="Texture2D" uid="uid://cfil5a87xiubf" path="res://Maro_ZdjęcieOG.png" id="4_u5pt0"]
 [ext_resource type="Script" uid="uid://cw2j532esa3w" path="res://Main/dostawa_rządowa.gd" id="5_1jwi6"]
 [ext_resource type="Script" uid="uid://dsepjrdnevdco" path="res://Main/zarobiona_kasa.gd" id="5_ic5xn"]
+[ext_resource type="Script" uid="uid://4qlokvgq6efo" path="res://Main/texture_rect_3.gd" id="5_m4n8e"]
 [ext_resource type="Script" uid="uid://b68t1smyqje5l" path="res://Main/next_day.gd" id="6_1jwi6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qe2ix"]
+font_size = 24
+font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_ic5xn"]
 font_size = 32
@@ -92,6 +97,26 @@ offset_bottom = -45.0
 grow_horizontal = 2
 grow_vertical = 0
 texture = ExtResource("3_m2mpv")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 516.0
+offset_top = 477.0
+offset_right = 613.0
+offset_bottom = 617.0
+tooltip_text = "He Will Chceck for Your Supplies, have some in stock!"
+texture = ExtResource("2_kpuyn")
+script = ExtResource("5_m4n8e")
+
+[node name="Label" type="Label" parent="TextureRect3"]
+layout_mode = 0
+offset_left = -140.0
+offset_top = 136.0
+offset_right = 257.0
+offset_bottom = 170.0
+text = "On Thurdsday Oficer Will Show Up"
+label_settings = SubResource("LabelSettings_qe2ix")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
