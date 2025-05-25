@@ -98,7 +98,7 @@ func _process(delta: float) -> void:
 			Global.Vdolce += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
 			Global.Zarobione_Pieniadze += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
 		else:
-			Global.punkty_po_podaniu = -0.8
+			Global.punkty_po_podaniu = -0.5
 			Global.Vdolce += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
 			Global.Zarobione_Pieniadze += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
 		$AnimationPlayer.play("odejscie")

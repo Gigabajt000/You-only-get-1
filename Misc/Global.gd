@@ -27,7 +27,7 @@ var Podany_Przedmiot: String = ""    #przedmiot podany klientowi
 var punkty_po_podaniu: float
 var podany = false
 #klient Resource---------------------------------------------------------------------
-var Vdolce: int = 0
+var Vdolce: int = 10
 var Start_Timer: bool = false        #start timer w labelu 
 
 #Dialog klienta---------------------------------------------------------------------
