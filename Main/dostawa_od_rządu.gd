@@ -8,6 +8,7 @@ func _process(delta: float) -> void:
 		visible = true
 
 func _on_pressed() -> void:
+	AudioManager.menu_button_down.play()
 	Global.Rzadowa_Dostawa(Global.ilosc_przedmiotow_od_rzadu)
 	visible = false
 	Global.Dostawa = false
