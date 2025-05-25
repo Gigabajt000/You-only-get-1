@@ -148,8 +148,7 @@ func _process(delta: float) -> void:
 #pokazuje accept button
 func ShowButton():
 	accept_button.visible = true
-	reveal_dialog(2.0)
-	#label.text = imie + ": " + podkategoria.Dialog
+	reveal_dialog(2.5)
 		
 func checkItem():
 	var przedmiot = Global.Podany_Przedmiot
