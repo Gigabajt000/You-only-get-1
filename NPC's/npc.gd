@@ -60,8 +60,12 @@ func _process(delta: float) -> void:
 			Global.Dodatkowy_Hajs = 2
 		else:
 			Global.Dodatkowy_Hajs = 1
-			
-		if podkategoria.Oficer == true:
+		
+		if Global.Play_Tutorial == true and Global.Podany_Przedmiot != "":
+			checkItem()
+		elif Global.Play_Tutorial == true:
+			pass
+		elif podkategoria.Oficer == true:
 			if len(Global.Lista) > 8:
 				Global.punkty_po_podaniu = 0.1 * len(Global.Lista)
 				Global.Vdolce += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
@@ -70,10 +74,6 @@ func _process(delta: float) -> void:
 				Global.punkty_po_podaniu = -0.1 * (21 - len(Global.Lista))
 				Global.Vdolce += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
 				Global.Zarobione_Pieniadze += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
-		elif Global.Play_Tutorial == true and Global.Podany_Przedmiot != "":
-			checkItem()
-		elif Global.Play_Tutorial == true:
-			pass
 		elif Global.Podany_Przedmiot != "":
 			checkItem()
 		elif Global.Podany_Przedmiot == "" and podkategoria.Bezdomny == true:
