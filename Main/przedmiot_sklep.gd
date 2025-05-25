@@ -28,6 +28,7 @@ func reset_tween():
 	tween = create_tween()
 
 func _on_mouse_entered():
+	AudioManager.button_hover.play()
 	reset_tween()
 	tween.set_trans(Tween.TRANS_CUBIC)
 	tween.tween_property(self, "scale", Vector2(1.2, 1.2), 0.05)

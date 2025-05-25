@@ -3,6 +3,7 @@ extends Control
 var dzien : int 
 
 func _ready() -> void:
+	AudioManager.find_and_connect_buttons(get_tree().root)
 	dzien = Global.Dzien
 
 func _process(delta: float) -> void:

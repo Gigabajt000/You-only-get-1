@@ -1,6 +1,6 @@
 extends AudioStreamPlayer
 
-@onready var gadanie: AudioStreamPlayer = $Gadanie
+@onready var button_hover: AudioStreamPlayer = $ButtonHover
 
 @onready var buy_1: AudioStreamPlayer = $Buy/Buy1
 @onready var buy_2: AudioStreamPlayer = $Buy/Buy2
@@ -15,3 +15,20 @@ func play_random_accept_sound():
 			buy_2.play()
 		2:
 			buy_3.play()
+
+func _ready():
+	# Optionally run this after the scene loads
+	find_and_connect_buttons(get_tree().root)
+
+func find_and_connect_buttons(node: Node):
+	for child in node.get_children():
+		if child is TextureButton:
+			# Avoid duplicate connections
+			if not child.is_connected("mouse_entered", Callable(self, "_on_button_hover")):
+				child.mouse_entered.connect(_on_button_hover)
+		# Recurse into children
+		find_and_connect_buttons(child)
+
+func _on_button_hover():
+	if button_hover and button_hover.stream:
+		button_hover.play()
