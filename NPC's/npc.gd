@@ -44,6 +44,13 @@ func _ready() -> void:
 	label.text = Global.Name + ": " + podkategoria.Dialog
 
 func _process(delta: float) -> void:
+	if Global.Play_Tutorial == true:
+		var tut_image = "res://NPC's/Gender/1/icon/3.tres"
+		var o = ResourceLoader.load(tut_image)
+		image = o.icon
+		icon.scale = Vector2(0.7,0.7)
+		imie = "Michajov Pyckov" 
+		icon.texture = o.icon
 	icon.scale = Vector2(0.7,0.7)
 	if Global.podany == true:
 		accept_button.visible = false
