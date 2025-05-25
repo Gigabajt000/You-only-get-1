@@ -33,6 +33,8 @@ func _process(delta: float) -> void:
 func _on_pressed() -> void:
 	if passs == false:
 		AudioManager.play_random_accept_sound()
+	else:
+		AudioManager.menu_button_down.play()
 	#Animacja Podania Przedmiotu
 	if Global.Play_Tutorial == false:
 		Global.klient_res = null

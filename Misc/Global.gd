@@ -20,7 +20,7 @@ var Przedmioty: Array = ["jabłko","chleb","kiełbasa","ziemniak","mleko","konse
 "szare mydło","pasta do zębów","szczototka do kibla","klucz hydrauliczny","klej","farba","gwoździe","gazeta",
 "książka marola karksa","alkohol","fajki"]
 var deafultowa_ilosc: int
-var ilosc_przedmiotow_od_rzadu: int = 5
+var ilosc_przedmiotow_od_rzadu: int = 4
 
 var Przedmiot: String = ""           #przedmiot na ladzie
 var Podany_Przedmiot: String = ""    #przedmiot podany klientowi
@@ -53,7 +53,7 @@ var Oficer_Played: bool = false
 var disable_buttons: bool = false
 
 func _ready() -> void:
-	deafultowa_ilosc = 5
+	deafultowa_ilosc = 4
 	Rzadowa_Dostawa(6)
 
 func _process(delta: float) -> void:

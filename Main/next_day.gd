@@ -2,6 +2,7 @@ extends TextureButton
 
 
 func _on_pressed() -> void:
+	AudioManager.menu_button_down.play()
 	Global.Dostawa = true
 	Global.Zarobione_Pieniadze = 0
 	Global.Klient = 0

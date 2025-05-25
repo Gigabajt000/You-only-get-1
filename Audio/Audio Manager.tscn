@@ -15,12 +15,15 @@ script = ExtResource("1_lswcb")
 [node name="ButtonHover" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_shxvs")
 volume_db = 10.0
+bus = &"SFX"
 
 [node name="MenuButtonDown" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_dco0l")
+bus = &"SFX"
 
 [node name="MenuButtonUp" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_bfoa7")
+bus = &"SFX"
 
 [node name="SovietMarchRoyaltyFreeRussianOrchestralMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_bfoa7")

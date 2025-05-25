@@ -16,6 +16,7 @@ func _process(delta: float) -> void:
 		texture_normal = null
 
 func _on_pressed() -> void:
+	AudioManager.menu_button_down.play()
 	Global.Lista.append(Global.Przedmiot)
 	Global.Przedmiot = ""
 	
