@@ -203,7 +203,9 @@ func choseGender():
 		var tut_image = "res://NPC's/Gender/1/icon/6.tres"
 		var o = ResourceLoader.load(tut_image)
 		image = o.icon
+		imie = "Homeles"
 		Global.Klient_icon = o.icon
+		Global.Name = imie
 	elif podkategoria.Oficer:
 		var tut_image = "res://NPC's/Gender/1/icon/7.tres"
 		var o = ResourceLoader.load(tut_image)
