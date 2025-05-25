@@ -28,11 +28,12 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -285.5
+offset_top = -19.0
 offset_right = 285.5
-offset_bottom = 175.0
+offset_bottom = 156.0
 grow_horizontal = 2
 theme_override_fonts/font = ExtResource("2_n4oh0")
-theme_override_font_sizes/font_size = 120
+theme_override_font_sizes/font_size = 100
 text = "CREDITS"
 horizontal_alignment = 1
 
@@ -60,20 +61,24 @@ stretch_mode = 0
 script = ExtResource("3_gjm8c")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -554.0
-offset_top = -194.0
-offset_right = 540.0
-offset_bottom = 231.0
+offset_left = -547.0
+offset_top = -233.0
+offset_right = 547.0
+offset_bottom = 233.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 theme = SubResource("Theme_30bwe")
+theme_override_fonts/bold_font = ExtResource("2_n4oh0")
+theme_override_font_sizes/normal_font_size = 17
+theme_override_font_sizes/bold_font_size = 24
 bbcode_enabled = true
 text = "[b] Mxels – Head & Graphics [/b]  
 Visionary behind the game's concept and visual identity. Designed all the pixel art, UI elements, and captured the unique atmosphere of the PRL era with authentic style and humor. 
@@ -85,15 +90,15 @@ Architect of the game's codebase. Oversaw the core mechanics, inventory systems,
 Specialist in gameplay interactions and event scripting. Made sure customer behavior, made game felt both nostalgic and fun. 
 
 [b] Kamil_owski – Programmer [/b]  
-Focused on backend systems and optimization. contributed to the design and implementation of various npc and items. 
+Focused on backend systems and optimization. Contributed to the design and implementation of various npc and items. 
 
 [b] Gigabajt000 – Programmer & Sound Effects [/b] 
-Implemented UI interactions and audio integration. Also created retro sound effects. 
+Implemented UI visuals and interactions.Responsible for the game's audio design. Also contributed to npc design.
 
 [b] Marek Solarz - Mentor[/b]
 Master of iteration and recursion, a mentor, an idol, and an enduring inspiration. Through his distinct and disciplined teaching style,
- he shaped generations of programmers to approach problems with precision, structure, and elegance. His mastery lies not just in knowledge,
- but in how he instills it — methodically, relentlessly, and with purpose. To be taught by him is to learn how to think. "
+he shaped generations of programmers to approach problems with precision, structure, and elegance. His mastery lies not just in knowledge,
+but in how he instills it — methodically, relentlessly, and with purpose. To be taught by him is to learn how to think. "
 fit_content = true
 
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]
