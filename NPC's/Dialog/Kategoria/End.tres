@@ -7,7 +7,7 @@ script = ExtResource("1_54mjl")
 Dialog = "Come With Me, Comrade"
 Specjalne = false
 Bezdomny = false
-Oficer = false
+Oficer = true
 Items = {
 "alkohol": 1.0,
 "chleb": 0.0,

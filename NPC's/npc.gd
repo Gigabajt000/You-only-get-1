@@ -204,6 +204,11 @@ func choseGender():
 		var o = ResourceLoader.load(tut_image)
 		image = o.icon
 		Global.Klient_icon = o.icon
+	elif podkategoria.Oficer:
+		var tut_image = "res://NPC's/Gender/1/icon/7.tres"
+		var o = ResourceLoader.load(tut_image)
+		image = o.icon
+		Global.Klient_icon = o.icon
 	else :
 		gender = randi_range(0,1)
 	#0=kobieta 1=facet

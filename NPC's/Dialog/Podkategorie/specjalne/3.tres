@@ -4,10 +4,10 @@
 
 [resource]
 script = ExtResource("1_1mcs2")
-Dialog = "specjal2"
-Specjalne = true
+Dialog = "Oficer"
+Specjalne = false
 Bezdomny = false
-Oficer = false
+Oficer = true
 Items = {
 "alkohol": 1.0,
 "chleb": 1.0,
