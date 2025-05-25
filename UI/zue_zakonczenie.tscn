@@ -1,11 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bu6pao35q1gji"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_y8rxj"]
-load_path = "res://.godot/imported/Maro_ZdjęcieOG.png-9a1c215894e19a7d51fa44df9f41e025.ctex"
-
-[sub_resource type="LabelSettings" id="LabelSettings_mnhq1"]
-font_size = 120
-font_color = Color(0, 0, 0, 1)
+[ext_resource type="Script" uid="uid://cvelujlek0w6q" path="res://UI/zue_zakonczenie.gd" id="1_h0g32"]
+[ext_resource type="Texture2D" uid="uid://osv6758ho3uh" path="res://Art/Ending/bad ending/fram1.png" id="1_mnhq1"]
 
 [node name="Zue Zakonczenie" type="Control"]
 layout_mode = 3
@@ -14,24 +10,18 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_h0g32")
 
 [node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = SubResource("CompressedTexture2D_y8rxj")
+texture = ExtResource("1_mnhq1")
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -20.0
-offset_right = 20.0
-offset_bottom = 23.0
-grow_horizontal = 2
-text = "Zuy Marek"
-label_settings = SubResource("LabelSettings_mnhq1")
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
