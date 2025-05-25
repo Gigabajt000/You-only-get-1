@@ -1,16 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://bu6pao35q1gji"]
+[gd_scene load_steps=3 format=3 uid="uid://bjt2m7kh40yee"]
 
-[ext_resource type="Script" uid="uid://cvelujlek0w6q" path="res://UI/zue_zakonczenie.gd" id="1_h0g32"]
-[ext_resource type="Texture2D" uid="uid://osv6758ho3uh" path="res://Art/Ending/bad ending/fram1.png" id="1_mnhq1"]
+[ext_resource type="Texture2D" uid="uid://pvrt1envhn12" path="res://Art/Ending/bad ending/frame3.png" id="1_2aftk"]
+[ext_resource type="Script" uid="uid://dtw1uyixtgq5l" path="res://UI/zue_zakonczenie_3.gd" id="1_nocxk"]
 
-[node name="Zue Zakonczenie" type="Control"]
+[node name="zue_zakonczenie_3" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_h0g32")
+script = ExtResource("1_nocxk")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
@@ -20,7 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_mnhq1")
+texture = ExtResource("1_2aftk")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0

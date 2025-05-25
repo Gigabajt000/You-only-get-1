@@ -105,16 +105,16 @@ func _process(delta: float) -> void:
 		
 		
 		#Komentarz Koncowy
-		if podkategoria.Oficer == true and len(Global.Lista) > 8:
-			label.text = "It Seems You are Doing Well. Goodbye Comrade"
-		elif podkategoria.Oficer == true and len(Global.Lista) < 8:
-			label.text = "You THINK It's Just A Game Don't You! You Are On A Thin Ice You Know."
-		elif Global.Play_Tutorial == true and Global.punkty_po_podaniu == 1.0:
+		if Global.Play_Tutorial == true and Global.punkty_po_podaniu == 1.0:
 			label.text = "Oh... thanks! I'll Gladly Take This"
 			Global.Play_Tutorial = false
 		elif Global.Play_Tutorial == true:
 			label.text = "See You Around, and Beaware... We are Watching You"
 			Global.Play_Tutorial = false
+		elif podkategoria.Oficer == true and len(Global.Lista) > 8:
+			label.text = "It Seems You are Doing Well. Goodbye Comrade"
+		elif podkategoria.Oficer == true and len(Global.Lista) < 8:
+			label.text = "You THINK It's Just A Game Don't You! You Are On A Thin Ice You Know."
 		elif podkategoria.Bezdomny == true and Global.punkty_po_podaniu == 0.5:
 			label.text = "Ohh... how grateful of you! I think I fell in love..."
 		elif podkategoria.Bezdomny == true and Global.punkty_po_podaniu == 0.0:

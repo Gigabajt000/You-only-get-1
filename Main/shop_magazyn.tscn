@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dn0ysblhrws4a" path="res://Art/UI/magazyn_back_button.png" id="5_662m0"]
 [ext_resource type="Texture2D" uid="uid://b6acsuu8ecmy" path="res://Art/UI/magazyn_back_button_pressed.png" id="6_0pqjx"]
 [ext_resource type="Texture2D" uid="uid://c2qiwwo3q8h8q" path="res://Art/UI/magazyn_back_button_hover.png" id="7_wpab7"]
-[ext_resource type="Script" path="res://UI/button.gd" id="8_iwdta"]
+[ext_resource type="Script" uid="uid://bxy3unsqxrujp" path="res://UI/button.gd" id="8_iwdta"]
 
 [node name="Shop-Magazyn" type="Control"]
 layout_mode = 3

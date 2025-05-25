@@ -1,5 +1,7 @@
 extends TextureButton
 
+var passs: bool = false
+
 func _ready() -> void:
 	$"../Magazyn_Button".visible = true
 	visible = true
@@ -17,15 +19,20 @@ func _process(delta: float) -> void:
 		texture_hover = preload("res://Art/UI/pass_button_hover.png")
 		texture_pressed = preload("res://Art/UI/pass_button_pressed.png")
 		texture_disabled = preload("res://Art/UI/pass_button_hover.png")
+		passs = true
+		
 		
 	else:
 		texture_normal = preload("res://Art/UI/accept_button.png")
 		texture_hover = preload("res://Art/UI/accept_button_hover.png")
 		texture_pressed = preload("res://Art/UI/accept_button_pressed.png")
 		texture_disabled = preload("res://Art/UI/accept_button_hover.png")
+		passs = false
 
 #Podanie Przedmiotu Klientowi
 func _on_pressed() -> void:
+	if passs == false:
+		AudioManager.play_random_accept_sound()
 	#Animacja Podania Przedmiotu
 	if Global.Play_Tutorial == false:
 		Global.klient_res = null
