@@ -1,8 +1,9 @@
-[gd_scene load_steps=20 format=3 uid="uid://66h1j5trsblh"]
+[gd_scene load_steps=21 format=3 uid="uid://66h1j5trsblh"]
 
 [ext_resource type="PackedScene" uid="uid://baeffjqt2pip1" path="res://UI/Pause Menu/pause_menu.tscn" id="1_83ytx"]
 [ext_resource type="Script" uid="uid://bdstl6kju6cnu" path="res://Main/main.gd" id="1_h5g1y"]
 [ext_resource type="PackedScene" uid="uid://bm1vquy3vqvrc" path="res://UI/Settings/pause_menu_settings.tscn" id="2_amygn"]
+[ext_resource type="Texture2D" uid="uid://duevshwleiqhm" path="res://Art/pixil-frame-0 - 2025-05-24T133954.230.png" id="2_d3r6l"]
 [ext_resource type="Script" uid="uid://bxt26po2nixjj" path="res://Main/label_2.gd" id="2_wltqy"]
 [ext_resource type="Script" uid="uid://defeswvoqx7w4" path="res://Main/magazyn_button.gd" id="4_ps1la"]
 [ext_resource type="Texture2D" uid="uid://1er4nvd3tp1c" path="res://Art/scale.png" id="4_qd626"]
@@ -31,10 +32,20 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_h5g1y")
 
+[node name="Bacground" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_d3r6l")
+
 [node name="NPC" parent="." instance=ExtResource("6_u2i7p")]
 position = Vector2(-105, -203)
 
-[node name="Background" type="TextureRect" parent="."]
+[node name="Foreground" type="TextureRect" parent="."]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 15
