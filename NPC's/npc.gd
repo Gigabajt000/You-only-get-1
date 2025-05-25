@@ -180,7 +180,7 @@ func random_podkategoria():
 	else:
 		podkat_path = "res://NPC's/Dialog/Podkategorie"
 		#range musi byc powyzej 1 (np: od 2 do 6)
-		var pkat = randi_range(2,5)
+		var pkat = randi_range(2,7)
 		pkat = str(pkat)
 		podkat_path = podkat_path+"/"+name_kat+"/"+pkat+".tres"
 		#print(podkat_path)
@@ -210,7 +210,7 @@ func choseGender():
 		var tut_image = "res://NPC's/Gender/1/icon/6.tres"
 		var o = ResourceLoader.load(tut_image)
 		image = o.icon
-		var gendername_path = gender_path + str(gender) + "/name/" + n+ ".tres"
+		var gendername_path = gender_path + "1/name/" + n+ ".tres"
 		var j = 0
 		j = ResourceLoader.load(gendername_path)
 		imie = j.name
@@ -219,6 +219,7 @@ func choseGender():
 	elif podkategoria.Oficer:
 		var tut_image = "res://NPC's/Gender/1/icon/7.tres"
 		var o = ResourceLoader.load(tut_image)
+		imie = "Grigoriy Braunov"
 		image = o.icon
 		Global.Klient_icon = o.icon
 	else :
