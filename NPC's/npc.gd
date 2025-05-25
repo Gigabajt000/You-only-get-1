@@ -210,7 +210,7 @@ func choseGender():
 func female():
 	gender_path = "res://NPC's/Gender/"
 	#name
-	var n = randi_range(1,4)
+	var n = randi_range(1,5)
 	n = str(n)
 	#icon 
 	var  i = randi_range(1,2)
@@ -230,7 +230,7 @@ func female():
 func male():
 	gender_path = "res://NPC's/Gender/"
 	#name
-	var n = randi_range(1,4)
+	var n = randi_range(1,7)
 	n = str(n)
 	#icon
 	var  i = randi_range(1,5)
