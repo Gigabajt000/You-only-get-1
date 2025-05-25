@@ -27,7 +27,7 @@ var Podany_Przedmiot: String = ""    #przedmiot podany klientowi
 var punkty_po_podaniu: float
 var podany = false
 #klient Resource---------------------------------------------------------------------
-var Vdolce: int = 10
+var Vdolce: int = 0
 var Start_Timer: bool = false        #start timer w labelu 
 
 #Dialog klienta---------------------------------------------------------------------
@@ -57,10 +57,10 @@ func _ready() -> void:
 	Rzadowa_Dostawa(6)
 
 func _process(delta: float) -> void:
-	if Vdolce >= 200:
-		Vdolce = 200
-	if Vdolce <= -200:
-		Vdolce = -200
+	if Vdolce >= 70:
+		Vdolce = 70
+	if Vdolce <= -70:
+		Vdolce = -70
 
 func Rzadowa_Dostawa(x):
 	for i in range(0,x):
