@@ -6,9 +6,10 @@ func _ready() -> void:
 	mouse_exited.connect(_on_mouse_exited)
 	
 func _on_pressed() -> void:
+	AudioManager.menu_button_down.play()
 	if Global.Vdolce >= 20:
 		Global.Vdolce -= 20
-		Global.ilosc_przedmiotow_od_rzadu *= 2
+		Global.ilosc_przedmiotow_od_rzadu = 7
 		visible = false
 var tween: Tween
 

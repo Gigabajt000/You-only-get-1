@@ -14,6 +14,7 @@ func _ready() -> void:
 
 
 func _on_pressed() -> void:
+	AudioManager.menu_button_down.play()
 	if Global.Przedmiot != "":
 		Global.Lista.append(Global.Przedmiot)
 	Global.Przedmiot = Nazwa
