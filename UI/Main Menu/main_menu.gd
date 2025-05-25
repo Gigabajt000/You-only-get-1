@@ -1,5 +1,7 @@
 extends Control
 
+func _ready() -> void:
+	AudioManager.find_and_connect_buttons(get_tree().root)
 
 func _on_play_pressed() -> void:
 	Transition.transition()

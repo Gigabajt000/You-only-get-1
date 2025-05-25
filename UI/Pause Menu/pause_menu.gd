@@ -32,4 +32,5 @@ func _on_main_menu_pressed() -> void:
 	Global.is_in_game = false
 	Global.is_in_pause_menu = false
 	Global.is_in_settings = false
+	AudioManager.find_and_connect_buttons(get_tree().root)
 	get_tree().change_scene_to_file("res://UI/Main Menu/main_menu.tscn")

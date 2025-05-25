@@ -8,6 +8,7 @@ var preload_path = preload("res://Main/przedmiot_sklep.tscn") # Preload Itemku
 #-------------------------------------------------------
 
 func _ready() -> void:
+	AudioManager.find_and_connect_buttons(get_tree().root)
 	Rozstawienie()
 
 #Rozstawia Przedmioty Na Półkach

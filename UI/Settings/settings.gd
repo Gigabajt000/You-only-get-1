@@ -7,6 +7,7 @@ extends Control
 @onready var sfx_volume: HSlider = $"MarginContainer2/VBoxContainer/SFX Volume"
 
 func _ready():
+	AudioManager.find_and_connect_buttons(get_tree().root)
 	for res in resolutions:
 		resolution_button.add_item(res)
 		
@@ -67,8 +68,10 @@ func _on_sfx_volume_value_changed(value: float) -> void:
 
 # Back ---------------------------------------------------------------------
 func _on_back_pressed() -> void:
+	AudioManager.find_and_connect_buttons(get_tree().root)
 	get_tree().change_scene_to_file("res://UI/Main Menu/main_menu.tscn")
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("back"):
+		AudioManager.find_and_connect_buttons(get_tree().root)
 		get_tree().change_scene_to_file("res://UI/Main Menu/main_menu.tscn")
