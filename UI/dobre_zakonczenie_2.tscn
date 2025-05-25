@@ -1,16 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://bbs7paqxmxlgj"]
+[gd_scene load_steps=3 format=3 uid="uid://cuimq4b0v57gu"]
 
-[ext_resource type="Script" uid="uid://cmf0f56i2pqfc" path="res://UI/dobre_zakonczenie.gd" id="1_fswfc"]
-[ext_resource type="Texture2D" uid="uid://daw285gnho7y2" path="res://Art/Ending/good ending/pixil-frame-0 - 2025-05-25T203351.782.png" id="2_1c1dr"]
+[ext_resource type="Script" uid="uid://37q56oeyx37c" path="res://UI/dobre_zakonczenie_2.gd" id="1_mxico"]
+[ext_resource type="Texture2D" uid="uid://bybdfrqxpqtg1" path="res://Art/Ending/good ending/pixil-frame-0 - 2025-05-25T210307.961.png" id="2_gwxyi"]
 
-[node name="Dobre Zakonczenie" type="Control"]
+[node name="dobre_zakonczenie_2" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_fswfc")
+script = ExtResource("1_mxico")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
@@ -20,7 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_1c1dr")
+texture = ExtResource("2_gwxyi")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0

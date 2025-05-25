@@ -54,7 +54,7 @@ var disable_buttons: bool = false
 
 func _ready() -> void:
 	deafultowa_ilosc = 5
-	Rzadowa_Dostawa(8)
+	Rzadowa_Dostawa(6)
 
 func _process(delta: float) -> void:
 	if Vdolce >= 200:

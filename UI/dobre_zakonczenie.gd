@@ -1,9 +1,9 @@
 extends Control
 
-func _ready():
+func _ready() -> void:
 	pass
 
 func _on_timer_timeout() -> void:
 	Transition.transition()
 	await Transition.on_transition_finished
-	get_tree().change_scene_to_file("res://UI/Credits/credits.tscn")
+	get_tree().change_scene_to_file("res://UI/dobre_zakonczenie_2.tscn")
