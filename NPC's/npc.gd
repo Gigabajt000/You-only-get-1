@@ -273,7 +273,7 @@ func male():
 	var n = randi_range(1,7)
 	n = str(n)
 	#icon
-	var  i = randi_range(1,5)
+	var  i = randi_range(1,7)
 	i = str(i)
 	var genderimage_path = gender_path + str(gender) + "/icon/" + i + ".tres"
 	var o = ResourceLoader.load(genderimage_path)
