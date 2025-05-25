@@ -1,6 +1,12 @@
 extends TextureButton
 
 
+func _process(delta: float) -> void:
+	if Global.disable_buttons == true:
+		disabled = true
+	else:
+		disabled = false
+
 func _on_pressed() -> void:
 	get_tree().change_scene_to_file("res://Main/shop_magazyn.tscn")
 
@@ -17,12 +23,14 @@ func reset_tween():
 	tween = create_tween()
 
 func _on_mouse_entered():
+	if Global.disable_buttons == true: return
 	reset_tween()
 	tween.set_trans(Tween.TRANS_CUBIC)
 	tween.tween_property(self, "scale", Vector2(1.2, 1.2), 0.05)
 	tween.tween_property(self, "scale", Vector2(1.1, 1.1), 0.2)
 
 func _on_mouse_exited():
+	if Global.disable_buttons == true: return
 	reset_tween()
 	tween.set_trans(Tween.TRANS_CUBIC)
 	tween.tween_property(self, "scale", Vector2(1.0, 1.0), 0.1)

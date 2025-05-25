@@ -117,6 +117,7 @@ pivot_offset = Vector2(64, 98)
 texture_normal = ExtResource("8_6ivxk")
 texture_pressed = ExtResource("9_6yo1i")
 texture_hover = ExtResource("9_6yo1i")
+texture_disabled = ExtResource("9_6yo1i")
 stretch_mode = 0
 script = ExtResource("4_ps1la")
 
@@ -156,6 +157,7 @@ pivot_offset = Vector2(98, 32)
 texture_normal = ExtResource("12_lrfe7")
 texture_pressed = ExtResource("13_r2ac1")
 texture_hover = ExtResource("14_d3r6l")
+texture_disabled = ExtResource("14_d3r6l")
 stretch_mode = 0
 script = ExtResource("6_hh5pf")
 

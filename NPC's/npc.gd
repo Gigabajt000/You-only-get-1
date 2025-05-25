@@ -43,7 +43,23 @@ func _ready() -> void:
 	else:
 		podkategoria = Global.klient_res
 		$Node2D/Sprite2D.position.x=893.0
-	label.text = Global.Name + ": " + podkategoria.Dialog
+		label.text = Global.Name + ": " + podkategoria.Dialog
+
+func reveal_dialog(total_time: float) -> void:
+	Global.disable_buttons = true
+	var full_text = Global.Name + ": " + podkategoria.Dialog
+	label.clear()
+	
+	var length := full_text.length()
+	if length == 0:
+		return
+
+	var delay := total_time / float(length)
+
+	for i in range(length):
+		label.append_text(full_text[i])
+		await get_tree().create_timer(delay).timeout
+	Global.disable_buttons = false
 
 func _process(delta: float) -> void:
 	if Global.Play_Tutorial == true:
@@ -132,7 +148,8 @@ func _process(delta: float) -> void:
 #pokazuje accept button
 func ShowButton():
 	accept_button.visible = true
-	label.text = imie + ": " + podkategoria.Dialog
+	reveal_dialog(2.0)
+	#label.text = imie + ": " + podkategoria.Dialog
 		
 func checkItem():
 	var przedmiot = Global.Podany_Przedmiot
