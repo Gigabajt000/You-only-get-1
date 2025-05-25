@@ -12,9 +12,12 @@ script = ExtResource("1_lswcb")
 
 [node name="Buy1" type="AudioStreamPlayer" parent="Buy"]
 stream = ExtResource("5_rap6d")
+bus = &"SFX"
 
 [node name="Buy2" type="AudioStreamPlayer" parent="Buy"]
 stream = ExtResource("6_kuol1")
+bus = &"SFX"
 
 [node name="Buy3" type="AudioStreamPlayer" parent="Buy"]
 stream = ExtResource("7_7ko5i")
+bus = &"SFX"
