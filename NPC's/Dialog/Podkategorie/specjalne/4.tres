@@ -6,6 +6,8 @@
 script = ExtResource("1_d7vb8")
 Dialog = "specjalne3"
 Specjalne = true
+Bezdomny = false
+Oficer = false
 Items = {
 "alkohol": 1.0,
 "chleb": 0.4,

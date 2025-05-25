@@ -13,6 +13,7 @@ var image
 var imie 
 
 var gender
+var zul : bool
 
 var k 
 
@@ -143,9 +144,9 @@ func losowanie():
 	if Global.Klient <= 4:
 		Global.Klient += 1
 		$AnimationPlayer.play("przyjście")
-		choseGender()
 		random_kategoria()
 		random_podkategoria()
+		choseGender()
 		icon.texture = image
 		icon.scale = Vector2(0.7,0.7)
 		if Global.Dzien == 3 and Global.Oficer_Played == false:
@@ -198,6 +199,11 @@ func choseGender():
 		icon.scale = Vector2(0.7,0.7)
 		imie = "Michajov Pyckov" 
 		#print(image,imie)
+	elif podkategoria.Bezdomny:
+		var tut_image = "res://NPC's/Gender/1/icon/6.tres"
+		var o = ResourceLoader.load(tut_image)
+		image = o.icon
+		Global.Klient_icon = o.icon
 	else :
 		gender = randi_range(0,1)
 	#0=kobieta 1=facet
