@@ -1,20 +1,21 @@
-[gd_scene load_steps=19 format=3 uid="uid://4phe338d6ahn"]
+[gd_scene load_steps=22 format=3 uid="uid://4phe338d6ahn"]
 
 [ext_resource type="Texture2D" uid="uid://btni8xltipiom" path="res://Art/UI/kalendarz_.png" id="1_jlrc6"]
 [ext_resource type="Script" uid="uid://cj51b85pcf145" path="res://Main/week_end.gd" id="1_kpuyn"]
 [ext_resource type="Texture2D" uid="uid://bqb4bgi3clh12" path="res://Art/UI/obwódka.png" id="2_kpuyn"]
 [ext_resource type="Texture2D" uid="uid://bpjux1batlcjc" path="res://Art/UI/plajstik.png" id="3_m2mpv"]
 [ext_resource type="Script" uid="uid://djwqgfx1eddcg" path="res://Main/label.gd" id="4_g0hrr"]
+[ext_resource type="FontFile" uid="uid://dqc18vmk7m5o3" path="res://Misc/Orange Kid.otf" id="4_na5xs"]
 [ext_resource type="Texture2D" uid="uid://bpiwnrrvd5owb" path="res://Art/lkjdfhgvsldkfjglskdmhgkljdfh (2).png" id="4_qe2ix"]
-[ext_resource type="Texture2D" uid="uid://cfil5a87xiubf" path="res://Maro_ZdjęcieOG.png" id="4_u5pt0"]
 [ext_resource type="Script" uid="uid://cw2j532esa3w" path="res://Main/dostawa_rządowa.gd" id="5_1jwi6"]
 [ext_resource type="Script" uid="uid://dsepjrdnevdco" path="res://Main/zarobiona_kasa.gd" id="5_ic5xn"]
 [ext_resource type="Script" uid="uid://4qlokvgq6efo" path="res://Main/texture_rect_3.gd" id="5_m4n8e"]
 [ext_resource type="Script" uid="uid://b68t1smyqje5l" path="res://Main/next_day.gd" id="6_1jwi6"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_qe2ix"]
-font_size = 24
-font_color = Color(0, 0, 0, 1)
+[ext_resource type="Texture2D" uid="uid://dc3i3ofvim0ri" path="res://Art/UI/bonus_suplies_button.png" id="9_6hsh4"]
+[ext_resource type="Texture2D" uid="uid://dssi41ncwpc56" path="res://Art/UI/bonus_suplies_button_hover_and_pressed.png" id="10_c4njl"]
+[ext_resource type="Texture2D" uid="uid://b0fufgu5i3bv1" path="res://Art/UI/next_day_button.png" id="12_06jpu"]
+[ext_resource type="Texture2D" uid="uid://drf0jw7cfbwyl" path="res://Art/UI/next_day_button_hover.png" id="13_i3vwd"]
+[ext_resource type="Texture2D" uid="uid://bryu6dfn6pmb0" path="res://Art/UI/next_day_button_pressed.png" id="14_raaqf"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ic5xn"]
 font_size = 32
@@ -23,9 +24,6 @@ font_color = Color(1, 1, 0, 1)
 [sub_resource type="LabelSettings" id="LabelSettings_m4n8e"]
 font_size = 32
 font_color = Color(0, 1, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_g0hrr"]
-font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="Animation" id="Animation_m2mpv"]
 length = 0.001
@@ -99,14 +97,30 @@ grow_horizontal = 2
 grow_vertical = 0
 texture = ExtResource("3_m2mpv")
 
-[node name="Label2" type="Label" parent="."]
-layout_mode = 0
-offset_left = 383.0
-offset_top = 22.0
-offset_right = 780.0
+[node name="Label2" type="RichTextLabel" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -198.0
+offset_top = 16.0
+offset_right = 198.0
 offset_bottom = 56.0
-text = "On Thurdsday Oficer Will Show Up"
-label_settings = SubResource("LabelSettings_qe2ix")
+grow_horizontal = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/normal_font = ExtResource("4_na5xs")
+theme_override_fonts/bold_font = ExtResource("4_na5xs")
+theme_override_font_sizes/normal_font_size = 48
+theme_override_font_sizes/bold_font_size = 28
+bbcode_enabled = true
+text = "On Thurdsday The Oficer Will Show Up!
+[b][color=#696969]Make sure you have enough supplies.[/color][/b]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
 
 [node name="TextureRect3" type="TextureRect" parent="."]
 texture_filter = 1
@@ -121,98 +135,137 @@ texture = ExtResource("4_qe2ix")
 script = ExtResource("5_m4n8e")
 
 [node name="Label" type="Label" parent="."]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -89.0
-offset_top = 70.0
-offset_right = -24.0
-offset_bottom = 115.0
+offset_left = -105.0
+offset_top = 110.0
+offset_right = -40.0
+offset_bottom = 155.0
 grow_horizontal = 0
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_na5xs")
+theme_override_font_sizes/font_size = 32
 text = "dfgz"
 label_settings = SubResource("LabelSettings_ic5xn")
+horizontal_alignment = 1
 script = ExtResource("4_g0hrr")
 
+[node name="RichTextLabel2" type="RichTextLabel" parent="Label"]
+texture_filter = 1
+offset_left = -19.0
+offset_top = -42.0
+offset_right = 85.0
+offset_bottom = 18.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_constants/line_separation = -12
+theme_override_fonts/normal_font = ExtResource("4_na5xs")
+theme_override_font_sizes/normal_font_size = 24
+text = "Total Reputation:"
+fit_content = true
+horizontal_alignment = 1
+
 [node name="zarobiona kasa" type="Label" parent="."]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -179.0
-offset_top = 70.0
-offset_right = -114.0
-offset_bottom = 115.0
+offset_left = -211.0
+offset_top = 110.0
+offset_right = -146.0
+offset_bottom = 155.0
 grow_horizontal = 0
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_na5xs")
+theme_override_font_sizes/font_size = 32
 text = "dfgz"
 label_settings = SubResource("LabelSettings_m4n8e")
+horizontal_alignment = 1
 script = ExtResource("5_ic5xn")
 
+[node name="RichTextLabel2" type="RichTextLabel" parent="zarobiona kasa"]
+texture_filter = 1
+layout_mode = 0
+offset_left = -17.0
+offset_top = -42.0
+offset_right = 87.0
+offset_bottom = 18.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_constants/line_separation = -12
+theme_override_fonts/normal_font = ExtResource("4_na5xs")
+theme_override_font_sizes/normal_font_size = 24
+text = "Reputation Gained:"
+fit_content = true
+horizontal_alignment = 1
+
 [node name="Dostawa_Rządowa" type="TextureButton" parent="."]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 167.0
-offset_top = -48.0
-offset_right = 310.0
-offset_bottom = 152.0
+offset_left = 89.0
+offset_top = 83.0
+offset_right = 153.0
+offset_bottom = 147.0
 grow_horizontal = 2
 grow_vertical = 2
+pivot_offset = Vector2(32, 32)
 tooltip_text = "Pay 20 Reputation for additional government supplies"
-texture_normal = ExtResource("4_u5pt0")
+texture_normal = ExtResource("9_6hsh4")
+texture_pressed = ExtResource("10_c4njl")
+texture_hover = ExtResource("10_c4njl")
+stretch_mode = 0
 script = ExtResource("5_1jwi6")
-metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="Dostawa_Rządowa"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -20.0
-offset_right = 20.0
-offset_bottom = 23.0
-grow_horizontal = 2
-text = "Bonus Supplies"
-label_settings = SubResource("LabelSettings_g0hrr")
-metadata/_edit_use_anchors_ = true
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 739.0
+offset_top = 401.0
+offset_right = 902.0
+offset_bottom = 476.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/normal_font = ExtResource("4_na5xs")
+theme_override_font_sizes/normal_font_size = 20
+text = "Pay 20 reputation to order additional supplies for the next day."
+fit_content = true
 
 [node name="Next_Day" type="TextureButton" parent="."]
+texture_filter = 1
+custom_minimum_size = Vector2(256, 64)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -117.0
-offset_top = -49.0
-offset_right = 26.0
-offset_bottom = 151.0
+offset_left = -214.0
+offset_top = 83.0
+offset_right = 42.0
+offset_bottom = 147.0
 grow_horizontal = 2
 grow_vertical = 2
-texture_normal = ExtResource("4_u5pt0")
+pivot_offset = Vector2(128, 32)
+texture_normal = ExtResource("12_06jpu")
+texture_pressed = ExtResource("13_i3vwd")
+texture_hover = ExtResource("14_raaqf")
+stretch_mode = 0
 script = ExtResource("6_1jwi6")
-metadata/_edit_use_anchors_ = true
-
-[node name="Label" type="Label" parent="Next_Day"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -20.0
-offset_right = 20.0
-offset_bottom = 23.0
-grow_horizontal = 2
-text = "Next Day"
-label_settings = SubResource("LabelSettings_g0hrr")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

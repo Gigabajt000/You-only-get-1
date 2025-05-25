@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://66h1j5trsblh"]
+[gd_scene load_steps=20 format=3 uid="uid://66h1j5trsblh"]
 
 [ext_resource type="PackedScene" uid="uid://baeffjqt2pip1" path="res://UI/Pause Menu/pause_menu.tscn" id="1_83ytx"]
 [ext_resource type="Script" uid="uid://bdstl6kju6cnu" path="res://Main/main.gd" id="1_h5g1y"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://c8aih30kbm0xt" path="res://Art/znacznik.png" id="6_6ivxk"]
 [ext_resource type="Script" uid="uid://b1b1cbubo5op8" path="res://Main/accept_button.gd" id="6_hh5pf"]
 [ext_resource type="PackedScene" uid="uid://bk1wd1ukqspqx" path="res://NPC's/NPC.tscn" id="6_u2i7p"]
+[ext_resource type="FontFile" uid="uid://dqc18vmk7m5o3" path="res://Misc/Orange Kid.otf" id="7_r2ac1"]
 [ext_resource type="Texture2D" uid="uid://173lpstksulq" path="res://Art/UI/warehouse_button.png" id="8_6ivxk"]
 [ext_resource type="Texture2D" uid="uid://cphntayxhsty3" path="res://Art/UI/warehouse_button_hover.png" id="9_6yo1i"]
 [ext_resource type="Texture2D" uid="uid://dp4dx0vpw14wt" path="res://Art/pixil-frame-0 - 2025-05-24T120819.440.png" id="12_kmnsd"]
@@ -70,6 +71,7 @@ texture = ExtResource("6_6ivxk")
 
 [node name="Label2" type="Label" parent="CanvasLayer"]
 visible = false
+texture_filter = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
@@ -78,6 +80,7 @@ offset_top = 50.0
 offset_right = -315.0
 offset_bottom = 95.0
 grow_horizontal = 0
+theme_override_fonts/font = ExtResource("7_r2ac1")
 text = "dfgz"
 label_settings = SubResource("LabelSettings_bor5n")
 script = ExtResource("2_wltqy")

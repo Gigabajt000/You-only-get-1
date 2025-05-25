@@ -1,5 +1,7 @@
 extends Label
 
+func _ready() -> void:
+	visible = false
 
 func _process(delta: float) -> void:
 	text = str(Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs)
