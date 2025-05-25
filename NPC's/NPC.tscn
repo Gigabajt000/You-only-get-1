@@ -1,8 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://bk1wd1ukqspqx"]
+[gd_scene load_steps=15 format=3 uid="uid://bk1wd1ukqspqx"]
 
 [ext_resource type="Script" uid="uid://c4r5eq7pdidem" path="res://NPC's/npc.gd" id="1_4g4tx"]
 [ext_resource type="Texture2D" uid="uid://cfil5a87xiubf" path="res://Maro_ZdjęcieOG.png" id="2_4g4tx"]
 [ext_resource type="FontFile" uid="uid://dqc18vmk7m5o3" path="res://Misc/Orange Kid.otf" id="2_wfqlo"]
+[ext_resource type="AudioStream" uid="uid://c5yyi42qq8jnb" path="res://Audio/SFX/footstep1.mp3" id="4_npc4v"]
+[ext_resource type="AudioStream" uid="uid://d1yjmn5iy1cat" path="res://Audio/SFX/footstep2.mp3" id="5_cy5j0"]
+[ext_resource type="AudioStream" uid="uid://dgcqk1m35f4uv" path="res://Audio/SFX/footstep3.mp3" id="6_ddoyd"]
+[ext_resource type="AudioStream" uid="uid://ber6acpg7c140" path="res://Audio/SFX/footstep4.mp3" id="7_43nf5"]
 
 [sub_resource type="Animation" id="Animation_wfqlo"]
 length = 0.001
@@ -29,6 +33,18 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
 }
 
 [sub_resource type="Animation" id="Animation_anlo3"]
@@ -102,9 +118,22 @@ tracks/2/keys = {
 "update": 0,
 "values": [Vector2(0, 45), Vector2(0, 25), Vector2(0, 45), Vector2(0, 25), Vector2(0, 45), Vector2(0, 25), Vector2(0, 45), Vector2(0, 25), Vector2(0, 45)]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(-0.0333333, 0.2, 0.466667, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [true, true, true, true]
+}
 
 [sub_resource type="Animation" id="Animation_4g4tx"]
 resource_name = "przyjście"
+length = 1.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -112,7 +141,7 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
+"times": PackedFloat32Array(0.5, 1.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(1317, 352), Vector2(893, 352)]
@@ -124,7 +153,7 @@ tracks/1/path = NodePath("..:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.233333, 0.5, 0.75, 1),
+"times": PackedFloat32Array(0.5, 0.733333, 1, 1.25, 1.5),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(0, 45), Vector2(0, 25), Vector2(0, 45), Vector2(0, 25), Vector2(0, 45)]
@@ -136,7 +165,7 @@ tracks/2/path = NodePath("../..")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0.9, 0.966667),
+"times": PackedFloat32Array(1.4, 1.46667),
 "transitions": PackedFloat32Array(1, 1),
 "values": [{
 "args": [],
@@ -145,6 +174,18 @@ tracks/2/keys = {
 "args": [],
 "method": &"Start_Timer"
 }]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.5, 0.966667, 1.46667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, true, true]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_w8n2j"]
@@ -155,6 +196,13 @@ _data = {
 &"odejscie": SubResource("Animation_b06e2"),
 &"przyjście": SubResource("Animation_4g4tx")
 }
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_n8nth"]
+streams_count = 4
+stream_0/stream = ExtResource("4_npc4v")
+stream_1/stream = ExtResource("5_cy5j0")
+stream_2/stream = ExtResource("6_ddoyd")
+stream_3/stream = ExtResource("7_43nf5")
 
 [node name="NPC" type="CharacterBody2D" node_paths=PackedStringArray("icon")]
 script = ExtResource("1_4g4tx")
@@ -191,8 +239,26 @@ libraries = {
 position = Vector2(1317, 352)
 texture = ExtResource("2_4g4tx")
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Node2D/Sprite2D"]
+stream = SubResource("AudioStreamRandomizer_n8nth")
+bus = &"SFX"
+
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
 one_shot = true
+
+[node name="Footsteps" type="Node" parent="."]
+
+[node name="Footstep1" type="AudioStreamPlayer" parent="Footsteps"]
+stream = ExtResource("4_npc4v")
+
+[node name="Footstep2" type="AudioStreamPlayer" parent="Footsteps"]
+stream = ExtResource("5_cy5j0")
+
+[node name="Footstep3" type="AudioStreamPlayer" parent="Footsteps"]
+stream = ExtResource("6_ddoyd")
+
+[node name="Footstep4" type="AudioStreamPlayer" parent="Footsteps"]
+stream = ExtResource("7_43nf5")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

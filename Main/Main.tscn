@@ -169,6 +169,9 @@ visible = false
 [node name="Pause Menu Settings" parent="CanvasLayer" instance=ExtResource("2_amygn")]
 visible = false
 
+[node name="AudioListener2D" type="AudioListener2D" parent="."]
+position = Vector2(577, 379)
+
 [connection signal="timeout" from="CanvasLayer/Label2/Timer" to="CanvasLayer/Label2" method="_on_timer_timeout"]
 [connection signal="pressed" from="CanvasLayer/Magazyn_Button" to="CanvasLayer/Magazyn_Button" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control" to="CanvasLayer/Control" method="_on_pressed"]

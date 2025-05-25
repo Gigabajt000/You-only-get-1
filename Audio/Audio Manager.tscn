@@ -1,0 +1,34 @@
+[gd_scene load_steps=8 format=3 uid="uid://mjmxpufdfxck"]
+
+[ext_resource type="Script" uid="uid://bcp3ey6sewvqr" path="res://Audio/audio_manager.gd" id="1_lswcb"]
+[ext_resource type="AudioStream" uid="uid://5xpew8pbo53q" path="res://Audio/SFX/gadanie1.mp3" id="2_dco0l"]
+[ext_resource type="AudioStream" uid="uid://hdvhg4ngrpa5" path="res://Audio/SFX/gadanie2.mp3" id="3_bfoa7"]
+[ext_resource type="AudioStream" uid="uid://bydr3e508p2fm" path="res://Audio/SFX/gadanie3.mp3" id="4_yxwtr"]
+[ext_resource type="AudioStream" uid="uid://c070n2k6okja2" path="res://Audio/SFX/buy1.mp3" id="5_rap6d"]
+[ext_resource type="AudioStream" uid="uid://lseiwku78amy" path="res://Audio/SFX/buy2.mp3" id="6_kuol1"]
+[ext_resource type="AudioStream" uid="uid://cnx7uj78jypjx" path="res://Audio/SFX/buy3.mp3" id="7_7ko5i"]
+
+[node name="AudioManager" type="AudioStreamPlayer"]
+script = ExtResource("1_lswcb")
+
+[node name="Gadanie" type="Node" parent="."]
+
+[node name="Gadanie1" type="AudioStreamPlayer" parent="Gadanie"]
+stream = ExtResource("2_dco0l")
+
+[node name="Gadanie2" type="AudioStreamPlayer" parent="Gadanie"]
+stream = ExtResource("3_bfoa7")
+
+[node name="Gadanie3" type="AudioStreamPlayer" parent="Gadanie"]
+stream = ExtResource("4_yxwtr")
+
+[node name="Buy" type="Node" parent="."]
+
+[node name="Buy1" type="AudioStreamPlayer" parent="Buy"]
+stream = ExtResource("5_rap6d")
+
+[node name="Buy2" type="AudioStreamPlayer" parent="Buy"]
+stream = ExtResource("6_kuol1")
+
+[node name="Buy3" type="AudioStreamPlayer" parent="Buy"]
+stream = ExtResource("7_7ko5i")
