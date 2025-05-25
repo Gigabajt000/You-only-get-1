@@ -62,7 +62,7 @@ func _process(delta: float) -> void:
 				Global.punkty_po_podaniu = -0.1 * (21 - len(Global.Lista))
 				Global.Vdolce += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
 				Global.Zarobione_Pieniadze += Global.punkty_po_podaniu * 10 * Global.Dodatkowy_Hajs
-		if Global.Play_Tutorial == true and Global.Podany_Przedmiot != "":
+		elif Global.Play_Tutorial == true and Global.Podany_Przedmiot != "":
 			checkItem()
 		elif Global.Play_Tutorial == true:
 			pass
@@ -162,7 +162,7 @@ func random_podkategoria():
 	if Global.Play_Tutorial == true:
 		podkategoria = ResourceLoader.load("res://NPC's/Dialog/Kategoria/Tutorial.tres")
 		Global.klient_res = podkategoria
-	elif Global.Play_Oficer == true:
+	elif Global.Play_Oficer == true and Global.Oficer_Played == false:
 		podkategoria = ResourceLoader.load("res://NPC's/Dialog/Kategoria/Oficer.tres")
 		Global.klient_res = podkategoria
 		Global.Oficer_Played = true

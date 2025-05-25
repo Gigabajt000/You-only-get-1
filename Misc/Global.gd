@@ -52,7 +52,7 @@ var Oficer_Played: bool = false
 
 func _ready() -> void:
 	deafultowa_ilosc = 5
-	Rzadowa_Dostawa(7)
+	Rzadowa_Dostawa(8)
 
 func _process(delta: float) -> void:
 	if Vdolce >= 100:
@@ -62,6 +62,7 @@ func _process(delta: float) -> void:
 
 func Rzadowa_Dostawa(x):
 	for i in range(0,x):
-		var y = randi_range(0,len(Przedmioty) - 1)
-		Lista.append(Przedmioty[y])
+		if len(Lista) < 21:
+			var y = randi_range(0,len(Przedmioty) - 1)
+			Lista.append(Przedmioty[y])
 		
