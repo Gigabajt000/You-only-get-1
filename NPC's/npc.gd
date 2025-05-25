@@ -200,12 +200,19 @@ func choseGender():
 		imie = "Michajov Pyckov" 
 		#print(image,imie)
 	elif podkategoria.Bezdomny:
+		gender_path = "res://NPC's/Gender/"
+		#name
+		var n = randi_range(1,5)
+		n = str(n)
 		var tut_image = "res://NPC's/Gender/1/icon/6.tres"
 		var o = ResourceLoader.load(tut_image)
 		image = o.icon
-		imie = "Homeles"
-		Global.Klient_icon = o.icon
+		var gendername_path = gender_path + str(gender) + "/name/" + n+ ".tres"
+		var j = 0
+		j = ResourceLoader.load(gendername_path)
+		imie = j.name
 		Global.Name = imie
+		Global.Klient_icon = o.icon
 	elif podkategoria.Oficer:
 		var tut_image = "res://NPC's/Gender/1/icon/7.tres"
 		var o = ResourceLoader.load(tut_image)
