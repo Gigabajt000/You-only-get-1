@@ -69,9 +69,10 @@ anchor_bottom = 0.5
 offset_left = -554.0
 offset_top = -194.0
 offset_right = 540.0
-offset_bottom = 309.0
+offset_bottom = 231.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 theme = SubResource("Theme_30bwe")
 bbcode_enabled = true
 text = "[b] Mxels – Head & Graphics [/b]  
@@ -93,5 +94,6 @@ Implemented UI interactions and audio integration. Also created retro sound effe
 Master of iteration and recursion, a mentor, an idol, and an enduring inspiration. Through his distinct and disciplined teaching style,
  he shaped generations of programmers to approach problems with precision, structure, and elegance. His mastery lies not just in knowledge,
  but in how he instills it — methodically, relentlessly, and with purpose. To be taught by him is to learn how to think. "
+fit_content = true
 
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]
