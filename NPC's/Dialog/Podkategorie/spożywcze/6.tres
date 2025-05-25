@@ -7,6 +7,7 @@ script = ExtResource("1_hh6so")
 Dialog = "“What’s small, desirable, and fits in a purse?”"
 Specjalne = false
 Bezdomny = false
+Oficer = false
 Items = {
 "alkohol": 1.0,
 "chleb": 0.4,

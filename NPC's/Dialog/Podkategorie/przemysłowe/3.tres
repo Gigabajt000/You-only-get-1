@@ -7,6 +7,7 @@ script = ExtResource("1_uwrhq")
 Dialog = "“Need to ‘accidentally’ destroy my school notes.”"
 Specjalne = false
 Bezdomny = false
+Oficer = false
 Items = {
 "alkohol": 1.0,
 "chleb": -1.0,

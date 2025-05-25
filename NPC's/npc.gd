@@ -151,6 +151,8 @@ func losowanie():
 		icon.scale = Vector2(0.7,0.7)
 		if Global.Dzien == 3 and Global.Oficer_Played == false:
 			Global.Play_Oficer = true
+		else:
+			Global.Play_Oficer = false
 		
 		
 var kat

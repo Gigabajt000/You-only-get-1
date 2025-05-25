@@ -4,9 +4,10 @@
 
 [resource]
 script = ExtResource("1_cilc7")
-Dialog = "Bezdomny"
+Dialog = "\"Ey, boss... give me... I don't know... something. Anything. Just... you know... to remind me I'm still alive.\""
 Specjalne = false
 Bezdomny = true
+Oficer = false
 Items = {
 "alkohol": 0.5,
 "chleb": 0.5,
