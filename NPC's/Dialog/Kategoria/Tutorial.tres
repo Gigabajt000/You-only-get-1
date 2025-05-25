@@ -4,9 +4,10 @@
 
 [resource]
 script = ExtResource("1_gpdld")
-Dialog = "Welcome my Comrade, You've been appointed as a shopkeeper in this part of town. Your job is to satisfy your clients as best as possible, on your down-right corner you have your warehouse, click it to show your items, then select one that fits your customers needs the most and enjoy!... or not?"
+Dialog = "Welcome, my comrade! You've been appointed as a shopkeeper in this part of town. Your job is to satisfy your clients as best as possible. In the bottom-right corner, you have your warehouse—click it to show your items. Then, select the one that best fits your customer's needs and enjoy! ...Or not?"
 Specjalne = false
 Bezdomny = false
+Oficer = false
 Items = {
 "alkohol": 1.0,
 "chleb": 0.0,

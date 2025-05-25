@@ -24,6 +24,10 @@ buses/default_bus_layout="uid://bycih7i5dw7k3"
 Global="*res://Misc/Global.gd"
 Transition="*res://Misc/Transition/transition.tscn"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [file_customization]
 
 folder_colors={
