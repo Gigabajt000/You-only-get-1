@@ -7,12 +7,13 @@ script = ExtResource("1_bpi5u")
 Dialog = "“They said I should get ‘something for the soul.’ Got any?”"
 Specjalne = false
 Bezdomny = false
+Oficer = false
 Items = {
 "alkohol": 1.0,
 "chleb": -0.2,
 "fajki": 1.0,
 "farba": -0.7,
-"gazeta": 0.8,
+"gazeta": 1.0,
 "gwoździe": -1.0,
 "jabłko": 0.2,
 "kiełbasa": 0.1,
@@ -24,7 +25,7 @@ Items = {
 "ocet": -0.7,
 "papier toaletowy": 0.5,
 "pasta do zębów": 0.4,
-"szare mydło": 0.6,
+"szare mydło": 0.3,
 "szczototka do kibla": -1.0,
-"ziemniak": 0.4
+"ziemniak": 0.1
 }

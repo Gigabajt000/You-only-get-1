@@ -7,24 +7,25 @@ script = ExtResource("1_drcv5")
 Dialog = "\"I need something to scrub reality away.\""
 Specjalne = false
 Bezdomny = false
+Oficer = false
 Items = {
 "alkohol": 1.0,
-"chleb": -0.3,
+"chleb": -0.7,
 "fajki": 1.0,
-"farba": -0.3,
-"gazeta": -0.5,
+"farba": -0.5,
+"gazeta": 0.5,
 "gwoździe": -1.0,
-"jabłko": -1.0,
+"jabłko": -0.7,
 "kiełbasa": -1.0,
 "klej": -0.3,
 "klucz hydrauliczny": -0.7,
 "konserwa": -0.7,
-"książka marola karksa": -1.0,
+"książka marola karksa": 0.5,
 "mleko": 0.3,
 "ocet": 0.6,
 "papier toaletowy": 0.3,
 "pasta do zębów": 0.5,
 "szare mydło": 1.0,
 "szczototka do kibla": 1.0,
-"ziemniak": -1.0
+"ziemniak": -0.7
 }

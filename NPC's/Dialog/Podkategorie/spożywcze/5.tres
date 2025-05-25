@@ -5,24 +5,27 @@
 [resource]
 script = ExtResource("1_lltoq")
 Dialog = "“Give me something I can throw, catch, or accidentally break a window with.”"
+Specjalne = false
+Bezdomny = false
+Oficer = false
 Items = {
 "alkohol": 1.0,
-"chleb": 0.4,
+"chleb": -0.2,
 "fajki": 1.0,
-"farba": -1.0,
+"farba": 0.5,
 "gazeta": -1.0,
-"gwoździe": -1.0,
+"gwoździe": 0.5,
 "jabłko": 1.0,
-"kiełbasa": 0.3,
+"kiełbasa": -0.7,
 "klej": -0.7,
-"klucz hydrauliczny": 0.6,
+"klucz hydrauliczny": 1.0,
 "konserwa": 0.9,
-"książka marola karksa": -0.6,
-"mleko": -0.8,
-"ocet": -0.8,
+"książka marola karksa": 0.3,
+"mleko": -0.4,
+"ocet": -0.4,
 "papier toaletowy": -0.8,
-"pasta do zębów": -0.6,
-"szare mydło": -0.8,
-"szczototka do kibla": -0.5,
+"pasta do zębów": -1.0,
+"szare mydło": -0.6,
+"szczototka do kibla": -0.9,
 "ziemniak": 1.0
 }
