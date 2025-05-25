@@ -112,9 +112,9 @@ func _process(delta: float) -> void:
 			label.text = "See You Around, and Beaware... We are Watching You"
 			Global.Play_Tutorial = false
 		elif podkategoria.Oficer == true and len(Global.Lista) > 8:
-			label.text = "It Seems You are Doing Well. Goodbye Comrade"
+			label.text = "Efficient. Predictable. Just like a tram schedule written by a loyal comrade. You may continue to exist."
 		elif podkategoria.Oficer == true and len(Global.Lista) < 8:
-			label.text = "You THINK It's Just A Game Don't You! You Are On A Thin Ice You Know."
+			label.text = "Ah… a shop with ambition, but no goods. Either you're incompetent or dangerously symbolic. Both are punishable."
 		elif podkategoria.Bezdomny == true and Global.punkty_po_podaniu == 0.5:
 			label.text = "Ohh... how grateful of you! I think I fell in love..."
 		elif podkategoria.Bezdomny == true and Global.punkty_po_podaniu == 0.0:
