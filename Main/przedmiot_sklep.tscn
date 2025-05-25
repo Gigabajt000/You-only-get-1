@@ -6,15 +6,10 @@
 
 [node name="Przedmiot-Sklep" type="TextureButton"]
 texture_filter = 1
-custom_minimum_size = Vector2(64, 64)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = -1088.0
-offset_bottom = -584.0
-grow_horizontal = 2
-grow_vertical = 2
-pivot_offset = Vector2(32, 32)
+custom_minimum_size = Vector2(96, 96)
+offset_right = 96.0
+offset_bottom = 96.0
+pivot_offset = Vector2(48, 48)
 size_flags_stretch_ratio = 0.0
 theme = ExtResource("1_uo4qn")
 texture_normal = ExtResource("1_v3sqd")

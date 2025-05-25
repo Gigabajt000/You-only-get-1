@@ -7,14 +7,22 @@ func _ready() -> void:
 	mouse_exited.connect(_on_mouse_exited)
 	
 func _process(delta: float) -> void:
+	if Global.disable_buttons == true:
+		disabled = true
+	else:
+		disabled = false
+	
 	if $"../Control".texture_normal == null:
 		texture_normal = preload("res://Art/UI/pass_button.png")
 		texture_hover = preload("res://Art/UI/pass_button_hover.png")
 		texture_pressed = preload("res://Art/UI/pass_button_pressed.png")
+		texture_disabled = preload("res://Art/UI/pass_button_hover.png")
+		
 	else:
 		texture_normal = preload("res://Art/UI/accept_button.png")
 		texture_hover = preload("res://Art/UI/accept_button_hover.png")
 		texture_pressed = preload("res://Art/UI/accept_button_pressed.png")
+		texture_disabled = preload("res://Art/UI/accept_button_hover.png")
 
 #Podanie Przedmiotu Klientowi
 func _on_pressed() -> void:
@@ -47,12 +55,14 @@ func reset_tween():
 	tween = create_tween()
 
 func _on_mouse_entered():
+	if Global.disable_buttons == true: return
 	reset_tween()
 	tween.set_trans(Tween.TRANS_CUBIC)
 	tween.tween_property(self, "scale", Vector2(1.2, 1.2), 0.05)
 	tween.tween_property(self, "scale", Vector2(1.1, 1.1), 0.2)
 
 func _on_mouse_exited():
+	if Global.disable_buttons == true: return
 	reset_tween()
 	tween.set_trans(Tween.TRANS_CUBIC)
 	tween.tween_property(self, "scale", Vector2(1.0, 1.0), 0.1)
