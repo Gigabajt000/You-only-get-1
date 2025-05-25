@@ -1,10 +1,11 @@
-[gd_scene load_steps=18 format=3 uid="uid://4phe338d6ahn"]
+[gd_scene load_steps=19 format=3 uid="uid://4phe338d6ahn"]
 
 [ext_resource type="Texture2D" uid="uid://btni8xltipiom" path="res://Art/UI/kalendarz_.png" id="1_jlrc6"]
 [ext_resource type="Script" uid="uid://cj51b85pcf145" path="res://Main/week_end.gd" id="1_kpuyn"]
 [ext_resource type="Texture2D" uid="uid://bqb4bgi3clh12" path="res://Art/UI/obwódka.png" id="2_kpuyn"]
 [ext_resource type="Texture2D" uid="uid://bpjux1batlcjc" path="res://Art/UI/plajstik.png" id="3_m2mpv"]
 [ext_resource type="Script" uid="uid://djwqgfx1eddcg" path="res://Main/label.gd" id="4_g0hrr"]
+[ext_resource type="Texture2D" uid="uid://bpiwnrrvd5owb" path="res://Art/lkjdfhgvsldkfjglskdmhgkljdfh (2).png" id="4_qe2ix"]
 [ext_resource type="Texture2D" uid="uid://cfil5a87xiubf" path="res://Maro_ZdjęcieOG.png" id="4_u5pt0"]
 [ext_resource type="Script" uid="uid://cw2j532esa3w" path="res://Main/dostawa_rządowa.gd" id="5_1jwi6"]
 [ext_resource type="Script" uid="uid://dsepjrdnevdco" path="res://Main/zarobiona_kasa.gd" id="5_ic5xn"]
@@ -98,25 +99,26 @@ grow_horizontal = 2
 grow_vertical = 0
 texture = ExtResource("3_m2mpv")
 
-[node name="TextureRect3" type="TextureRect" parent="."]
-texture_filter = 1
+[node name="Label2" type="Label" parent="."]
 layout_mode = 0
-offset_left = 516.0
-offset_top = 477.0
-offset_right = 613.0
-offset_bottom = 617.0
-tooltip_text = "He Will Chceck for Your Supplies, have some in stock!"
-texture = ExtResource("2_kpuyn")
-script = ExtResource("5_m4n8e")
-
-[node name="Label" type="Label" parent="TextureRect3"]
-layout_mode = 0
-offset_left = -140.0
-offset_top = 136.0
-offset_right = 257.0
-offset_bottom = 170.0
+offset_left = 383.0
+offset_top = 22.0
+offset_right = 780.0
+offset_bottom = 56.0
 text = "On Thurdsday Oficer Will Show Up"
 label_settings = SubResource("LabelSettings_qe2ix")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 507.0
+offset_top = 442.0
+offset_right = 640.0
+offset_bottom = 669.0
+tooltip_text = "He Will Chceck for Your Supplies, have some in stock!"
+texture = ExtResource("4_qe2ix")
+script = ExtResource("5_m4n8e")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
