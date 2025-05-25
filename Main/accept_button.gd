@@ -6,7 +6,13 @@ func _ready() -> void:
 	
 func _process(delta: float) -> void:
 	if $"../Control".texture_normal == null:
-		texture_normal = preload("res://Maro_ZdjęcieOG.png")
+		texture_normal = preload("res://Art/UI/pass_button.png")
+		texture_hover = preload("res://Art/UI/pass_button_hover.png")
+		texture_pressed = preload("res://Art/UI/pass_button_pressed.png")
+	else:
+		texture_normal = preload("res://Art/UI/accept_button.png")
+		texture_hover = preload("res://Art/UI/accept_button_hover.png")
+		texture_pressed = preload("res://Art/UI/accept_button_pressed.png")
 
 #Podanie Przedmiotu Klientowi
 func _on_pressed() -> void:
