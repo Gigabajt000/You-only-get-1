@@ -32,7 +32,7 @@ var Start_Timer: bool = false        #start timer w labelu
 
 #Dialog klienta---------------------------------------------------------------------
 var klient_res : Resource
-var Name : String = "Michajov Pyckov"
+var Name : String = "Mikhail Pychkov"
 
 var Dodatkowy_Hajs: int = 1
 

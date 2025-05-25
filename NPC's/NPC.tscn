@@ -2,8 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c4r5eq7pdidem" path="res://NPC's/npc.gd" id="1_4g4tx"]
 [ext_resource type="Texture2D" uid="uid://cfil5a87xiubf" path="res://Maro_ZdjęcieOG.png" id="2_4g4tx"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_4g4tx"]
+[ext_resource type="FontFile" uid="uid://dqc18vmk7m5o3" path="res://Misc/Orange Kid.otf" id="2_wfqlo"]
 
 [sub_resource type="Animation" id="Animation_wfqlo"]
 length = 0.001
@@ -169,27 +168,28 @@ _data = {
 &"przyjście": SubResource("Animation_4g4tx")
 }
 
-[node name="NPC" type="CharacterBody2D" node_paths=PackedStringArray("label", "icon")]
+[node name="NPC" type="CharacterBody2D" node_paths=PackedStringArray("icon")]
 script = ExtResource("1_4g4tx")
-label = NodePath("CanvasLayer/Label")
 icon = NodePath("Node2D/Sprite2D")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
-offset_left = 114.0
-offset_top = 416.0
-offset_right = 1036.0
-offset_bottom = 532.0
+offset_left = 248.0
+offset_top = 468.0
+offset_right = 902.0
+offset_bottom = 625.0
 color = Color(0.152941, 0.152941, 0.152941, 0.486275)
 
-[node name="Label" type="Label" parent="CanvasLayer"]
-offset_left = 128.0
-offset_top = 433.0
-offset_right = 1023.0
-offset_bottom = 520.0
-label_settings = SubResource("LabelSettings_4g4tx")
-autowrap_mode = 3
+[node name="Label" type="RichTextLabel" parent="CanvasLayer"]
+offset_left = 257.0
+offset_top = 477.0
+offset_right = 894.0
+offset_bottom = 614.0
+theme_override_fonts/normal_font = ExtResource("2_wfqlo")
+theme_override_font_sizes/normal_font_size = 24
+fit_content = true
+scroll_active = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../Node2D/Sprite2D")

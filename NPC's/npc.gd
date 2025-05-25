@@ -23,7 +23,8 @@ var numer_klienta : int
 
 var accept_button
 
-@export var label : Label
+@onready var label: RichTextLabel = $CanvasLayer/Label
+#@export var label : Label
 @export var icon : Sprite2D
 
 
@@ -50,7 +51,7 @@ func _process(delta: float) -> void:
 		var o = ResourceLoader.load(tut_image)
 		image = o.icon
 		icon.scale = Vector2(0.7,0.7)
-		imie = "Michajov Pyckov" 
+		imie = "Mikhail Pychkov"
 		icon.texture = o.icon
 	icon.scale = Vector2(0.7,0.7)
 	if Global.podany == true:
