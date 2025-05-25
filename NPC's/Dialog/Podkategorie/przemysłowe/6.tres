@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="dialog" load_steps=2 format=3 uid="uid://y0d20vjqwuvf"]
+
+[ext_resource type="Script" uid="uid://c4ubq78o0w33d" path="res://Recourses/Clients/Client.gd" id="1_6po4v"]
+
+[resource]
+script = ExtResource("1_6po4v")
+Dialog = "\"Everything’s falling. Including my will to live. Help me fix the shelf.\""
+Specjalne = false
+Bezdomny = false
+Oficer = false
+Items = {
+"alkohol": 1.0,
+"chleb": -1.0,
+"fajki": 1.0,
+"farba": -0.7,
+"gazeta": 0.4,
+"gwoździe": 1.0,
+"jabłko": -1.0,
+"kiełbasa": -1.0,
+"klej": 1.0,
+"klucz hydrauliczny": 0.8,
+"konserwa": -1.0,
+"książka marola karksa": 0.2,
+"mleko": -1.0,
+"ocet": -1.0,
+"papier toaletowy": 0.3,
+"pasta do zębów": 0.2,
+"szare mydło": -1.0,
+"szczototka do kibla": 0.4,
+"ziemniak": -1.0
+}

@@ -4,28 +4,28 @@
 
 [resource]
 script = ExtResource("1_d7vb8")
-Dialog = ""
+Dialog = "\"Ey, man... gimme... somethin’... I dunno... just somethin’. Life’s hard, y’know?\""
 Specjalne = true
 Bezdomny = false
 Oficer = false
 Items = {
-"alkohol": 0.0,
-"chleb": 0.0,
-"fajki": 0.0,
-"farba": 0.0,
-"gazeta": 0.0,
-"gwoździe": 0.0,
-"jabłko": 0.0,
-"kiełbasa": 0.0,
-"klej": 0.0,
-"klucz hydrauliczny": 0.0,
-"konserwa": 0.0,
-"książka marola karksa": 0.0,
-"mleko": 0.0,
-"ocet": 0.0,
-"papier toaletowy": 0.0,
-"pasta do zębów": 0.0,
-"szare mydło": 0.0,
-"szczototka do kibla": 0.0,
-"ziemniak": 0.0
+"alkohol": 0.5,
+"chleb": 0.5,
+"fajki": 0.5,
+"farba": 0.5,
+"gazeta": 0.5,
+"gwoździe": 0.5,
+"jabłko": 0.5,
+"kiełbasa": 0.5,
+"klej": 0.5,
+"klucz hydrauliczny": 0.5,
+"konserwa": 0.5,
+"książka marola karksa": 0.5,
+"mleko": 0.5,
+"ocet": 0.5,
+"papier toaletowy": 0.5,
+"pasta do zębów": 0.5,
+"szare mydło": 0.5,
+"szczototka do kibla": 0.5,
+"ziemniak": 0.5
 }
