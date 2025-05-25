@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_f17ys")
-Dialog = "Oficer"
+Dialog = "\"Good day, citizen shopkeeper. I am here to conduct a Routine Inventory Assessment. For state purposes.\""
 Specjalne = false
 Bezdomny = false
 Oficer = true
