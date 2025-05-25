@@ -157,6 +157,7 @@ script = ExtResource("4_g0hrr")
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="Label"]
 texture_filter = 1
+layout_mode = 0
 offset_left = -19.0
 offset_top = -42.0
 offset_right = 85.0
