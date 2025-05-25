@@ -1,13 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://bh01dykrpth4o"]
+[gd_scene load_steps=10 format=3 uid="uid://bh01dykrpth4o"]
 
-[ext_resource type="Texture2D" uid="uid://dr4xufhyjgk2t" path="res://icon.svg" id="1_7o363"]
 [ext_resource type="Script" uid="uid://cndqmucc6qnt2" path="res://Main/shop_magazyn.gd" id="1_xlw5q"]
 [ext_resource type="Texture2D" uid="uid://c106pmkc2xpll" path="res://Art/tło.png" id="2_27yh6"]
+[ext_resource type="Texture2D" uid="uid://dc3i3ofvim0ri" path="res://Art/UI/bonus_suplies_button.png" id="3_0pqjx"]
 [ext_resource type="Script" uid="uid://cneq0x2fomwd0" path="res://Main/dostawa_od_rządu.gd" id="3_6kdoj"]
-[ext_resource type="Texture2D" uid="uid://cfil5a87xiubf" path="res://Maro_ZdjęcieOG.png" id="4_27yh6"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_xlw5q"]
-font_color = Color(0, 0, 0, 1)
+[ext_resource type="Texture2D" uid="uid://dssi41ncwpc56" path="res://Art/UI/bonus_suplies_button_hover_and_pressed.png" id="4_wpab7"]
+[ext_resource type="Texture2D" uid="uid://dn0ysblhrws4a" path="res://Art/UI/magazyn_back_button.png" id="5_662m0"]
+[ext_resource type="Texture2D" uid="uid://b6acsuu8ecmy" path="res://Art/UI/magazyn_back_button_pressed.png" id="6_0pqjx"]
+[ext_resource type="Texture2D" uid="uid://c2qiwwo3q8h8q" path="res://Art/UI/magazyn_back_button_hover.png" id="7_wpab7"]
+[ext_resource type="Script" uid="uid://bxy3unsqxrujp" path="res://UI/button.gd" id="8_iwdta"]
 
 [node name="Shop-Magazyn" type="Control"]
 layout_mode = 3
@@ -18,43 +19,55 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_xlw5q")
 
-[node name="Tło" type="Sprite2D" parent="."]
+[node name="Tło" type="TextureRect" parent="."]
 texture_filter = 1
-position = Vector2(572, 326)
-scale = Vector2(9.069, 9.069)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("2_27yh6")
 
-[node name="TextureButton" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 1001.0
-offset_top = 440.0
-offset_right = 1144.0
-offset_bottom = 640.0
-texture_normal = ExtResource("4_27yh6")
+[node name="Dostawa" type="TextureButton" parent="."]
+texture_filter = 1
+custom_minimum_size = Vector2(196, 196)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -204.0
+offset_top = -204.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("3_0pqjx")
+texture_pressed = ExtResource("4_wpab7")
+texture_hover = ExtResource("4_wpab7")
+stretch_mode = 0
 script = ExtResource("3_6kdoj")
 
 [node name="Back" type="TextureButton" parent="."]
+texture_filter = 1
+custom_minimum_size = Vector2(196, 64)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -64.0
-offset_right = 64.0
-offset_bottom = 128.0
+offset_left = -98.0
+offset_top = 16.0
+offset_right = 98.0
+offset_bottom = 80.0
 grow_horizontal = 2
-texture_normal = ExtResource("1_7o363")
-
-[node name="Label" type="Label" parent="Back"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -20.0
-offset_right = 20.0
-offset_bottom = 23.0
-grow_horizontal = 2
-text = "Back"
-label_settings = SubResource("LabelSettings_xlw5q")
+pivot_offset = Vector2(98, 32)
+texture_normal = ExtResource("5_662m0")
+texture_pressed = ExtResource("6_0pqjx")
+texture_hover = ExtResource("7_wpab7")
+stretch_mode = 0
+script = ExtResource("8_iwdta")
 
 [node name="Node2D" type="Node2D" parent="."]
 
@@ -87,5 +100,5 @@ theme_override_constants/separation = 50
 layout_mode = 2
 theme_override_constants/separation = 50
 
-[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="Dostawa" to="Dostawa" method="_on_pressed"]
 [connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
