@@ -13,9 +13,7 @@ func _on_pressed() -> void:
 		Global.podany = true
 		Global.Start_Timer = true
 		#klient
-		Global.Klient += 1
 		if Global.Klient == 5:
-			Global.Klient = 0
 			Global.Dostawa = true
 			$"../Magazyn_Button".visible = false
 			visible = false

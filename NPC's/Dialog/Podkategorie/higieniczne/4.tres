@@ -6,7 +6,7 @@
 script = ExtResource("1_55ax2")
 Dialog = "“Need something to style hair and survive economic collapse.”"
 Specjalne = false
-Bezdomny = true
+Bezdomny = false
 Items = {
 "alkohol": 1.0,
 "chleb": -0.3,

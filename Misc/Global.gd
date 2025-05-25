@@ -27,11 +27,12 @@ var Podany_Przedmiot: String = ""    #przedmiot podany klientowi
 var punkty_po_podaniu: float
 var podany = false
 #klient Resource---------------------------------------------------------------------
-var Vdolce: int = 25
+var Vdolce: int = -10
 var Start_Timer: bool = false        #start timer w labelu 
 
 #Dialog klienta---------------------------------------------------------------------
 var klient_res : Resource
+var Name : String = "Michajov Pyckov"
 
 var Dodatkowy_Hajs: int = 1
 

@@ -41,7 +41,7 @@ func _ready() -> void:
 	else:
 		podkategoria = Global.klient_res
 		$Node2D/Sprite2D.position.x=893.0
-	label.text = podkategoria.Dialog
+	label.text = Global.Name + ": " + podkategoria.Dialog
 
 func _process(delta: float) -> void:
 	icon.scale = Vector2(0.7,0.7)
@@ -78,7 +78,7 @@ func _process(delta: float) -> void:
 			label.text = "See You Around, and Beaware... We are Watching You"
 			Global.Play_Tutorial = false
 		elif podkategoria.Bezdomny == true and Global.punkty_po_podaniu == 0.5:
-			label.text = "Man... I just got a spaceship... but I’m too drunk to fly."
+			label.text = "Ohh... how grateful of you! I think I fell in love..."
 		elif podkategoria.Bezdomny == true and Global.punkty_po_podaniu == 0.0:
 			label.text = "Man... Really? Huh... thats life"
 		elif Global.punkty_po_podaniu == 1.0 and Global.Podany_Przedmiot == "alkohol" or Global.Podany_Przedmiot == "fajki":
@@ -110,7 +110,7 @@ func _process(delta: float) -> void:
 #pokazuje accept button
 func ShowButton():
 	accept_button.visible = true
-	label.text = imie + podkategoria.Dialog
+	label.text = imie + ": " + podkategoria.Dialog
 		
 func checkItem():
 	var przedmiot = Global.Podany_Przedmiot
@@ -120,7 +120,9 @@ func checkItem():
 
 	
 func losowanie():
-	if Global.Klient < 5:
+	if Global.Klient <= 4:
+		print(Global.Klient)
+		Global.Klient += 1
 		$AnimationPlayer.play("przyjście")
 		choseGender()
 		random_kategoria()
@@ -145,6 +147,7 @@ func random_kategoria():
 func random_podkategoria():
 	if Global.Play_Tutorial == true:
 		podkategoria = ResourceLoader.load("res://NPC's/Dialog/Kategoria/Tutorial.tres")
+		Global.klient_res = podkategoria
 	else:
 		podkat_path = "res://NPC's/Dialog/Podkategorie"
 		#range musi byc powyzej 1 (np: od 2 do 6)
@@ -168,7 +171,7 @@ func choseGender():
 		var o = ResourceLoader.load(tut_image)
 		image = o.icon
 		icon.scale = Vector2(0.7,0.7)
-		imie = "Michajov Pyckov: " 
+		imie = "Michajov Pyckov" 
 		#print(image,imie)
 	else :
 		gender = randi_range(0,1)
@@ -196,6 +199,7 @@ func female():
 	var j = 0
 	j = ResourceLoader.load(gendername_path)
 	imie = j.name
+	Global.Name = imie
 	#print(image," " ,imie)
 
 func male():
@@ -215,6 +219,7 @@ func male():
 	var j = 0
 	j = ResourceLoader.load(gendername_path)
 	imie = j.name
+	Global.Name = imie
 	#print(image," " ,imie)
 
 var dobre_zakonczenie = "res://UI/dobre_zakonczenie.tscn"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://66h1j5trsblh"]
+[gd_scene load_steps=17 format=3 uid="uid://66h1j5trsblh"]
 
 [ext_resource type="PackedScene" uid="uid://baeffjqt2pip1" path="res://UI/Pause Menu/pause_menu.tscn" id="1_83ytx"]
 [ext_resource type="Script" uid="uid://bdstl6kju6cnu" path="res://Main/main.gd" id="1_h5g1y"]
@@ -13,7 +13,6 @@
 [ext_resource type="Script" uid="uid://b1b1cbubo5op8" path="res://Main/accept_button.gd" id="6_hh5pf"]
 [ext_resource type="Texture2D" uid="uid://dr4xufhyjgk2t" path="res://icon.svg" id="6_qg80j"]
 [ext_resource type="PackedScene" uid="uid://bk1wd1ukqspqx" path="res://NPC's/NPC.tscn" id="6_u2i7p"]
-[ext_resource type="Script" uid="uid://dmkunh8xetibq" path="res://Main/dzien_licznik.gd" id="10_kf8jr"]
 [ext_resource type="Texture2D" uid="uid://dp4dx0vpw14wt" path="res://Art/pixil-frame-0 - 2025-05-24T120819.440.png" id="12_kmnsd"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_bor5n"]
@@ -147,12 +146,6 @@ text = "accept"
 [node name="Timer" type="Timer" parent="CanvasLayer/accept_button"]
 wait_time = 1.5
 one_shot = true
-
-[node name="Dzien" type="Label" parent="CanvasLayer"]
-offset_right = 157.0
-offset_bottom = 62.0
-theme_override_font_sizes/font_size = 37
-script = ExtResource("10_kf8jr")
 
 [node name="Pause Menu" parent="CanvasLayer" instance=ExtResource("1_83ytx")]
 visible = false

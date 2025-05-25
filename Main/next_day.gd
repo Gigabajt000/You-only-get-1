@@ -3,6 +3,7 @@ extends TextureButton
 
 func _on_pressed() -> void:
 	Global.Zarobione_Pieniadze = 0
+	Global.Klient = 0
 	if Global.Dzien == 6:
 		Global.Play_End = true
 	Transition.transition()
