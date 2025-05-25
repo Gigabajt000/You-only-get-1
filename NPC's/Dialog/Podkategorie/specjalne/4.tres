@@ -5,8 +5,8 @@
 [resource]
 script = ExtResource("1_d7vb8")
 Dialog = "\"Ey, man... gimme... somethin’... I dunno... just somethin’. Life’s hard, y’know?\""
-Specjalne = true
-Bezdomny = false
+Specjalne = false
+Bezdomny = true
 Oficer = false
 Items = {
 "alkohol": 0.5,
